@@ -69,8 +69,9 @@ export const Main = () => {
 				<span className="desktop">Замовити</span>
 				<span className="desktop">Написати нам</span>
 
-				<div className="burger">
-					<img onClick={() => setOpenBurger(true)} src={burger} alt="" />
+				<div className="burger" onClick={() => setOpenBurger(!openBurger)}>
+					{/* <img onClick={() => setOpenBurger(true)} src={burger} alt="" /> */}
+					<span></span>
 				</div>
 
 				{

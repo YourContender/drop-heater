@@ -20,11 +20,11 @@ export const Order = () => {
                 <div className="order-container-price">
                     <div className="order-container-price-old">
                         <span>Звичайна ціна</span>
-                        <h1>2200 грн.</h1>
+                        <h1>2.200 грн.</h1>
                     </div>
                     <div className="order-container-price-new">
                         <span>Знижка -35%</span>
-                        <h1>1200 грн.</h1>
+                        <h1>1.200 грн.</h1>
                     </div>
                 </div>
                 
