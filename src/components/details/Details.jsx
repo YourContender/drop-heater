@@ -4,7 +4,7 @@ import "./Details.scss";
 
 export const Details = () => {
   return (
-    <div className="details">
+    <div className="details" id="details">
         <div className="details-title">
             <h1>Характеристики</h1>
         </div>

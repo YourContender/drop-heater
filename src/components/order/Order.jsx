@@ -15,7 +15,7 @@ export const Order = () => {
 	};
 
     return (
-        <div className="order" >
+        <div className="order" id="order">
             <div className="order-container">
                 <div className="order-container-price">
                     <div className="order-container-price-old">

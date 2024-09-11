@@ -1,7 +1,13 @@
 import React from 'react';
 import "./Burger.scss";
+import { scrollToSection } from '../../../helper/scroll/scrollToSection';
 
 export const Burger = ({ setOpenBurger }) => {
+  const roadToSection = (param) => {
+    setOpenBurger(false);
+    scrollToSection(param)
+  }
+
   return (
     <div className="burger-menu">
       <div className="burger-menu-btn">
@@ -9,10 +15,15 @@ export const Burger = ({ setOpenBurger }) => {
       </div>
 
       <div className="burger-menu-items">
-        <span>Опис</span>
-        <span>Характеристики</span>
-        <span>Замовити</span>
-        <span>Написати нам</span>
+        <span onClick={() => roadToSection("descr")}>Опис</span>
+        <span onClick={() => roadToSection("details")}>Характеристики</span>
+        <span onClick={() => roadToSection("order")}>Замовити</span>
+        <a  
+          href="https://t.me/your_contender"
+          target="_blank"
+        >
+          Написати нам
+        </a>
       </div>
     </div>
   )

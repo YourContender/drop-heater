@@ -7,7 +7,7 @@ import "./Descr.scss";
 
 export const Descr = () => {
   return (
-    <div className="descr">
+    <div className="descr" id="descr">
       <div className="descr-title">
         <h1>Опис: </h1>
       </div>

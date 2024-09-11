@@ -7,7 +7,7 @@
 
 .main {
     width: 100%;
-    height: calc(var(--index) * 30);
+    height: calc(var(--index) * 32);
     display: flex;
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@
     
     &-left {
         width: 30%;
-        height: calc(var(--index) * 28);
+        height: calc(var(--index) * 32);
         display: flex;
         align-items: center;
         background-color: #e7dfdf;
@@ -41,20 +41,20 @@
 
     &-middle {
         width: 50%;
-        height: calc(var(--index) * 28);
+        height: calc(var(--index) * 32);
     }
 
     &-right {
         width: 20%;
         background-color: rgb(55, 72, 102);
-        height: calc(var(--index) * 30);
+        height: calc(var(--index) * 32);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         min-height: 40px;
 
-        span {
+        span, a {
             color: #fff;
             letter-spacing: 1.2px;
             margin: 25px 0;
@@ -79,7 +79,7 @@
 
 .swiper-slide{
     width: calc(var(--index) * 15);
-    height: calc(var(--index) * 30);
+    height: calc(var(--index) * 32);
 }
 
 .swiper-slide-active {
@@ -215,10 +215,10 @@
             }
         }
         &-middle {
-            height: calc(var(--index) * 30);
+            height: calc(var(--index) * 33);
         }
         .swiper-slide{
-            height: calc(var(--index) * 30);
+            height: calc(var(--index) * 33);
         }
     }
 }

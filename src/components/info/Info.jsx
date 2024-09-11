@@ -12,7 +12,12 @@ export const Info = () => {
 
             </div>
 
-            <button>Написати нам</button>
+            <a
+              href="https://t.me/your_contender"
+              target="_blank"
+            >
+              Написати нам
+            </a>
         </div>
     </div>
   )
