@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import InputMask from "react-input-mask";
+import Confetti from "react-confetti";
+import { Modal } from '../modal/Modal';
 import "./Order.scss";
 
 export const Order = () => {
+    const [openModal, setOpenModal] = useState(false);
+    const [showConfetti, setShowConfetti] = useState(false);
+    const handleOrderComplete = () => {
+        setShowConfetti(true);
+    
+        setTimeout(() => {
+            setShowConfetti(false);
+            setOpenModal(false);
+
+        }, 5000);
+    };
+
     const {
 		register,
 		handleSubmit,
@@ -12,6 +26,8 @@ export const Order = () => {
 
 	const onSubmit = (data) => {
 		console.log(data);
+        setOpenModal(true);
+        handleOrderComplete()
 	};
 
     return (
@@ -79,6 +95,9 @@ export const Order = () => {
                     </div>
                 </form>
             </div>
+
+            { openModal && <Modal/> } 
+            { showConfetti && <Confetti className="confetti"/> }
         </div>
     )
 }
