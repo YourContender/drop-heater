@@ -1,0 +1,32 @@
+image: kroniak/ssh-client
+
+stages:
+  - deploy-prod
+
+before_script:
+  - eval $(ssh-agent -s)
+  - ssh-add <(echo "$MRP_DEPOY_KEY")
+  - mkdir -p ~/.ssh
+  - chmod 700 ~/.ssh
+  - touch ~/.ssh/known_hosts
+  - chmod 644 ~/.ssh/known_hosts
+  - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+
+main:
+  stage: deploy-prod
+  #when: manual #Uncomment if you need manual deploy
+  only:
+    - main
+  script:
+  - ssh-keyscan 159.69.69.110 >> ~/.ssh/known_hosts
+  - ssh -T root@159.69.69.110 <<EOF
+  - mkdir -p /docker/build-prod/drop-heater-$CI_COMMIT_SHORT_SHA
+  - cd /docker/build-prod/drop-heater-$CI_COMMIT_SHORT_SHA
+  - git clone git@gitlab.com:YourContender/drop-heater.git . -b main
+  - git reset --hard $CI_COMMIT_SHORT_SHA
+  - git clean -df
+  - docker build -t prod-drop-heater -f Dockerfile . || {  exit 1; }
+  - docker-compose -f /docker/drop-heater-prod/docker-compose.yml up -d
+  - find /docker/build-prod -not -name '*$CI_COMMIT_SHORT_SHA' -name 'drop-heater-*' -type d -exec rm -rf {} \;
+  - exit
+
