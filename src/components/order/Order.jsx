@@ -1,18 +1,14 @@
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import InputMask from "react-input-mask";
-import Confetti from "react-confetti";
 import { Modal } from '../modal/Modal';
 import "./Order.scss";
 
 export const Order = () => {
     const [openModal, setOpenModal] = useState(false);
-    const [showConfetti, setShowConfetti] = useState(false);
+  
     const handleOrderComplete = () => {
-        setShowConfetti(true);
-    
         setTimeout(() => {
-            setShowConfetti(false);
             setOpenModal(false);
 
         }, 5000);
@@ -20,14 +16,19 @@ export const Order = () => {
 
     const {
 		register,
-		handleSubmit,
+		handleSubmit, 
+        reset,
+        watch,
 		formState: { errors },
 	} = useForm();
+
+    const watchPhone = watch("phone");
 
 	const onSubmit = (data) => {
 		console.log(data);
         setOpenModal(true);
-        handleOrderComplete()
+        handleOrderComplete();
+        reset();
 	};
 
     return (
@@ -57,7 +58,9 @@ export const Order = () => {
                             id="name"
                             placeholder="Ваше ім'я" 
                             className={errors.name ? "input_error" : null}
-                            {...register("name", { required: "Ім'я обов'язкове" })}    
+                            {...register("name", { 
+                                required: "Ім'я обов'язкове", 
+                            })}    
                         />
                     </div>
                     <div className="order-container-forms-box">
@@ -70,6 +73,7 @@ export const Order = () => {
                         <InputMask
                             mask="+38099-999-99-99"
                             maskChar={null}
+                            value={watchPhone || ""}
                             {...register("phone", {
                                 required: "Телефон обов'язковий",
                                 pattern: {
@@ -97,7 +101,6 @@ export const Order = () => {
             </div>
 
             { openModal && <Modal/> } 
-            { showConfetti && <Confetti className="confetti"/> }
         </div>
     )
 }
