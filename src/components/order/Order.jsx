@@ -24,8 +24,26 @@ export const Order = () => {
 
     const watchPhone = watch("phone");
 
+    const sendRequest = async (data) => {
+        let userDate = {
+            name: data.name,
+            phone: data.phone
+        }
+
+        await fetch('https://api.heater.pp.ua/send', {
+            method: 'POST',
+            body: JSON.stringify({
+                ...userDate
+            }),
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }
+        });
+    }
+
 	const onSubmit = (data) => {
-		console.log(data);
+		sendRequest(data);
         setOpenModal(true);
         handleOrderComplete();
         reset();
@@ -37,11 +55,11 @@ export const Order = () => {
                 <div className="order-container-price">
                     <div className="order-container-price-old">
                         <span>Звичайна ціна</span>
-                        <h1>2.200 грн.</h1>
+                        <h1>3.100 грн.</h1>
                     </div>
                     <div className="order-container-price-new">
                         <span>Знижка -35%</span>
-                        <h1>1.200 грн.</h1>
+                        <h1>1.499 грн.</h1>
                     </div>
                 </div>
                 
