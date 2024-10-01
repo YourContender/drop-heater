@@ -6,7 +6,7 @@ import "./Order.scss";
 
 export const Order = () => {
     const [openModal, setOpenModal] = useState(false);
-  
+
     const handleOrderComplete = () => {
         setTimeout(() => {
             setOpenModal(false);
@@ -16,7 +16,7 @@ export const Order = () => {
 
     const {
 		register,
-		handleSubmit, 
+		handleSubmit,
         reset,
         watch,
 		formState: { errors },
@@ -55,14 +55,14 @@ export const Order = () => {
                 <div className="order-container-price">
                     <div className="order-container-price-old">
                         <span>Звичайна ціна</span>
-                        <h1>3.100 грн.</h1>
+                        <h1>2500 грн.</h1>
                     </div>
                     <div className="order-container-price-new">
-                        <span>Знижка -35%</span>
+                        <span>Знижка -40%</span>
                         <h1>1.499 грн.</h1>
                     </div>
                 </div>
-                
+
                 <form className="order-container-forms" onSubmit={handleSubmit(onSubmit)}>
                     <div className="order-container-forms-box">
                         <label className={errors.name ? "label_error" : null} htmlFor="name">
@@ -70,15 +70,15 @@ export const Order = () => {
                         </label>
 
                         {errors.name && <p className="error">{errors.name.message}</p>}
-                        
-                        <input 
-                            type="text" 
+
+                        <input
+                            type="text"
                             id="name"
-                            placeholder="Ваше ім'я" 
+                            placeholder="Ваше ім'я"
                             className={errors.name ? "input_error" : null}
-                            {...register("name", { 
-                                required: "Ім'я обов'язкове", 
-                            })}    
+                            {...register("name", {
+                                required: "Ім'я обов'язкове",
+                            })}
                         />
                     </div>
                     <div className="order-container-forms-box">
@@ -118,7 +118,7 @@ export const Order = () => {
                 </form>
             </div>
 
-            { openModal && <Modal/> } 
+            { openModal && <Modal/> }
         </div>
     )
 }
