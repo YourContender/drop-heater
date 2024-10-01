@@ -1,4 +1,4 @@
-FROM node:20
+FROM node:lts-iron as builder
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -12,8 +12,10 @@ RUN npm install
 # Copy the rest of the application code to the working directory
 COPY . .
 
-# Expose the port your application will run on
-EXPOSE 8080
+# Build static content
+RUN npm run build
 
-# Define the command to run your application
-CMD ["npm", "run", "prod"]
+FROM nginx:stable-alpine
+COPY provision/nginx.conf /etc/nginx/nginx.conf
+WORKDIR /app
+COPY --from=builder /app/dist /app/dist

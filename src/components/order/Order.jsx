@@ -1,18 +1,14 @@
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import InputMask from "react-input-mask";
-import Confetti from "react-confetti";
 import { Modal } from '../modal/Modal';
 import "./Order.scss";
 
 export const Order = () => {
     const [openModal, setOpenModal] = useState(false);
-    const [showConfetti, setShowConfetti] = useState(false);
+  
     const handleOrderComplete = () => {
-        setShowConfetti(true);
-    
         setTimeout(() => {
-            setShowConfetti(false);
             setOpenModal(false);
 
         }, 5000);
@@ -20,14 +16,37 @@ export const Order = () => {
 
     const {
 		register,
-		handleSubmit,
+		handleSubmit, 
+        reset,
+        watch,
 		formState: { errors },
 	} = useForm();
 
+    const watchPhone = watch("phone");
+
+    const sendRequest = async (data) => {
+        let userDate = {
+            name: data.name,
+            phone: data.phone
+        }
+
+        await fetch('https://api.heater.pp.ua/send', {
+            method: 'POST',
+            body: JSON.stringify({
+                ...userDate
+            }),
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }
+        });
+    }
+
 	const onSubmit = (data) => {
-		console.log(data);
+		sendRequest(data);
         setOpenModal(true);
-        handleOrderComplete()
+        handleOrderComplete();
+        reset();
 	};
 
     return (
@@ -36,11 +55,11 @@ export const Order = () => {
                 <div className="order-container-price">
                     <div className="order-container-price-old">
                         <span>Звичайна ціна</span>
-                        <h1>2.200 грн.</h1>
+                        <h1>3.100 грн.</h1>
                     </div>
                     <div className="order-container-price-new">
                         <span>Знижка -35%</span>
-                        <h1>1.200 грн.</h1>
+                        <h1>1.499 грн.</h1>
                     </div>
                 </div>
                 
@@ -57,7 +76,9 @@ export const Order = () => {
                             id="name"
                             placeholder="Ваше ім'я" 
                             className={errors.name ? "input_error" : null}
-                            {...register("name", { required: "Ім'я обов'язкове" })}    
+                            {...register("name", { 
+                                required: "Ім'я обов'язкове", 
+                            })}    
                         />
                     </div>
                     <div className="order-container-forms-box">
@@ -70,6 +91,7 @@ export const Order = () => {
                         <InputMask
                             mask="+38099-999-99-99"
                             maskChar={null}
+                            value={watchPhone || ""}
                             {...register("phone", {
                                 required: "Телефон обов'язковий",
                                 pattern: {
@@ -97,7 +119,6 @@ export const Order = () => {
             </div>
 
             { openModal && <Modal/> } 
-            { showConfetti && <Confetti className="confetti"/> }
         </div>
     )
 }

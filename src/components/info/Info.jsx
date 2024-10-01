@@ -7,13 +7,13 @@ export const Info = () => {
         <div className="info-container">
             <div className="info-container-text">
                 <h3>
-                    Також, Ви можете зробити замовлення написавши нам в наш Телеграм, для цього натисніть "Написати нам" 
+                    Також, Ви можете зробити замовлення написавши нам в наш Telegram, для цього натисніть "Написати нам" 
                 </h3>
 
             </div>
 
             <a
-              href="https://t.me/your_contender"
+              href="#"
               target="_blank"
             >
               Написати нам
