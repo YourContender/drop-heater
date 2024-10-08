@@ -19,7 +19,7 @@ export const Burger = ({ setOpenBurger }) => {
         <span onClick={() => roadToSection("details")}>Характеристики</span>
         <span onClick={() => roadToSection("order")}>Замовити</span>
         <a  
-          href="https://t.me/your_contender"
+          href="https://t.me/nikkp8"
           target="_blank"
         >
           Написати нам
