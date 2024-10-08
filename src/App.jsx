@@ -14,7 +14,7 @@ export const App = () => {
 			{/* <OrderPage/> */}
 			<Details/>
 			<Order/>
-			<Info/>
+			{/*<Info/>*/}
 		</div>
 	);
 };
