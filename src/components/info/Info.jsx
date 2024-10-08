@@ -13,7 +13,7 @@ export const Info = () => {
             </div>
 
             <a
-              href="#"
+              href="https://t.me/nikkp8"
               target="_blank"
             >
               Написати нам
