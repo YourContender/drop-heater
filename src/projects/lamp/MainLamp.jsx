@@ -6,7 +6,7 @@ import { Order } from "./components/order/Order"
 import { Reviews } from "./components/reviews/Reviews";
 import { Modal } from "./components/modal/Modal";
 import { Info } from "./components/info/Info";
-import "./MainLamp.scss";
+import './MainLamp.scss';
 
 export const MainLamp = () => {
 	const [openBurger, setOpenBurger] = useState(false);
