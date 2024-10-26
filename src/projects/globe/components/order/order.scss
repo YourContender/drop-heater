@@ -1,0 +1,141 @@
+.order {
+    &-title {
+        text-align: center;
+        font-family: "Inconsolata", monospace;
+        letter-spacing: 1px;
+        color: #cf85cd;
+    }
+    &-price {
+        padding: 20px 20px;
+        height: 60px;
+        display: flex;
+        justify-content: space-around;
+        font-family: "Inconsolata", monospace;
+        &-old, &-new {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            span {
+                font-family: "Inconsolata", monospace;
+            }
+            &-text {
+                font-size: 18px;
+            }
+            &-sum {
+                font-size: 20px;
+            }
+        }
+        &-old {
+            &-sum {
+                text-decoration: line-through;
+                background-color: #615e61;
+                border-radius: 8px;
+                padding: 2px 5px;
+                font-weight: 400;
+                color: #b6b2b2;
+            }
+        }
+        &-new {
+            &-sum {
+                background-color: #3ef75d;
+                border-radius: 8px;
+                padding: 2px 5px;
+                font-size: 28px;
+                font-weight: 700;
+            }
+        }
+        &-message {
+            height: 60px;
+            text-align: center;
+            background-color: #45a354;
+            padding: 10px 20px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span {
+                font-family: "Inconsolata", monospace;
+                font-size: 18px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    &-container {
+        &-forms {
+            margin: 20px 0;
+            &-box {
+                background-color: #6d546c;
+                display: flex;
+                flex-direction: column;
+                padding: 10px 20px;
+                height: 85px;
+                label {
+                    margin-bottom: 5px;
+                    font-family: "Inconsolata", monospace;
+                    font-size: 18px;
+                    padding-left: 7px;
+                }
+                input {
+                    padding: 10px 10px;
+                    border-radius: 15px;
+                    outline: none;
+                    border: none;
+                    font-family: "Inconsolata", monospace;
+                    font-size: 16px;
+                }
+            }
+            .first {
+                border-radius: 15px 15px 0 0;
+            }
+            .second {
+                border-radius: 0 0 15px 15px;
+            }
+        }
+        &-send {
+            text-align: center;
+            margin-top: 20px;
+            button {
+                font-family: "Inconsolata", monospace;
+                font-size: 18px;
+                padding: 15px 30px;
+                border-radius: 15px;
+                border: none;
+                outline: none;
+                background-color: #aa53a7;
+                letter-spacing: 2px;
+                color: #fff;
+                cursor: pointer;
+                img {
+                    vertical-align: middle; 
+                    margin-right: 8px; 
+                }
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+.error {
+    font-family: "Inconsolata", monospace;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: red;
+    margin: 0 0 5px 0;
+    padding-left: 10px;
+}
+
+.input_error {
+    color: red !important;
+    border: 2px solid red !important;
+    background-color: #e4b8b8;
+
+}
+
+.label_error {
+    color: rgb(55, 72, 102)!important;
+    display: none;
+}
+
