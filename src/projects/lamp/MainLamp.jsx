@@ -4,9 +4,9 @@ import { Main } from "./components/main/Main";
 import { Details } from "./components/details/Details"
 import { Order } from "./components/order/Order"
 import { Reviews } from "./components/reviews/Reviews";
-import "./MainLamp.scss";
 import { Modal } from "./components/modal/Modal";
 import { Info } from "./components/info/Info";
+import "./MainLamp.scss";
 
 export const MainLamp = () => {
 	const [openBurger, setOpenBurger] = useState(false);
