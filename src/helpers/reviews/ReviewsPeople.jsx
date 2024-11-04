@@ -1,8 +1,8 @@
 import React from 'react'
 
-export const ReviewsPeople = ({ reviewsForGlobe }) => {
+export const ReviewsPeople = ({ review }) => {
     return (
-        reviewsForGlobe.map((item, index) => {
+        review.map((item, index) => {
             return (
                 <div className="reviews-item" key={index}>
                     <div className="reviews-item-user">

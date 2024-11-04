@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { Home } from "./projects/home/Home";
+import { MainGlobe} from "./projects/globe-project/MainGlobe.jsx";
+import { MainLamp } from "./projects/lamp-project/MainLamp.jsx";
+import { MainCosmos } from "./projects/cosmos-project/MainCosmos.jsx";
 import "./index.css";
-import { MainGlobe } from "./projects/globe/MainGlobe";
-import { MainLamp } from "./projects/lamp/MainLamp.jsx";
-import { MainCosmos } from "./projects/cosmos/MainCosmos.jsx";
 
 export const App = () => {
 	return (
@@ -16,7 +16,7 @@ export const App = () => {
                     <Route path="/" element={<Home />}/>
                     <Route path="/lamp" element={<MainLamp />} />
                     <Route path="/globe" element={<MainGlobe/>} />
-                    <Route path="/cosmos" element={<MainCosmos/>} />
+                    <Route path="/cosmos" element={<MainCosmos/>} /> 
                 </Routes>
             </Router>
 		</div>
