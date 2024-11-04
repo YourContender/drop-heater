@@ -5,7 +5,7 @@
 
 .swiper-slide{
     max-width: 500px;
-    max-height: 430px;
+    max-height: 470px;
     width: calc(var(--index) * 15);
     height: calc(var(--index) * 32);
 }
@@ -13,7 +13,7 @@
 .swiper-slide-active {
     img {
         width: 100%;
-        min-height: 400px;
+        min-height: 100%;
     }
 }
 
