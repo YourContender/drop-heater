@@ -134,7 +134,7 @@ export const prodTitle = "Акумуляторна лампа для кемпі�
 export const nameProd = "Battery Lamp";
 
 export const cost = {
-	old: 310,
+	old: 500,
 	new: 350,
 };
 
@@ -155,7 +155,7 @@ export const imagesForLampSlider = [
 export const detailsForLamp = [
 	{
 		title: "Місткість акумулятора:",
-		descr: "1500 mAh",
+		descr: "3000 mAh",
 	},
 	{
 		title: "Час роботи:",
