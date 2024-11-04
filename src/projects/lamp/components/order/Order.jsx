@@ -1,49 +1,18 @@
-import React, { useState } from 'react';
-import { useForm } from "react-hook-form";
+import React from 'react';
 import InputMask from "react-input-mask";
 import order from "../../img/rocket.png";
+import { useFormHook } from '../../../../helpers/form/useFormHook';
 import "./order.scss";
 
-export const Order = () => {
-    const [successOrder, setSuccessOrder] = useState(false);
-
-    const {
-		register,
-		handleSubmit, 
-        reset,
-        watch,
-		formState: { errors },
-	} = useForm();
-
-    const watchPhone = watch("phone");
-
-    const sendRequest = async (data) => {
-        let userDate = {
-            name: data.name,
-            phone: data.phone,
-            product: "Акумуляторна лампа"
-        }
-
-        await fetch('https://api.heater.pp.ua/send', {
-            method: 'POST',
-            body: JSON.stringify({
-                ...userDate
-            }),
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            }
-        });
-    }
-
-    const onSubmit = (data) => {
-        setSuccessOrder(true);
-		sendRequest(data);
-        reset();
-        setTimeout(() => {
-            setSuccessOrder(false);
-        }, 3000)
-	};
+export const Order = ({ nameProduct }) => {
+    const { 
+        register, 
+        handleSubmit, 
+        onSubmit, 
+        errors, 
+        watchPhone, 
+        successOrder 
+    } = useFormHook(nameProduct);
 
     return (
         <div className="order" id="order">

@@ -9,6 +9,7 @@ export const Home = () => {
                     <li><Link className="project" to="/">Home</Link></li>
                     <li><Link className="project" to="/lamp">Lamp</Link></li>
                     <li><Link className="project" to="/globe">Globe</Link></li>
+                    <li><Link className="project" to="/cosmos">Cosmos</Link></li>
                 </ul>
             </nav>
         </div>

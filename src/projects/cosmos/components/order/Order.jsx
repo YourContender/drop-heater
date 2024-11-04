@@ -26,11 +26,11 @@ export const Order = ({ nameProduct }) => {
                     <>
                         <div className="order-price-old">
                             <span className="order-price-old-text">Стара ціна</span>
-                            <span className="order-price-old-sum">650 грн</span>
+                            <span className="order-price-old-sum">1000 грн</span>
                         </div>
                         <div className="order-price-new">
                             <span className="order-price-new-text">Нова ціна</span>
-                            <span className="order-price-new-sum">465 грн</span>
+                            <span className="order-price-new-sum">650 грн</span>
                         </div>
                     </> : 
                         <div className="order-price-message">

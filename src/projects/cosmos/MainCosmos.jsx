@@ -6,9 +6,9 @@ import { Order } from "./components/order/Order"
 import { Reviews } from "./components/reviews/Reviews";
 import { Modal } from "./components/modal/Modal";
 import { Info } from "./components/info/Info";
-import './Mainlamp.scss';
+import './MainCosmos.scss';
 
-export const MainLamp = () => {
+export const MainCosmos = () => {
 	const [openBurger, setOpenBurger] = useState(false);
 
 	return (
@@ -18,7 +18,7 @@ export const MainLamp = () => {
 			<Main/>
 			<Details />
 			<Info/>
-			<Order nameProduct="Акумуляторна лампа"/>
+			<Order nameProduct="Світильник астронавт"/>
 			<Reviews/>
 		</div>
 	);

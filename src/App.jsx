@@ -4,9 +4,7 @@ import { Home } from "./projects/home/Home";
 import "./index.css";
 import { MainGlobe } from "./projects/globe/MainGlobe";
 import { MainLamp } from "./projects/lamp/MainLamp.jsx";
-
-const HomePage = () => <h2>Home Page</h2>;
-const About = () => <h2>About Page</h2>;
+import { MainCosmos } from "./projects/cosmos/MainCosmos.jsx";
 
 export const App = () => {
 	return (
@@ -18,6 +16,7 @@ export const App = () => {
                     <Route path="/" element={<Home />}/>
                     <Route path="/lamp" element={<MainLamp />} />
                     <Route path="/globe" element={<MainGlobe/>} />
+                    <Route path="/cosmos" element={<MainCosmos/>} />
                 </Routes>
             </Router>
 		</div>

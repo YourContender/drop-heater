@@ -18,7 +18,7 @@ export const MainGlobe = () => {
 			<Main/>
 			<Details />
 			<Info/>
-			<Order/>
+			<Order nameProduct="Cвітильник настільний"/>
 			<Reviews/>
 		</div>
 	);
