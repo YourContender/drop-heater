@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Home } from "./projects/home/Home";
 import { MainGlobe} from "./projects/globe-project/MainGlobe.jsx";
 import { MainLamp } from "./projects/lamp-project/MainLamp.jsx";

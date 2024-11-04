@@ -201,7 +201,7 @@ export const reviewsForLamp = [
 // ============================================== COSMOS
 
 export const prodTitleCosmos =
-	"Світильник настільний Місяць 3D RGB 8 см + пульт";
+	"Світильник-проектор Астронавт Nebula RGB + пульт";
 
 export const nameProdCosmos = "Astronaut";
 
