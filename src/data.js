@@ -30,6 +30,24 @@ import cosmos6 from "./helpers/images/slider-cosmos/6.jpg";
 import cosmos7 from "./helpers/images/slider-cosmos/7.jpg";
 import cosmos8 from "./helpers/images/slider-cosmos/8.jpg";
 
+export const sizeForGlobe = [
+	{
+		sm: 12,
+		old: 840,
+		new: 645,
+	},
+	{
+		sm: 15,
+		old: 980,
+		new: 755,
+	},
+	{
+		sm: 18,
+		old: 1250,
+		new: 975,
+	},
+];
+
 export const prodTitleGlobe =
 	"Світильник настільний Місяць 3D RGB 8 см + пульт";
 
@@ -129,13 +147,15 @@ export const reviewsForGlobe = [
 
 // ============================================== LAMP
 
+export const sizeForLamp = null;
+
 export const prodTitle = "Акумуляторна лампа для кемпінгу CG-30W 1500mAh";
 
 export const nameProd = "Battery Lamp";
 
 export const cost = {
-	old: 500,
-	new: 350,
+	old: 505,
+	new: 379,
 };
 
 export const infoProd =
@@ -200,14 +220,16 @@ export const reviewsForLamp = [
 
 // ============================================== COSMOS
 
+export const sizeForCosmos = null;
+
 export const prodTitleCosmos =
 	"Світильник-проектор Астронавт Nebula RGB + пульт";
 
 export const nameProdCosmos = "Astronaut";
 
 export const costCosmos = {
-	old: 1000,
-	new: 650,
+	old: 1100,
+	new: 849,
 };
 
 export const infoProdCosmos =
@@ -300,6 +322,6 @@ export const reviewsForCosmos = [
 		name: "Олена А.",
 		star: "⭐️⭐️⭐️⭐️⭐️",
 		img: user3,
-		text: "Дуже задоволений цим проектором, він реально створює ефект космосу у кімнаті. Легко можна змінювати колір туманності, налаштовувати яскравість і навіть вимикати зірки, коли хочеться більш спокійного світла. Пульт допомагає швидко налаштувати все, а таймер дозволяє залишити його ввімкненим, не переживаючи, що працюватиме всю ніч. Розмір зручний, не займає багато місця. Рекомендую як дорослим, так і дітям!",
+		text: "Дуже задоволена цим проектором, він реально створює ефект космосу у кімнаті. Легко можна змінювати колір туманності, налаштовувати яскравість і навіть вимикати зірки, коли хочеться більш спокійного світла. Пульт допомагає швидко налаштувати все, а таймер дозволяє залишити його ввімкненим, не переживаючи, що працюватиме всю ніч. Розмір зручний, не займає багато місця. Рекомендую як дорослим, так і дітям!",
 	},
 ];

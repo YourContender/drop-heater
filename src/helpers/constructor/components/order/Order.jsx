@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import InputMask from "react-input-mask";
 import order from "../../img/rocket.png";
 import { useFormHook } from '../../../form/useFormHook';
 import "./order.scss";
 
-export const Order = ({ nameProduct, cost }) => {
+export const Order = ({ 
+    nameProduct, 
+    cost, 
+    size
+}) => {
+    const [classNameForSize, setClassNameForSize] = useState(0);
+    const [oldPrice, setOldPrice] = useState(0);
+    const [newPrice, setNewPrice] = useState(0);
+
     const { 
         register, 
         handleSubmit, 
@@ -12,7 +20,29 @@ export const Order = ({ nameProduct, cost }) => {
         errors, 
         watchPhone, 
         successOrder 
-    } = useFormHook(nameProduct);
+    } = useFormHook(nameProduct, classNameForSize, newPrice);
+
+    useEffect(() => {
+        if (size) {
+            setClassNameForSize(size[0].sm);
+            setOldPrice(size[0].old);
+            setNewPrice(size[0].new);
+        } else {
+            setNewPrice(cost.new);
+            setClassNameForSize("default")
+        }
+    }, []);
+
+    const changeSizeProduct = (data) => {
+        setClassNameForSize(data);
+
+        size.map((item) => {
+            if (item.sm === data) {
+                setOldPrice(item.old);
+                setNewPrice(item.new);
+            } 
+        })
+    }
 
     return (
         <div className="order" id="order">
@@ -20,17 +50,40 @@ export const Order = ({ nameProduct, cost }) => {
                 <h2>Замовити:</h2>
             </div>
 
+            {
+                size ?            
+                    <div className="order-size">
+                        <h4>Оберіть розмір</h4>
+
+                        <div className="order-size-items">
+                            {
+                                size.map((item, index) => {
+                                    return (
+                                        <span 
+                                            className={classNameForSize === item.sm ? "order-size-items-item active" : "order-size-items-item"}
+                                            onClick={() => changeSizeProduct(item.sm)}
+                                            key={index}
+                                        >
+                                            {item.sm} см
+                                        </span>
+                                    )
+                                })
+                            }
+                        </div>
+                    </div> : null
+            }
+
             <div className="order-price">
                 {
                     !successOrder ? 
                     <>
                         <div className="order-price-old">
                             <span className="order-price-old-text">Стара ціна</span>
-                            <span className="order-price-old-sum">{cost.old} грн</span>
+                            <span className="order-price-old-sum">{size ? oldPrice : cost.old} грн</span>
                         </div>
                         <div className="order-price-new">
                             <span className="order-price-new-text">Нова ціна</span>
-                            <span className="order-price-new-sum">{cost.new} грн</span>
+                            <span className="order-price-new-sum">{size ? newPrice : cost.new} грн</span>
                         </div>
                     </> : 
                         <div className="order-price-message">
@@ -39,6 +92,7 @@ export const Order = ({ nameProduct, cost }) => {
                             </span>
                         </div>
                 }
+
             </div>
 
             <form className="order-container-forms" onSubmit={handleSubmit(onSubmit)}>

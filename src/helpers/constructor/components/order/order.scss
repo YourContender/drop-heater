@@ -5,6 +5,37 @@
         letter-spacing: 1px;
         color: #cf85cd;
     }
+    &-size {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h4 {
+            margin: 5px 0;
+            text-align: center;
+            font-family: "Inconsolata", monospace;
+            letter-spacing: 1px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        &-items{
+            margin: 20px 0;
+            &-item {
+                font-family: "Inconsolata", monospace;
+                font-size: 18px;
+                border-radius: 15px;
+                background-color: #cf85cd;
+                padding: 5px 10px;
+                margin: 5px 15px;
+                cursor: pointer;
+            }
+        }
+        .active {
+            background-color: #855f83ab;
+            color: rgb(255, 255, 255);
+        }
+    }
     &-price {
         padding: 20px 20px;
         height: 60px;

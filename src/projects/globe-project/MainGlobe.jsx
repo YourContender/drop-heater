@@ -7,6 +7,7 @@ import {
     prodTitleGlobe, 
     infoProdGlobe, 
     nameProdGlobe,
+    sizeForGlobe,
     costGlobe 
 } from "../../data";
 import { Header } from "../../helpers/constructor/components/header/Header";
@@ -42,6 +43,7 @@ export const MainGlobe = () => {
             />
 			<Order 
                 cost={costGlobe} 
+                size={sizeForGlobe}
                 nameProduct="Глобус світильник"
             />
 			<Reviews review={reviewsForGlobe}/>

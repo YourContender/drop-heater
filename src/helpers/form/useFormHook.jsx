@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
-export const useFormHook = (nameProduct) => {
+export const useFormHook = (nameProduct, classNameForSize, newPrice) => {
     const {
       register,
       handleSubmit,
@@ -18,7 +18,9 @@ export const useFormHook = (nameProduct) => {
         let userDate = {
             name: data.name,
             phone: data.phone,
-            product: nameProduct
+            product: nameProduct,
+            size: classNameForSize,
+            price: newPrice
         }
 
         await fetch('https://api.heater.pp.ua/send', {

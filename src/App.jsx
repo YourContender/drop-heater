@@ -13,7 +13,7 @@ export const App = () => {
                 {/* <Home/> */}
 
                 <Routes>
-                    <Route path="/" element={<Home />}/>
+                    {/* <Route path="/" element={<Home />}/> */}
                     <Route path="/lamp" element={<MainLamp />} />
                     <Route path="/globe" element={<MainGlobe/>} />
                     <Route path="/cosmos" element={<MainCosmos/>} /> 

@@ -7,6 +7,7 @@ import {
     prodTitleCosmos, 
     infoProdCosmos, 
     nameProdCosmos,
+    sizeForCosmos,
     costCosmos 
 } from "../../data";
 import { Header } from "../../helpers/constructor/components/header/Header";
@@ -42,6 +43,7 @@ export const MainCosmos = () => {
             />
 			<Order 
                 cost={costCosmos} 
+                size={sizeForCosmos}
                 nameProduct="космонавт"
             />
 			<Reviews review={reviewsForCosmos}/>

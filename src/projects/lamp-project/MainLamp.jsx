@@ -6,6 +6,7 @@ import {
     reviewsForLamp, 
     prodTitle, 
     infoProd, 
+    sizeForLamp,
     nameProd,
     cost 
 } from "../../data";
@@ -20,6 +21,10 @@ import './Mainlamp.scss';
 
 export const MainLamp = () => {
 	const [openBurger, setOpenBurger] = useState(false);
+
+    const [classNameForSize, setClassNameForSize] = useState(0);
+    const [oldPrice, setOldPrice] = useState(0);
+    const [newPrice, setNewPrice] = useState(0);
 
 	return (
 		<div className="container">
@@ -42,6 +47,7 @@ export const MainLamp = () => {
             />
 			<Order 
                 cost={cost} 
+                size={sizeForLamp}
                 nameProduct="Акумуляторна лампа"
             />
 			<Reviews review={reviewsForLamp}/>
