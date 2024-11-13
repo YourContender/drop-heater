@@ -7,16 +7,24 @@ import { MainCosmos } from "./projects/cosmos-project/MainCosmos.jsx";
 import "./index.css";
 
 export const App = () => {
+    const hostname = window.location.hostname;
+    const [subdomain] = hostname.split(".");
+
 	return (
 		<div>
 			<Router>
-                {/* <Home/> */}
-
                 <Routes>
-                    {/* <Route path="/" element={<Home />}/> */}
+                    {/* Subdomain routing with nested routes */}
+                    {subdomain === "lamp" && <Route path="*" element={<MainLamp />} /> }
+                    {subdomain === "globe" && <Route path="*" element={<MainGlobe />} /> }
+                    {subdomain === "cosmos" && <Route path="*" element={<MainCosmos />} /> }
+
+                    {/* Fallback for path-based routing */}
                     <Route path="/lamp" element={<MainLamp />} />
-                    <Route path="/globe" element={<MainGlobe/>} />
-                    <Route path="/cosmos" element={<MainCosmos/>} /> 
+                    <Route path="/globe" element={<MainGlobe />} />
+                    <Route path="/cosmos" element={<MainCosmos />} />
+
+                    <Route path="/" element={<Home />} />
                 </Routes>
             </Router>
 		</div>
