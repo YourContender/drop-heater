@@ -9,6 +9,7 @@ import "./index.css";
 export const App = () => {
     const hostname = window.location.hostname;
     const [subdomain] = hostname.split(".");
+    console.log(window.location.hostname, subdomain);
 
 	return (
 		<div>
