@@ -49,7 +49,7 @@ export const sizeForGlobe = [
 ];
 
 export const prodTitleGlobe =
-	"Світильник настільний Місяць 3D RGB 8 см + пульт";
+	"Світильник настільний Місяць 3D RGB + пульт";
 
 export const nameProdGlobe = "Table lamp";
 
@@ -149,7 +149,7 @@ export const reviewsForGlobe = [
 
 export const sizeForLamp = null;
 
-export const prodTitle = "Акумуляторна лампа для кемпінгу CG-30W 1500mAh";
+export const prodTitle = "Акумуляторна лампа для кемпінгу CG-30W 3000mAh";
 
 export const nameProd = "Battery Lamp";
 
