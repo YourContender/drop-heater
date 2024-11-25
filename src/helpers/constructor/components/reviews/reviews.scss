@@ -1,36 +1,130 @@
 .reviews {
-    &-item {
-        background-color: #554246cb;
-        padding: 20px;
-        border-radius: 15px;
-        margin: 40px 0;
-        &-user {
+    color: #000;
+    font-family: "Podkova", serif;
+    &_title {
+        text-align: center;
+        h2 {
+            letter-spacing: 1px;
+            color: #2b2b2b;
+        }
+    }
+    &_rating {
+        text-align: center;
+        &-comment {
             display: flex;
-            align-items: center;
-            img {
-                border-radius: 50%;
-                width: 70px;
-                height: 70px;
+            margin: 20px 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #dfdcdc;
+            &-img {
+                img {
+                    border-radius: 100%;
+                }
             }
-            &-info {
-                display: flex;
-                flex-direction: column;
-                margin-left: 30px;
-
-                .name {
-                    padding-left: 2px;
-                    font-family: "Inconsolata", monospace;
-                    letter-spacing: 1px;
-                    font-size: 20px;
+            .star {
+                color: rgb(255, 196, 0);
+                margin: 0 2px;
+            }
+            &-data {
+                margin-left: 10px;
+                &-name {
+                    h2 {
+                        margin: 5px 0;
+                    }
                 }
             }
         }
-        &-text {
-            margin-top: 5px;
+        &-star {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             span {
-                font-family: "Inconsolata", monospace;
-                letter-spacing: .5px;
+                font-size: 18px;
+                margin: 0 7px;
+                color: #2b2b2b;
+            }
+            &-num {
+                font-size: 36px !important;
+                color: rgb(38, 190, 38) !important;
+                font-weight: 700;
             }
         }
+        &-line {
+            margin: 20px 0;
+            &-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 5px;
+                span {
+                    font-size: 20px;
+                    margin: 0 5px;
+                }
+            }
+        }
+        &-btn {
+            margin: 40px 0;
+            button {
+                color: #fff;
+                background-color: rgb(38, 190, 38);
+                border: none;
+                outline: none;
+                padding: 10px 40px;
+                border-radius: 8px;
+                font-family: "Podkova", serif;
+                font-size: 22px;
+                letter-spacing: 1px;
+            }
+        }
+
+        .line, .line-green {
+            display: block;
+            width: 70%;
+            height: 5px;
+            background-color: #aca9a9;
+            border-radius: 15px;
+        }
+        .line-green {
+            background-color: rgb(38, 190, 38);
+            height: 7px;
+        }
+        .star {
+            color: rgb(255, 196, 0);
+            margin: 0 2px;
+        }
+
     }
+    // &-item {
+    //     background-color: #554246cb;
+    //     padding: 20px;
+    //     border-radius: 15px;
+    //     margin: 40px 0;
+    //     &-user {
+    //         display: flex;
+    //         align-items: center;
+    //         img {
+    //             border-radius: 50%;
+    //             width: 70px;
+    //             height: 70px;
+    //         }
+    //         &-info {
+    //             display: flex;
+    //             flex-direction: column;
+    //             margin-left: 30px;
+
+    //             .name {
+    //                 padding-left: 2px;
+    //                 font-family: "Inconsolata", monospace;
+    //                 letter-spacing: 1px;
+    //                 font-size: 20px;
+    //             }
+    //         }
+    //     }
+    //     &-text {
+    //         margin-top: 5px;
+    //         span {
+    //             font-family: "Inconsolata", monospace;
+    //             letter-spacing: .5px;
+    //         }
+    //     }
+    // }
 }

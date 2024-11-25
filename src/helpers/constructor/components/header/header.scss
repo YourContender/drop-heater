@@ -1,9 +1,10 @@
 .header {
-    padding: 20px 30px;
+    padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     font-family: "Inconsolata", monospace;
+    background-color:#2b2b2b; 
     &_burger {
         display: flex;
         position: relative;
@@ -17,14 +18,14 @@
             height: 2px;
             width: 100%;
             transform: scale(1);
-            background-color: #cf85cd;
+            background-color: #fff;
         }
         &::before, &::after {
             content: '';
             position: absolute;
             height: 2px;
             width: 80%;
-            background-color: #cf85cd;
+            background-color: #fff;
             transition: all 0.3s ease 0s;
         }
         &::before {
@@ -57,22 +58,23 @@
         justify-content: center;
         align-items: center;
         font-weight: 700;
-        font-size: 24px;
-        color: #cf85cd;
+        img {
+            width: 100px;
+        }
     }
 }
 
 @media (max-width: 992px) {
     .header {
         justify-content: space-between;
-        padding: 20px 50px; 
+        padding: 10px 50px; 
     }
 }
 
 @media (max-width: 476px) {
     .header {
         justify-content: space-between;
-        padding: 20px 10px;
+        padding: 10px 10px;
         &_logo {
             font-size: 18px;
         }

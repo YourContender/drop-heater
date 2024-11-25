@@ -5,7 +5,7 @@ export const Details = ({ details, equipment }) => {
     return (
         <div className="details" id="details">
             <div className="details-title">
-                <h2>Характеристики</h2>
+                <h2>Характеристики: </h2>
             </div>
             {
                 details.map((item, index) => {

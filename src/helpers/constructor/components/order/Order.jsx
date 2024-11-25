@@ -3,6 +3,7 @@ import InputMask from "react-input-mask";
 import order from "../../img/rocket.png";
 import { useFormHook } from '../../../form/useFormHook';
 import "./order.scss";
+import { ModalOrder } from '../modal/modal-order/ModalOrder';
 
 export const Order = ({ 
     nameProduct, 
@@ -12,6 +13,7 @@ export const Order = ({
     const [classNameForSize, setClassNameForSize] = useState(0);
     const [oldPrice, setOldPrice] = useState(0);
     const [newPrice, setNewPrice] = useState(0);
+    const [quantity, setQuantity] = useState(1);
 
     const { 
         register, 
@@ -20,7 +22,7 @@ export const Order = ({
         errors, 
         watchPhone, 
         successOrder 
-    } = useFormHook(nameProduct, classNameForSize, newPrice);
+    } = useFormHook(nameProduct, classNameForSize, newPrice, quantity, setQuantity);
 
     useEffect(() => {
         if (size) {
@@ -42,6 +44,18 @@ export const Order = ({
                 setNewPrice(item.new);
             } 
         })
+    }
+
+    const changeQuantity = (action) => {
+        let newQuantity = quantity;
+
+        if (action === "plus") {
+            newQuantity += 1
+        } else {
+            quantity !== 1 ? newQuantity -= 1 : 1;
+        }
+
+        return setQuantity(newQuantity);
     }
 
     return (
@@ -86,11 +100,7 @@ export const Order = ({
                             <span className="order-price-new-sum">{size ? newPrice : cost.new} грн</span>
                         </div>
                     </> : 
-                        <div className="order-price-message">
-                            <span>
-                                Дякуємо за замовлення. Наш менеджер зв'яжеться з Вами!
-                            </span>
-                        </div>
+                        <ModalOrder />
                 }
 
             </div>
@@ -142,6 +152,16 @@ export const Order = ({
                             />
                         )}
                     </InputMask>
+
+                    <div className="order_quantity">
+                        <span className="order_quantity-title">Кількість: </span>
+                        
+                        <div className="order_quantity-calc">
+                            <span className="order_quantity-calc-arrow" onClick={() => changeQuantity("minus")}>{`<`}</span>
+                            <span className="order_quantity-calc-number">{quantity}</span>
+                            <span className="order_quantity-calc-arrow" onClick={() => changeQuantity("plus")}>{`>`}</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="order-container-send">
@@ -152,6 +172,7 @@ export const Order = ({
                 </div>
             </form>
 
+            {/* <span className="alert">Увага! Акційна ціна діє з 23.11.2024 до 26.11.2024</span> */}
         </div>
     )
 }

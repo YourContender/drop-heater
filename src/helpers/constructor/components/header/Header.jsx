@@ -1,11 +1,12 @@
 import React from "react";
 import "./header.scss";
+import test from "../../../images/logos/lamp.png";
 
-export const Header = ({ openBurger, setOpenBurger, nameProd }) => {
+export const Header = ({ openBurger, setOpenBurger, lamp }) => {
     return (
         <header className="header">
-            <div className="header_logo">
-                <span>{nameProd}</span>
+            <div className="header_logo">   
+                <img src={test} alt="hui" />
             </div>
 
             <div 
