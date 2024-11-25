@@ -1,5 +1,5 @@
 import React from "react";
-import "./Marquee.scss";
+import "./marquee.scss";
 
 const Marquee = ({ cost }) => {
 	return (
