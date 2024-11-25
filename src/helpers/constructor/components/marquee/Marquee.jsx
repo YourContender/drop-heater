@@ -1,7 +1,7 @@
 import React from "react";
 import "./marquee.scss";
 
-const Marquee = ({ cost }) => {
+export const Marquee = ({ cost }) => {
 	return (
 		<div className="marquee">
 			<div className="marquee-inner run">
@@ -15,5 +15,3 @@ const Marquee = ({ cost }) => {
 		</div>
 	);
 };
-
-export default Marquee;
