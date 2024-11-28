@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import { 
-    imagesForLampSlider, 
-    detailsForLamp, 
-    equipmentForLamp,  
-    reviewsForLampNew,
-    prodTitle, 
-    infoProd, 
-    detailsTitle,
-    sizeForLamp,
-    nameProd,
-    equipmentTitleForLamp,
-    cost 
+    imagesForRubberSlider, 
+    detailsForRubber, 
+    equipmentForRubber,  
+    reviewsForRubber,
+    prodTitleRubber, 
+    infoRubber, 
+    detailsTitleRubber,
+    sizeForRubber,
+    equipmentTitleForRubber,
+    costRubber 
 } from "../../data";
 import { Header } from "../../helpers/constructor/components/header/Header";
 import { Main } from "../../helpers/constructor/components/main/Main";
@@ -22,9 +21,9 @@ import { Modal } from "../../helpers/constructor/components/modal/Modal";
 import { Marquee } from "../../helpers/constructor/components/marquee/Marquee";
 import { Delivery } from "../../helpers/constructor/components/delivery/Delivery";
 import { Footer } from "../../helpers/constructor/components/footer/Footer";
-import './Mainlamp.scss';
+import './MainRubber.scss';
 
-export const MainLamp = () => {
+export const MainRubber = () => {
 	const [openBurger, setOpenBurger] = useState(false);
 
 	return (
@@ -32,40 +31,40 @@ export const MainLamp = () => {
 			{openBurger ? 
                 <Modal 
                     setOpenBurger={setOpenBurger} 
-                    title={detailsTitle}
+                    title={detailsTitleRubber}
                 /> : null
             }
 			<Header 
                 openBurger={openBurger} 
                 setOpenBurger={setOpenBurger}
-                nameProd={nameProd}
+                // nameProd={nameProdRubber}
             />
 			<Main 
-                images={imagesForLampSlider}
+                images={imagesForRubberSlider}
             />
-            <Marquee cost={cost} />
+            <Marquee cost={costRubber} />
             <Info 
-                info={infoProd}
-                nameProd={prodTitle}
+                info={infoRubber}
+                nameProd={prodTitleRubber}
             />
 			<Details 
-                details={detailsForLamp} 
-                equipment={equipmentForLamp}
-                title={detailsTitle}
-                other={equipmentTitleForLamp}
+                details={detailsForRubber} 
+                equipment={equipmentForRubber}
+                title={detailsTitleRubber}
+                other={equipmentTitleForRubber}
             />
             <Order 
-                cost={cost} 
-                size={sizeForLamp}
-                nameProduct="Акумуляторна лампа"
-                orderPrice={379}
+                cost={costRubber} 
+                size={sizeForRubber}
+                nameProduct="Гумка для фітнесу Fit Simplify GO DO 5 шт"
+                orderPrice={350}
             />
             <Delivery 
-                nameProduct="Акумуляторна лампа"
+                nameProduct="Гумка для фітнесу Fit Simplify GO DO 5 шт"
             />
 			<Reviews 
-                review={reviewsForLampNew} 
-                title={prodTitle}
+                review={reviewsForRubber} 
+                title={prodTitleRubber}
             />
             <Footer/>
 		</div>

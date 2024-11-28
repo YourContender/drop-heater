@@ -1,7 +1,7 @@
 import React from 'react';
 import "./details.scss";
 
-export const Details = ({ details, equipment, title }) => {
+export const Details = ({ details, equipment, title, other }) => {
     return (
         <div className="details" id="details">
             <div className="details-title">
@@ -21,7 +21,7 @@ export const Details = ({ details, equipment, title }) => {
             <div className="details-other">
                 <div className="details-other-title">
                     {
-                        equipment.length !== 0 ? <h2>Комплектація:</h2> : null
+                        equipment.length !== 0 ? <h2>{other}:</h2> : null
                     }
                 </div>
                 {

@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { 
-    sizeForKnife, 
-    prodTitleKnife, 
-    costKnife,  
-    infoKnife,
-    imagesForKnifeSlider, 
-    detailsTitleKnife, 
-    detailsForKnife,
-    equipmentForKnife,
-    equipmentTitleForLamp,
-    reviewsForKnife
+    sizeForGoose, 
+    prodTitleGoose, 
+    costGoose,  
+    infoGoose,
+    imagesForGooseSlider, 
+    detailsTitleGoose, 
+    detailsForGoose,
+    equipmentForGoose,
+    equipmentTitleForGoose,
+    reviewsForGoose
 } from "../../data";
 import { Header } from "../../helpers/constructor/components/header/Header";
 import { Main } from "../../helpers/constructor/components/main/Main";
@@ -21,40 +21,40 @@ import { Modal } from "../../helpers/constructor/components/modal/Modal";
 import { Marquee } from "../../helpers/constructor/components/marquee/Marquee";
 import { Delivery } from "../../helpers/constructor/components/delivery/Delivery";
 import { Footer } from "../../helpers/constructor/components/footer/Footer";
-import './MainKnife.scss';
+import './MainGoose.scss';
 
-export const MainKnife = () => {
+export const MainGoose = () => {
 	const [openBurger, setOpenBurger] = useState(false);
 
 	return (
 		<div className="container">
-			{openBurger ? <Modal setOpenBurger={setOpenBurger} title={detailsTitleKnife}/> : null}
+			{openBurger ? <Modal setOpenBurger={setOpenBurger} title={detailsTitleGoose}/> : null}
 			<Header 
                 openBurger={openBurger} 
                 setOpenBurger={setOpenBurger}
             />
 			<Main 
-                images={imagesForKnifeSlider}
+                images={imagesForGooseSlider}
             />
-            <Marquee cost={costKnife} />
+            <Marquee cost={costGoose} />
             <Info 
-                info={infoKnife}
-                nameProd={prodTitleKnife}
+                info={infoGoose}
+                nameProd={prodTitleGoose}
             />
 			<Details 
-                details={detailsForKnife} 
-                equipment={equipmentForKnife}
-                title={detailsTitleKnife}
-                other={equipmentTitleForLamp}
+                details={detailsForGoose} 
+                equipment={equipmentForGoose}
+                title={detailsTitleGoose}
+                other={equipmentTitleForGoose}
             />
             <Order 
-                cost={costKnife} 
-                size={sizeForKnife}
+                cost={costGoose} 
+                size={sizeForGoose}
                 nameProduct="Електрична точила"
-                orderPrice={450}
+                orderPrice={599}
             />
             <Delivery nameProduct="Електрична точила"/>
-			<Reviews review={reviewsForKnife} title={prodTitleKnife}/>
+			<Reviews review={reviewsForGoose} title={prodTitleGoose}/>
             <Footer/>
 		</div>
 	);

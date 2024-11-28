@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ModalReviews } from '../modal/modal-reviews/ModalReviews';
 import { ratingStars } from '../../../../data';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-import "./reviews.scss";
 import { Review } from './review/Review';
+import "./reviews.scss";
 
 export const Reviews = ({ review, title }) => {
     const [openModal, setOpenModal] = useState(false);
@@ -25,13 +25,13 @@ export const Reviews = ({ review, title }) => {
                             })
                         }
                     </span>
-                    <span>7 відгуків</span>
+                    <span>{review.length} відгуків</span>
                 </div>
                 <div className="reviews_rating-line">
                     <div className="reviews_rating-line-item">
                         <span>5 <FontAwesomeIcon className="star" icon={faStar} /></span>
                         <span className="line-green"></span>
-                        <span>7</span>
+                        <span>{review.length}</span>
                     </div>
                     <div className="reviews_rating-line-item">
                         <span>4 <FontAwesomeIcon className="star" icon={faStar} /></span>
