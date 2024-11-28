@@ -50,10 +50,10 @@ export const MainGoose = () => {
             <Order 
                 cost={costGoose} 
                 size={sizeForGoose}
-                nameProduct="Електрична точила"
+                nameProduct="Гусь-обіймусь 110 см"
                 orderPrice={599}
             />
-            <Delivery nameProduct="Електрична точила"/>
+            <Delivery nameProduct="Гусь-обіймусь 110 см"/>
 			<Reviews review={reviewsForGoose} title={prodTitleGoose}/>
             <Footer/>
 		</div>
