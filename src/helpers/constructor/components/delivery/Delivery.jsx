@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import call from "../../../images/delivery/call.jpg";
-import post from "../../../images/delivery/post.png";
-import replace from "../../../images/delivery/replace.jpg";
-import "./delivery.scss";
+import call from "../../img/delivery/call.jpg";
+import post from "../../img/delivery/post.png";
+import replace from "../../img/delivery/replace.jpg";
 import { ModalTel } from '../modal/modal-tel/ModalTel';
+import "./delivery.scss";
 
-export const Delivery = () => {
+export const Delivery = ({ nameProduct }) => {
     const [openModal, setOpenModal] = useState(false);
 
     return (
@@ -38,7 +38,7 @@ export const Delivery = () => {
                 </div>
             </div>
 
-            <div className="delivery_question">
+            {/* <div className="delivery_question">
                 <h2>Якщо у Вас виникли питання, ви можете залишити свій номер телефону, наш менеджер зв'яжеться з Вами.</h2>
 
                 <button 
@@ -48,7 +48,7 @@ export const Delivery = () => {
                 </button>
             </div>
 
-            {openModal ? <ModalTel setOpenModal={setOpenModal}/> : null}
+            {openModal ? <ModalTel setOpenModal={setOpenModal} nameProduct={nameProduct}/> : null} */}
         </div>
     )
 }

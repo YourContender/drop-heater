@@ -172,7 +172,12 @@ export const Order = ({
                 </div>
             </form>
 
-            {/* <span className="alert">Увага! Акційна ціна діє з 23.11.2024 до 26.11.2024</span> */}
+            <div className="alert">
+                <span>
+                    Якщо ви хочете <span className="alert-curr">замовити</span> або у вас є <span className="alert-curr">питання</span>, 
+                    заповніть форму вище і наш менеджер Вам зателефонує.
+                </span>
+            </div>
         </div>
     )
 }

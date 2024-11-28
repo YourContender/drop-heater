@@ -4,7 +4,7 @@ import { faXmark, faStar } from '@fortawesome/free-solid-svg-icons';
 import { ratingStars } from '../../../../../data';
 import "./modalReviews.scss";
 
-export const ModalReviews = ({ setOpenModal }) => {
+export const ModalReviews = ({ setOpenModal, title }) => {
     const [changeStar, setChangeStar] = useState(0);
     const [rating, setRating] = useState(ratingStars);
     const [name, setName] = useState("");
@@ -62,7 +62,7 @@ export const ModalReviews = ({ setOpenModal }) => {
                 onClick={() => setOpenModal(false)}
             />
 
-            <h2>Додати відгук на товар "Акумуляторна лампа для кемпінгу CG-30W 3000mAh"</h2>
+            <h2>{title}</h2>
             
             <div className="modal-reviews-stars">
                 {

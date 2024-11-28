@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import { 
-    imagesForLampSlider, 
-    detailsForLamp, 
-    equipmentForLamp,  
-    reviewsForLampNew,
-    prodTitle, 
-    infoProd, 
-    detailsTitle,
-    sizeForLamp,
-    nameProd,
-    cost 
+    sizeForKnife, 
+    prodTitleKnife, 
+    costKnife,  
+    infoKnife,
+    imagesForKnifeSlider, 
+    detailsTitleKnife, 
+    detailsForKnife,
+    equipmentForKnife,
+    reviewsForKnife
 } from "../../data";
 import { Header } from "../../helpers/constructor/components/header/Header";
 import { Main } from "../../helpers/constructor/components/main/Main";
@@ -21,50 +20,39 @@ import { Modal } from "../../helpers/constructor/components/modal/Modal";
 import { Marquee } from "../../helpers/constructor/components/marquee/Marquee";
 import { Delivery } from "../../helpers/constructor/components/delivery/Delivery";
 import { Footer } from "../../helpers/constructor/components/footer/Footer";
-import './Mainlamp.scss';
+import './MainKnife.scss';
 
-export const MainLamp = () => {
+export const MainKnife = () => {
 	const [openBurger, setOpenBurger] = useState(false);
 
 	return (
 		<div className="container">
-			{openBurger ? 
-                <Modal 
-                    setOpenBurger={setOpenBurger} 
-                    title={detailsTitle}
-                /> : null
-            }
+			{openBurger ? <Modal setOpenBurger={setOpenBurger} title={detailsTitleKnife}/> : null}
 			<Header 
                 openBurger={openBurger} 
                 setOpenBurger={setOpenBurger}
-                nameProd={nameProd}
             />
 			<Main 
-                images={imagesForLampSlider}
+                images={imagesForKnifeSlider}
             />
-            <Marquee cost={cost} />
+            <Marquee cost={costKnife} />
             <Info 
-                info={infoProd}
-                nameProd={prodTitle}
+                info={infoKnife}
+                nameProd={prodTitleKnife}
             />
 			<Details 
-                details={detailsForLamp} 
-                equipment={equipmentForLamp}
-                title={detailsTitle}
+                details={detailsForKnife} 
+                equipment={equipmentForKnife}
+                title={detailsTitleKnife}
             />
             <Order 
-                cost={cost} 
-                size={sizeForLamp}
-                nameProduct="Акумуляторна лампа"
-                orderPrice={379}
+                cost={costKnife} 
+                size={sizeForKnife}
+                nameProduct="Електрична точила"
+                orderPrice={450}
             />
-            <Delivery 
-                nameProduct="Акумуляторна лампа"
-            />
-			<Reviews 
-                review={reviewsForLampNew} 
-                title={prodTitle}
-            />
+            <Delivery nameProduct="Електрична точила"/>
+			<Reviews review={reviewsForKnife} title={prodTitleKnife}/>
             <Footer/>
 		</div>
 	);

@@ -5,14 +5,14 @@ import { useFormQuestion } from '../../../../form/useFormQuestion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
-export const ModalTel = ({ setOpenModal }) => {
+export const ModalTel = ({ setOpenModal, nameProduct }) => {
     const { 
         register, 
         handleSubmit, 
         onSubmit, 
         errors, 
         watchPhone, 
-    } = useFormQuestion();
+    } = useFormQuestion(nameProduct);
     
     return (
         <div className="modal-tel">

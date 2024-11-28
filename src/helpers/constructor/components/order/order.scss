@@ -198,8 +198,24 @@
         }
     }
     .alert {
-        color: red;
-        font-size: 18px;
+        background-color: #2b2b2b;
+        font-size: 20px;
+        display: flex;
+        margin: 20px 10px;
+        padding: 10px 20px;
+        border-radius: 15px;
+        color: #fff;
+        justify-content: center;
+        span {
+            text-align: center;
+            font-family: "Podkova", serif;
+            letter-spacing: 1px;
+        }
+        &-curr {
+            color: rgb(73, 243, 96);
+            text-transform: uppercase;
+
+        }
     }
 }
 

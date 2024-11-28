@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-import none from "../../../../images/logos/none.png";
+import none from "../../../img/logos/none.png";
 
 export const Review = ({ item }) => {
     return (

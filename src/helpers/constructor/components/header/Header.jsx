@@ -1,13 +1,13 @@
 import React from "react";
 import "./header.scss";
-import test from "../../../images/logos/lamp.png";
+import test from "../../img/logos/lamp.png";
 
-export const Header = ({ openBurger, setOpenBurger, lamp }) => {
+export const Header = ({ openBurger, setOpenBurger }) => {
     return (
         <header className="header">
-            <div className="header_logo">   
+            {/* <div className="header_logo">   
                 <img src={test} alt="hui" />
-            </div>
+            </div> */}
 
             <div 
                 className={openBurger ? "header_burger active" : "header_burger"} 

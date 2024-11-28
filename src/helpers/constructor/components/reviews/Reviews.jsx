@@ -3,17 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ModalReviews } from '../modal/modal-reviews/ModalReviews';
 import { ratingStars } from '../../../../data';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-import none from "../../../images/logos/none.png";
 import "./reviews.scss";
 import { Review } from './review/Review';
 
-export const Reviews = ({ review }) => {
+export const Reviews = ({ review, title }) => {
     const [openModal, setOpenModal] = useState(false);
 
     return (
         <div className="reviews" id="reviews">
             <div className="reviews_title">
-                <h2>Відгуки (7)</h2>
+                <h2>Відгуки ({review.length})</h2>
             </div>
 
             <div className="reviews_rating">
@@ -61,7 +60,7 @@ export const Reviews = ({ review }) => {
                 </div>
             </div>
 
-            {openModal ? <ModalReviews setOpenModal={setOpenModal}/> : null}
+            {openModal ? <ModalReviews setOpenModal={setOpenModal} title={title}/> : null}
 
             {
                 review.map((item, index) => {

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
-export const useFormQuestion = ( ) => {
+export const useFormQuestion = ( nameProduct ) => {
     const {
       register,
       handleSubmit,
@@ -15,10 +15,9 @@ export const useFormQuestion = ( ) => {
     const sendRequest = async (data) => {
         let userData = {
             tel: data.phone,
-            text: "Є питання, замовили виклик"
+            text: "Є питання, замовили виклик",
+            product: nameProduct
         }
-
-        console.log(userData);
 
         await fetch('https://api.heater.pp.ua/send', {
             method: 'POST',

@@ -1,18 +1,12 @@
-import img1 from "./helpers/images/slider/img1.jpg";
-import img2 from "./helpers/images/slider/img2.jpg";
-import img3 from "./helpers/images/slider/img3.jpg";
-import img4 from "./helpers/images/slider/img4.jpg";
-import img5 from "./helpers/images/slider/img5.jpg";
-import img6 from "./helpers/images/slider/img6.jpg";
-import img7 from "./helpers/images/slider/img7.jpg";
-import img8 from "./helpers/images/slider/img8.jpg";
-import img9 from "./helpers/images/slider/img9.jpg";
+import knife1 from "./helpers/images/knife-prod/1.jpg";
+import knife2 from "./helpers/images/knife-prod/2.jpg";
+import knife3 from "./helpers/images/knife-prod/3.jpg";
+import knife4 from "./helpers/images/knife-prod/4.jpg";
+import knife5 from "./helpers/images/knife-prod/5.jpg";
+import knife6 from "./helpers/images/knife-prod/6.jpg";
+import knife7 from "./helpers/images/knife-prod/7.jpg";
+import knife8 from "./helpers/images/knife-prod/8.jpg";
 
-import user1 from "./helpers/images/reviews/1.png";
-import user2 from "./helpers/images/reviews/2.png";
-import user3 from "./helpers/images/reviews/3.png";
-
-import logo_lamp from "./helpers/images/logos/lamp.png";
 import lamp1 from "./helpers/images/slider-lamp/1.jpg";
 import lamp2 from "./helpers/images/slider-lamp/2.jpg";
 import lamp3 from "./helpers/images/slider-lamp/3.jpg";
@@ -21,15 +15,6 @@ import lamp5 from "./helpers/images/slider-lamp/5.jpg";
 import lamp6 from "./helpers/images/slider-lamp/6.jpg";
 import lamp7 from "./helpers/images/slider-lamp/7.jpg";
 import lamp8 from "./helpers/images/slider-lamp/8.jpg";
-
-import cosmos1 from "./helpers/images/slider-cosmos/1.jpg";
-import cosmos2 from "./helpers/images/slider-cosmos/2.jpg";
-import cosmos3 from "./helpers/images/slider-cosmos/3.jpg";
-import cosmos4 from "./helpers/images/slider-cosmos/4.jpg";
-import cosmos5 from "./helpers/images/slider-cosmos/5.jpg";
-import cosmos6 from "./helpers/images/slider-cosmos/6.jpg";
-import cosmos7 from "./helpers/images/slider-cosmos/7.jpg";
-import cosmos8 from "./helpers/images/slider-cosmos/8.jpg";
 
 export const ratingStars = [
 	{
@@ -54,124 +39,25 @@ export const ratingStars = [
 	},
 ];
 
-export const sizeForGlobe = [
-	{
-		sm: 12,
-		old: 840,
-		new: 645,
-	},
-	{
-		sm: 15,
-		old: 980,
-		new: 755,
-	},
-	{
-		sm: 18,
-		old: 1250,
-		new: 975,
-	},
-];
-
-export const prodTitleGlobe =
-	"Світильник настільний Місяць 3D RGB 8 см + пульт";
-
-export const nameProdGlobe = "Table lamp";
-
-export const costGlobe = {
-	old: 650,
-	new: 465,
-};
-
-export const infoProdGlobe =
-	"Світильник настільний місяць 3D RGB - це унікальний декоративний аксесуар, який точно повторює поверхню місяця з реалістичною 3D-текстурою. Він створить атмосферу затишку і чарівництва в будь-якому приміщенні. Можливість вибору різних режимів освітлення і кольорів за допомогою сенсорного управління або пульта дає змогу легко налаштовувати світло під настрій або обстановку. Вбудована батарея ємністю 300mAh забезпечує до 12 годин роботи без необхідності в частому заряджанні. Такий нічник стане ідеальним доповненням до інтер'єру не тільки спальні дорослих, а й у дитячій. І найменші зможуть спокійно засинати під його світлом.";
-
-export const imagesForGlobeSlider = [
-	img1,
-	img2,
-	img3,
-	img4,
-	img5,
-	img6,
-	img7,
-	img8,
-	img9,
-];
-
-export const detailsForGlobe = [
-	{
-		title: "М'яке світло",
-		descr: "",
-	},
-	{
-		title: "Кількість режимів:",
-		descr: "16",
-	},
-	{
-		title: "Ємність акумулятора:",
-		descr: "300 mAh",
-	},
-	{
-		title: "Час роботи:",
-		descr: "від 8 до 12 годин",
-	},
-	{
-		title: "Час заряджання:",
-		descr: "до 3 годин",
-	},
-	{
-		title: "Живлення:",
-		descr: "від акумулятора/USB",
-	},
-	{
-		title: "Сенсорний перемикач",
-		descr: "",
-	},
-	{
-		title: "Пульт дистанційного керування",
-		descr: "",
-	},
-	{
-		title: "Освітлює простір на 360 градусів",
-		descr: "",
-	},
-	{
-		title: "Діаметр:",
-		descr: "8 см",
-	},
-];
-
-export const equipmentForGlobe = [
-	"Світильник настільний",
-	"Пульт дистанційного керування",
-	"Дерев'яна підставка",
-	"USB кабель",
-	"Інструкція",
-];
-
-export const reviewsForGlobe = [
-	{
-		name: "Богдан В.",
-		star: "⭐️⭐️⭐️⭐️⭐️",
-		img: user1,
-		text: "Дуже подобається м'яке світло цього світильника у формі місяця. Завдяки 16 режимам можна вибрати ідеальне освітлення для будь-якого настрою. Сенсорний перемикач і пульт – супер зручні, особливо ввечері, коли вже не хочеться вставати з ліжка. Працює близько 10 годин на одному заряді, що для мене повністю вистачає!",
-	},
-	{
-		name: "Світлана Г.",
-		star: "⭐️⭐️⭐️⭐️⭐️",
-		img: user2,
-		text: "Цей світильник виглядає просто чудово! Компактний, лише 8 см в діаметрі, але світить доволі яскраво і охоплює всю кімнату завдяки освітленню на 360 градусів. Чудово тримає заряд і заряджається швидко – всього 3 години. Рекомендую для всіх, хто хоче додати трохи магії у свою кімнату!",
-	},
-	{
-		name: "Олена А.",
-		star: "⭐️⭐️⭐️⭐️⭐️",
-		img: user3,
-		text: "Сподобалося, що світильник працює як від акумулятора, так і від USB – дуже зручно. Вечорами він створює неймовірну атмосферу, а пульт дозволяє легко перемикати режими. Також приємно здивувала тривалість роботи, заряд тримається до 12 годин!",
-	},
-];
+// export const sizeForGlobe = [
+// 	{
+// 		sm: 12,
+// 		old: 840,
+// 		new: 645,
+// 	},
+// 	{
+// 		sm: 15,
+// 		old: 980,
+// 		new: 755,
+// 	},
+// 	{
+// 		sm: 18,
+// 		old: 1250,
+// 		new: 975,
+// 	},
+// ];
 
 // ============================================== LAMP
-
-export const lamp = [logo_lamp];
 
 export const sizeForLamp = null;
 
@@ -197,6 +83,8 @@ export const imagesForLampSlider = [
 	lamp7,
 	lamp8,
 ];
+
+export const detailsTitle = "Характеристики";
 
 export const detailsForLamp = [
 	{
@@ -261,110 +149,98 @@ export const reviewsForLampNew = [
 	},
 ];
 
-// ============================================== COSMOS
+//========================================================================= KNIFE
 
-export const sizeForCosmos = null;
+export const sizeForKnife = null;
 
-export const prodTitleCosmos =
-	"Світильник-проектор Астронавт Nebula RGB + пульт";
+export const prodTitleKnife =
+	"Електрична точила для заточування ножів та ножиць ELECTRIC SHARPENER 220В";
 
-export const nameProdCosmos = "Astronaut";
-
-export const costCosmos = {
-	old: 1100,
-	new: 849,
+export const costKnife = {
+	old: 750,
+	new: 450,
 };
 
-export const infoProdCosmos =
-	"Світильник-проектор Астронавт Nebula RGB - світильник має безліч режимів колірного зображення космічного неба, що дає змогу створювати неповторну атмосферу в будь-якому приміщенні. Зображення-проекція виходить дуже чітким і реалістичним, прекрасно передаються всі деталі і яскравість картинки. Фігурка з регульованою головою дає змогу змінювати її положення і напрямок проекції, що робить використання ще зручнішим. Управління нічником інтуїтивно зрозуміле і зручне, а наявність пульта дистанційного керування робить експлуатацію ще простішою. Стильний дизайн світильника легко впишеться в будь-який інтер'єр. Це ідеальне поєднання функціональності, стилю і сучасних  технологій, яке стане справжньою окрасою вашого будинку.";
+export const infoKnife =
+	"Наточити ніж за допомогою точилки для ножів під силу навіть жінці! Добре заточений ніж на кухні – мрія кожної господині чи мисливця. Заточення ножів справа складна та трудомістка. Необхідно знати, як правильно точити ніж та мати досвід. Точилка для ножів виконує заточування інструменту протягом декількох секунд. Перевагою даної точилки є можливість заточування ножів із зубчастим лезом та заточування ножиць. Для того щоб Ваш ніж знову був гострий, потрібно лише провести кілька разів лезом ножа взад-вперед спеціальним роз’ємом на корпусі точила. Те саме потрібно зробити для ножиць і викруток з вузькою та широкою основою. Прилад для заточування інструментів виготовлений із високоякісного матеріалу, що гарантує його довговічність у використанні.";
 
-export const imagesForSliderCosmos = [
-	cosmos1,
-	cosmos2,
-	cosmos3,
-	cosmos4,
-	cosmos5,
-	cosmos6,
-	cosmos7,
-	cosmos8,
+export const imagesForKnifeSlider = [
+	knife1,
+	knife2,
+	knife3,
+	knife4,
+	knife5,
+	knife6,
+	knife7,
+	knife8,
 ];
 
-export const detailsForCosmos = [
+export const detailsTitleKnife = "Переваги";
+
+export const detailsForKnife = [
 	{
-		title: "Ефект зоряного неба і туманності",
+		title: "пластиковий корпус",
 		descr: "",
 	},
 	{
-		title: "Зміна напрямку проекції",
+		title: "металеві елементи для заточування",
 		descr: "",
 	},
 	{
-		title: "Регулювання яскравості туманності",
+		title: "працює від 220 В",
 		descr: "",
 	},
 	{
-		title: "Регулювання швидкості зміни туманност",
+		title: "потужність 50 Гц, 20 Вт",
 		descr: "",
 	},
 	{
-		title: "Перемикання кольору туманності",
+		title:
+			"роз’єм для заточування ножів, ножиць, викруток з вузькою та широкою основою",
 		descr: "",
 	},
 	{
-		title: "Керування зірками (ввімкнути/вимкнути)",
+		title: "розмір 15 х 9 х 6 см",
 		descr: "",
-	},
-	{
-		title: "Регулювання яскравості зірок",
-		descr: "",
-	},
-	{
-		title: "Можливість встановити таймер: ",
-		descr: "45 / 90 хв",
-	},
-	{
-		title: "Пульт дистанційного керування",
-		descr: "",
-	},
-	{
-		title: "Кнопки управління",
-		descr: "",
-	},
-	{
-		title: "Живлення: ",
-		descr: "від USB",
-	},
-	{
-		title: "Розмір: ",
-		descr: "85*76*125 мм",
 	},
 ];
 
-export const equipmentForCosmos = [
-	"Світильник проектор",
-	"Двосторонній скотч",
-	"Пульт дистанційного керування",
-	"USB кабель",
-	"Інструкція",
-];
+export const equipmentForKnife = [];
 
-export const reviewsForCosmos = [
+export const reviewsForKnife = [
 	{
-		name: "Богдан В.",
-		star: "⭐️⭐️⭐️⭐️⭐️",
-		img: user1,
-		text: "Купили цей проектор для спальні, і тепер кожен вечір у нас — справжнє зоряне шоу. Дуже подобається, що можна регулювати яскравість туманності та швидкість зміни кольорів — це створює неповторну атмосферу. Дистанційний пульт працює на відмінно, зручно управляти, навіть не підходячи до проектора. Дітям також дуже подобається, особливо можливість вмикати і вимикати зірки. Рекомендую всім!",
+		rating: "5",
+		name: "Галя",
+		text: "Дитина в захваті від подарунку. Дякуємо за консультацію менеджеру!",
 	},
 	{
-		name: "Світлана Г.",
-		star: "⭐️⭐️⭐️⭐️⭐️",
-		img: user2,
-		text: "Проектор просто супер! Компактний, живиться від USB, тому легко використовувати і вдома, і в дорозі. Ефект зоряного неба виглядає дуже реалістично, туманність змінює кольори і створює заспокійливий настрій. Таймер на 45 або 90 хвилин — це зручна функція, особливо коли хочеться засинати під зоряний купол. Дистанційне керування теж працює бездоганно. Дійсно вартий своєї ціни!",
+		rating: "5",
+		name: "Тетяна",
+		text: "Гарна якість. Швидка доставка.",
 	},
 	{
-		name: "Олена А.",
-		star: "⭐️⭐️⭐️⭐️⭐️",
-		img: user3,
-		text: "Дуже задоволена цим проектором, він реально створює ефект космосу у кімнаті. Легко можна змінювати колір туманності, налаштовувати яскравість і навіть вимикати зірки, коли хочеться більш спокійного світла. Пульт допомагає швидко налаштувати все, а таймер дозволяє залишити його ввімкненим, не переживаючи, що працюватиме всю ніч. Розмір зручний, не займає багато місця. Рекомендую як дорослим, так і дітям!",
+		rating: "5",
+		name: "Володимир",
+		text: "Купили на подарунок. Дякуємо.",
+	},
+	{
+		rating: "5",
+		name: "Поліна",
+		text: "Звязалися одразу. Доставка швидка. Покупкою задоволена.",
+	},
+	{
+		rating: "5",
+		name: "Оля",
+		text: "Дитина у захваті. Дякуємо.",
+	},
+	{
+		rating: "5",
+		name: "Оля",
+		text: "Покупкою задоволені. Доставили швидко.",
+	},
+	{
+		rating: "5",
+		name: "Катерина",
+		text: "Звязалися одразу. Доставка швидка. Покупкою задоволена.",
 	},
 ];

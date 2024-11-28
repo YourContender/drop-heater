@@ -1,11 +1,11 @@
 import React from 'react';
 import "./details.scss";
 
-export const Details = ({ details, equipment }) => {
+export const Details = ({ details, equipment, title }) => {
     return (
         <div className="details" id="details">
             <div className="details-title">
-                <h2>Характеристики: </h2>
+                <h2>{title}: </h2>
             </div>
             {
                 details.map((item, index) => {
@@ -20,7 +20,9 @@ export const Details = ({ details, equipment }) => {
 
             <div className="details-other">
                 <div className="details-other-title">
-                    <h2>Комплектація:</h2>
+                    {
+                        equipment.length !== 0 ? <h2>Комплектація:</h2> : null
+                    }
                 </div>
                 {
                     equipment.map((item, index) => {
