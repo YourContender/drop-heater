@@ -6,6 +6,7 @@ import { MainKnife } from "./projects/knife-project/MainKnife.jsx";
 import { MainRubber } from "./projects/rubber-project/MainRubber.jsx";
 import { MainGoose } from "./projects/goose-project/MainGoose.jsx";
 import "./index.css";
+import { MainColor } from "./projects/color-project/MainColor.jsx";
 
 export const App = () => {
 	return (
@@ -19,6 +20,7 @@ export const App = () => {
                     <Route path="/knife" element={<MainKnife/>} />
                     <Route path="/rubber" element={<MainRubber/>} /> 
                     <Route path="/goose" element={<MainGoose/>} /> 
+                    <Route path="/color" element={<MainColor/>} /> 
                 </Routes>
             </Router>
 		</div>

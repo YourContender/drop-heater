@@ -64,29 +64,6 @@ export const Order = ({
                 <h2>Замовити:</h2>
             </div>
 
-            {
-                size ?            
-                    <div className="order-size">
-                        <h4>Оберіть розмір</h4>
-
-                        <div className="order-size-items">
-                            {
-                                size.map((item, index) => {
-                                    return (
-                                        <span 
-                                            className={classNameForSize === item.sm ? "order-size-items-item active" : "order-size-items-item"}
-                                            onClick={() => changeSizeProduct(item.sm)}
-                                            key={index}
-                                        >
-                                            {item.sm} см
-                                        </span>
-                                    )
-                                })
-                            }
-                        </div>
-                    </div> : null
-            }
-
             <div className="order-price">
                 {
                     !successOrder ? 
@@ -162,7 +139,30 @@ export const Order = ({
                             <span className="order_quantity-calc-arrow" onClick={() => changeQuantity("plus")}>{`>`}</span>
                         </div>
                     </div>
+
                 </div>
+                {
+                    size ?            
+                        <div className="order-size">
+                            <h4>Оберіть розмір упаковки: </h4>
+
+                            <div className="order-size-items">
+                                {
+                                    size.map((item, index) => {
+                                        return (
+                                            <span 
+                                                className={classNameForSize === item.sm ? "order-size-items-item active" : "order-size-items-item"}
+                                                onClick={() => changeSizeProduct(item.sm)}
+                                                key={index}
+                                            >
+                                                {item.sm} 
+                                            </span>
+                                        )
+                                    })
+                                }
+                            </div>
+                        </div> : null
+                }
 
                 <div className="order-container-send">
                     <button type="submit">
