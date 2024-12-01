@@ -9,13 +9,20 @@ import "./index.css";
 import { MainColor } from "./projects/color-project/MainColor.jsx";
 
 export const App = () => {
+    const hostname = window.location.hostname;
+    const [subdomain] = hostname.split(".");
+    console.log(window.location.hostname, subdomain);
+
 	return (
 		<div>
 			<Router>
-                {/* <Home/> */}
-
                 <Routes>
-                    {/* <Route path="/" element={<Home />}/> */}
+                    {/* Subdomain routing with nested routes */}
+                    {subdomain === "lamp" && <Route path="/" element={<MainLamp />} /> }
+                    {subdomain === "globe" && <Route path="/" element={<MainGlobe />} /> }
+                    {subdomain === "cosmos" && <Route path="/" element={<MainCosmos />} /> }
+
+                    {/* Fallback for path-based routing */}
                     <Route path="/lamp" element={<MainLamp />} />
                     <Route path="/knife" element={<MainKnife/>} />
                     <Route path="/rubber" element={<MainRubber/>} /> 
