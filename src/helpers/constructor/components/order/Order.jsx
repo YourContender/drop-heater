@@ -21,7 +21,8 @@ export const Order = ({
         onSubmit, 
         errors, 
         watchPhone, 
-        successOrder 
+        successOrder,
+        setSuccessOrder 
     } = useFormHook(nameProduct, classNameForSize, newPrice, quantity, setQuantity);
 
     useEffect(() => {
@@ -77,7 +78,7 @@ export const Order = ({
                             <span className="order-price-new-sum">{size ? newPrice : cost.new} грн</span>
                         </div>
                     </> : 
-                        <ModalOrder />
+                        <ModalOrder setSuccessOrder={setSuccessOrder}/>
                 }
 
             </div>

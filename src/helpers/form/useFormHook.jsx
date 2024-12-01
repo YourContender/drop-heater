@@ -44,7 +44,7 @@ export const useFormHook = (nameProduct, classNameForSize, newPrice, quantity, s
         reset(); 
         setTimeout(() => {
             setSuccessOrder(false);
-        }, 3000)
+        }, 15000)
     };
   
     return {
@@ -53,6 +53,7 @@ export const useFormHook = (nameProduct, classNameForSize, newPrice, quantity, s
         onSubmit,
         errors,
         watchPhone,
-        successOrder
+        successOrder,
+        setSuccessOrder
     };
   };
