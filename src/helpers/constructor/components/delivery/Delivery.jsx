@@ -18,7 +18,7 @@ export const Delivery = ({ nameProduct }) => {
 
                 <div className="delivery_item-call">
                     <h2>Зробити замовлення на сайті заповнити всі дані вірно</h2>
-                    <span>Ми автоматично підтверджуємо замовлення і відправляємо на протязі 1-3 днів(залежно від загруженості)</span>
+                    <span>Наш менеджер Вам зателефонує для підтвердження замовлення, після чого, ми відправляємо товар на протязі 1-3 днів(залежно від загруженості)</span>
                 </div>
             </div>
             <div className="delivery_item">
@@ -37,18 +37,6 @@ export const Delivery = ({ nameProduct }) => {
                     <span>Якщо товар прийшов пошкоджений або не відповідає характеристикам - ви можете його повернути</span>
                 </div>
             </div>
-
-            {/* <div className="delivery_question">
-                <h2>Якщо у Вас виникли питання, ви можете залишити свій номер телефону, наш менеджер зв'яжеться з Вами.</h2>
-
-                <button 
-                    onClick={() => setOpenModal(true)}
-                >
-                    Залишити номер
-                </button>
-            </div>
-
-            {openModal ? <ModalTel setOpenModal={setOpenModal} nameProduct={nameProduct}/> : null} */}
         </div>
     )
 }
