@@ -190,7 +190,7 @@ export const prodTitleKnife =
 
 export const costKnife = {
 	old: 750,
-	new: 450,
+	new: 370,
 };
 
 export const infoKnife =
@@ -287,8 +287,8 @@ export const prodTitleRubber =
 	"Гумка для фітнесу та тренувань Fit Simplify GO DO 5 шт";
 
 export const costRubber = {
-	old: 650,
-	new: 350,
+	old: 510,
+	new: 270,
 };
 
 export const infoRubber =
