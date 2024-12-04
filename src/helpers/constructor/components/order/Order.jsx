@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import InputMask from "react-input-mask";
 import order from "../../img/rocket.png";
 import { useFormHook } from '../../../form/useFormHook';
-import "./order.scss";
 import { ModalOrder } from '../modal/modal-order/ModalOrder';
+import "./order.scss";
 
 export const Order = ({ 
     nameProduct, 
