@@ -20,8 +20,11 @@ export const App = () => {
                 <Routes>
                     {/* Subdomain routing with nested routes */}
                     {subdomain === "lamp" && <Route path="/" element={<MainLamp />} /> }
-                    {subdomain === "globe" && <Route path="/" element={<MainGlobe />} /> }
-                    {subdomain === "cosmos" && <Route path="/" element={<MainCosmos />} /> }
+                    {subdomain === "knife" && <Route path="/" element={<MainKnife />} /> }
+                    {subdomain === "rubber" && <Route path="/" element={<MainRubber />} /> }
+                    {subdomain === "goose" && <Route path="/" element={<MainGoose />} /> }
+                    {subdomain === "color" && <Route path="/" element={<MainColor />} /> }
+                    {subdomain === "hoodie" && <Route path="/" element={<MainHoodie />} /> }
 
                     {/* Fallback for path-based routing */}
                     <Route path="/lamp" element={<MainLamp />} />
