@@ -26,6 +26,7 @@ export const App = () => {
                     {subdomain === "goose" && <Route path="/" element={<MainGoose />} /> }
                     {subdomain === "color" && <Route path="/" element={<MainColor />} /> }
                     {subdomain === "hoodie" && <Route path="/" element={<MainHoodie />} /> }
+                    {subdomain === "suit" && <Route path="/" element={<SuitManMain />} /> }
 
                     {/* Fallback for path-based routing */}
                     <Route path="/lamp" element={<MainLamp />} />

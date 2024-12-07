@@ -49,7 +49,7 @@ export const prodTitleSuitMan =
 
 export const costSuitMan = {
 	old: 2070,
-	new: 1199,
+	new: 1099,
 };
 
 export const infoSuitMan =
@@ -125,27 +125,27 @@ export const sizeForSuitMan = [
 	{
 		sm: "S",
 		old: 2070,
-		new: 1199,
+		new: 1099,
 	},
 	{
 		sm: "M",
 		old: 2070,
-		new: 1199,
+		new: 1099,
 	},
 	{
 		sm: "L",
 		old: 2070,
-		new: 1199,
+		new: 1099,
 	},
 	{
 		sm: "XL",
 		old: 2070,
-		new: 1199,
+		new: 1099,
 	},
 	{
 		sm: "2XL",
 		old: 2070,
-		new: 1199,
+		new: 1099,
 	},
 ];
 

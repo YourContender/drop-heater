@@ -61,7 +61,7 @@ export const SuitManMain = () => {
                 cost={costSuitMan} 
                 size={sizeForSuitMan}
                 nameProduct="Костюм флісовий теплий чоловічий"
-                orderPrice={1199}
+                orderPrice={1099}
                 color={colorForSuitMan}
             />
             <Delivery 
