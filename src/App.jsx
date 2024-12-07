@@ -9,6 +9,7 @@ import "./index.css";
 import { MainColor } from "./projects/color-project/MainColor.jsx";
 import { MainHoodie } from "./projects/hoodie-project/MainHoodie.jsx";
 import { SuitManMain } from "./projects/suit-project/SuitManMain.jsx";
+import { SuitWomanMain } from "./projects/suit-project/SuitWomanMain.jsx";
 
 export const App = () => {
     const hostname = window.location.hostname;
@@ -27,6 +28,7 @@ export const App = () => {
                     {subdomain === "color" && <Route path="/" element={<MainColor />} /> }
                     {subdomain === "hoodie" && <Route path="/" element={<MainHoodie />} /> }
                     {subdomain === "suit" && <Route path="/" element={<SuitManMain />} /> }
+                    {subdomain === "suitt" && <Route path="/" element={<SuitWomanMain />} /> }
 
                     {/* Fallback for path-based routing */}
                     <Route path="/lamp" element={<MainLamp />} />
@@ -36,6 +38,7 @@ export const App = () => {
                     <Route path="/color" element={<MainColor/>} /> 
                     <Route path="/hoodie" element={<MainHoodie/>} /> 
                     <Route path="/suit" element={<SuitManMain/>} /> 
+                    <Route path="/suitt" element={<SuitWomanMain/>} /> 
                 </Routes>
             </Router>
 		</div>
