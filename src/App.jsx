@@ -8,6 +8,7 @@ import { MainGoose } from "./projects/goose-project/MainGoose.jsx";
 import "./index.css";
 import { MainColor } from "./projects/color-project/MainColor.jsx";
 import { MainHoodie } from "./projects/hoodie-project/MainHoodie.jsx";
+import { SuitManMain } from "./projects/suit-project/SuitManMain.jsx";
 
 export const App = () => {
     const hostname = window.location.hostname;
@@ -33,6 +34,7 @@ export const App = () => {
                     <Route path="/goose" element={<MainGoose/>} /> 
                     <Route path="/color" element={<MainColor/>} /> 
                     <Route path="/hoodie" element={<MainHoodie/>} /> 
+                    <Route path="/suit" element={<SuitManMain/>} /> 
                 </Routes>
             </Router>
 		</div>
