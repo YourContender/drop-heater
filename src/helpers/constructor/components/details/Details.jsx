@@ -1,7 +1,7 @@
 import React from 'react';
 import "./details.scss";
 
-export const Details = ({ details, equipment, title, other }) => {
+export const Details = ({ details, equipment, title, other, size, ten }) => {
     return (
         <div className="details" id="details">
             <div className="details-title">
@@ -34,6 +34,17 @@ export const Details = ({ details, equipment, title, other }) => {
                     })
                 }
             </div>
+
+            {
+                size ? 
+                    <div className="details-size">
+                        <h2>Розмірна сітка: </h2>
+                        <img src={ten} alt="" />
+
+                        <span>Наш менеджер обо'язково допоможе Вам підібрати ідеальний розмір.</span>
+                    </div>
+                    : null
+            }
         </div>
     )
 }

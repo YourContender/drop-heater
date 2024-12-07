@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
-export const useFormHook = (nameProduct, classNameForSize, newPrice, quantity, setQuantity ) => {
+export const useFormHook = (nameProduct, classNameForSize, newPrice, quantity, setQuantity, colorSuit ) => {
     const {
       register,
       handleSubmit,
@@ -21,7 +21,8 @@ export const useFormHook = (nameProduct, classNameForSize, newPrice, quantity, s
             product: nameProduct,
             size: classNameForSize,
             price: newPrice,
-            quantity: quantity
+            quantity: quantity,
+            color: colorSuit
         }
         
         setQuantity(1);

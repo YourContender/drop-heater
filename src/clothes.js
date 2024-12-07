@@ -19,6 +19,8 @@ import suit18 from "./helpers/images/suit-prod/man/18.jpg";
 import suit19 from "./helpers/images/suit-prod/man/19.jpg";
 import suit20 from "./helpers/images/suit-prod/man/20.jpg";
 
+import sizeMan from "./helpers/images/suit-prod/size-man.png";
+
 export const imagesForSuitManSlider = [
 	suit1,
 	suit2,
@@ -70,7 +72,7 @@ export const detailsForSuitMan = [
 	},
 	{
 		title: "Кольори:",
-		descr: "Чорний, синій, шоколад",
+		descr: "Чорний, синій, хакі",
 	},
 	{
 		title: "Базовий крій, підійде на будь-яку фігуру",
@@ -146,3 +148,17 @@ export const sizeForSuitMan = [
 		new: 1199,
 	},
 ];
+
+export const colorForSuitMan = [
+	{
+		sm: "хакі",
+	},
+	{
+		sm: "синій",
+	},
+	{
+		sm: "сірий",
+	},
+];
+
+export const ten = sizeMan;

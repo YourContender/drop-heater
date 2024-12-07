@@ -8,12 +8,15 @@ import "./order.scss";
 export const Order = ({ 
     nameProduct, 
     cost, 
-    size
+    size, 
+    color
 }) => {
     const [classNameForSize, setClassNameForSize] = useState(0);
+    const [classNameForColor, setClassNameForColor] = useState(0);
     const [oldPrice, setOldPrice] = useState(0);
     const [newPrice, setNewPrice] = useState(0);
     const [quantity, setQuantity] = useState(1);
+    const [colorSuit, setColorSuit] = useState("");
 
     const { 
         register, 
@@ -23,7 +26,7 @@ export const Order = ({
         watchPhone, 
         successOrder,
         setSuccessOrder 
-    } = useFormHook(nameProduct, classNameForSize, newPrice, quantity, setQuantity);
+    } = useFormHook(nameProduct, classNameForSize, newPrice, quantity, setQuantity, colorSuit);
 
     useEffect(() => {
         if (size) {
@@ -36,6 +39,14 @@ export const Order = ({
         }
     }, []);
 
+    useEffect(() => {
+        if (color) {
+            setClassNameForColor(size[0].sm);
+        } else {
+            setClassNameForColor("default")
+        }
+    }, []);
+
     const changeSizeProduct = (data) => {
         setClassNameForSize(data);
 
@@ -45,6 +56,11 @@ export const Order = ({
                 setNewPrice(item.new);
             } 
         })
+    }
+
+    const changeColorProduct = (data) => {
+        setClassNameForColor(data);
+        setColorSuit(data)
     }
 
     const changeQuantity = (action) => {
@@ -145,7 +161,7 @@ export const Order = ({
                 {
                     size ?            
                         <div className="order-size">
-                            <h4>Оберіть розмір упаковки: </h4>
+                            <h4>Оберіть розмір: </h4>
 
                             <div className="order-size-items">
                                 {
@@ -154,6 +170,28 @@ export const Order = ({
                                             <span 
                                                 className={classNameForSize === item.sm ? "order-size-items-item active" : "order-size-items-item"}
                                                 onClick={() => changeSizeProduct(item.sm)}
+                                                key={index}
+                                            >
+                                                {item.sm} 
+                                            </span>
+                                        )
+                                    })
+                                }
+                            </div>
+                        </div> : null
+                }
+                {
+                    color ?            
+                        <div className="order-size">
+                            <h4>Оберіть колір: </h4>
+
+                            <div className="order-size-items">
+                                {
+                                    color.map((item, index) => {
+                                        return (
+                                            <span 
+                                                className={classNameForColor === item.sm ? "order-size-items-item active" : "order-size-items-item"}
+                                                onClick={() => changeColorProduct(item.sm)}
                                                 key={index}
                                             >
                                                 {item.sm} 

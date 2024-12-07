@@ -9,7 +9,9 @@ import {
     equipmentForSuitMan,
     equipmentTitleForSuitMan,
     reviewsForSuitMan,
-    sizeForSuitMan
+    sizeForSuitMan,
+    colorForSuitMan,
+    ten
 } from "../../clothes";
 import { Header } from "../../helpers/constructor/components/header/Header";
 import { Main } from "../../helpers/constructor/components/main/Main";
@@ -52,15 +54,18 @@ export const SuitManMain = () => {
                 equipment={equipmentForSuitMan}
                 title={detailsTitleSuitMan}
                 other={equipmentTitleForSuitMan}
+                size={true}
+                ten={ten}
             />
             <Order 
                 cost={costSuitMan} 
                 size={sizeForSuitMan}
-                nameProduct="Гумка для фітнесу Fit Simplify GO DO 5 шт"
-                orderPrice={350}
+                nameProduct="Костюм флісовий теплий чоловічий"
+                orderPrice={1199}
+                color={colorForSuitMan}
             />
             <Delivery 
-                nameProduct="Гумка для фітнесу Fit Simplify GO DO 5 шт"
+                nameProduct="Костюм флісовий теплий чоловічий"
             />
 			<Reviews 
                 review={reviewsForSuitMan} 
