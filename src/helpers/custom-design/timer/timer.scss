@@ -1,0 +1,28 @@
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2b2b;
+    padding: 10px 2px;
+    &-title {
+        display: flex;
+        align-items: center;
+        span {
+            font-family: "Podkova", serif;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding-left: 10px;
+        }
+    }
+    &-down {
+        display: flex;
+        &-item {
+            margin: 0 5px;
+        }
+        &-text {
+            font-size: 14px;
+            letter-spacing: .5px;
+        }
+    }
+}

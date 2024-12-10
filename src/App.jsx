@@ -10,6 +10,7 @@ import { MainColor } from "./projects/color-project/MainColor.jsx";
 import { MainHoodie } from "./projects/hoodie-project/MainHoodie.jsx";
 import { SuitManMain } from "./projects/suit-project/SuitManMain.jsx";
 import { SuitWomanMain } from "./projects/suit-project/SuitWomanMain.jsx";
+import { MainCustom } from "./helpers/custom-design/MainCustom.jsx";
 
 export const App = () => {
     const hostname = window.location.hostname;
@@ -39,6 +40,9 @@ export const App = () => {
                     <Route path="/hoodie" element={<MainHoodie/>} /> 
                     <Route path="/suit" element={<SuitManMain/>} /> 
                     <Route path="/suitt" element={<SuitWomanMain/>} /> 
+
+
+                    <Route path="/custom" element={<MainCustom/>} /> 
                 </Routes>
             </Router>
 		</div>
