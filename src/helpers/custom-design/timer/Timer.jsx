@@ -39,8 +39,8 @@ const Timer = () => {
   return (
     <div className="timer" style={{ display: "flex", gap: "10px", textAlign: "center" }}>
         <div className="timer-title">
-            <img src={time} alt="" />
-            <span>Акція діє ще:</span>
+            {/* <img src={time} alt="" /> */}
+            <span>До кінця акції:</span>
         </div>
         <div className="timer-down"> 
             <div className="timer-down-item">

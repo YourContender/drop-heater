@@ -6,7 +6,8 @@ export const Header = ({ openBurger, setOpenBurger }) => {
     return (
         <header className="header">
             <div className="header_logo">   
-                {/* <Timer/> */}
+                <Timer/>
+                
             </div>
             <div 
                 className={openBurger ? "header_burger active" : "header_burger"} 
