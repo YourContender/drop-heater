@@ -30,6 +30,7 @@ export const App = () => {
                     {subdomain === "hoodie" && <Route path="/" element={<MainHoodie />} /> }
                     {subdomain === "suit" && <Route path="/" element={<SuitManMain />} /> }
                     {subdomain === "suitt" && <Route path="/" element={<SuitWomanMain />} /> }
+                    {subdomain === "custom" && <Route path="/" element={<MainCustom />} /> }
 
                     {/* Fallback for path-based routing */}
                     <Route path="/lamp" element={<MainLamp />} />
