@@ -12,8 +12,8 @@ export const Modal = ({ setOpenBurger, title }) => {
     return (
         <div className="modal">
             <div className="modal-items">
-                <span onClick={() => scrollSection("details")}>{title}</span>
-                <span onClick={() => scrollSection("info")}>Опис</span>
+                <span onClick={() => scrollSection("details")}>Опис</span>
+                <span onClick={() => scrollSection("details-curr")}>{title}</span>
                 <span onClick={() => scrollSection("order")}>Замовити</span>
                 <span onClick={() => scrollSection("reviews")}>Відгуки</span>
             </div>

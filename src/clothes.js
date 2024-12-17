@@ -42,6 +42,166 @@ import w19 from "./helpers/images/suit-prod/woman/19.jpg";
 import sizeMan from "./helpers/images/suit-prod/size-man.png";
 import sizeWoman from "./helpers/images/suit-prod/size-woman.png";
 
+// woman suit color: небесний 1-7
+import customW1 from "./helpers/images/custom-prod/woman/1.jpg";
+import customW2 from "./helpers/images/custom-prod/woman/2.jpg";
+import customW3 from "./helpers/images/custom-prod/woman/3.jpg";
+import customW4 from "./helpers/images/custom-prod/woman/4.jpg";
+import customW5 from "./helpers/images/custom-prod/woman/5.jpg";
+import customW6 from "./helpers/images/custom-prod/woman/6.jpg";
+import customW7 from "./helpers/images/custom-prod/woman/7.jpg";
+
+// woman suit color: бежевий 8-12
+import customW8 from "./helpers/images/custom-prod/woman/8.jpg";
+import customW9 from "./helpers/images/custom-prod/woman/9.jpg";
+import customW10 from "./helpers/images/custom-prod/woman/10.jpg";
+import customW11 from "./helpers/images/custom-prod/woman/11.jpg";
+import customW12 from "./helpers/images/custom-prod/woman/12.jpg";
+
+// woman suit color: темно синій 13-15
+import customW13 from "./helpers/images/custom-prod/woman/13.jpg";
+import customW14 from "./helpers/images/custom-prod/woman/14.jpg";
+import customW15 from "./helpers/images/custom-prod/woman/15.jpg";
+
+// woman suit color: чорний 16-20
+import customW16 from "./helpers/images/custom-prod/woman/16.jpg";
+import customW17 from "./helpers/images/custom-prod/woman/17.jpg";
+import customW18 from "./helpers/images/custom-prod/woman/18.jpg";
+import customW19 from "./helpers/images/custom-prod/woman/19.jpg";
+import customW20 from "./helpers/images/custom-prod/woman/20.jpg";
+
+// woman suit color: шоколад 21-24
+import customW21 from "./helpers/images/custom-prod/woman/21.jpg";
+import customW22 from "./helpers/images/custom-prod/woman/22.jpg";
+import customW23 from "./helpers/images/custom-prod/woman/23.jpg";
+import customW24 from "./helpers/images/custom-prod/woman/24.jpg";
+
+// woman suit color: мокко 25-31
+import customW25 from "./helpers/images/custom-prod/woman/25.jpg";
+import customW26 from "./helpers/images/custom-prod/woman/26.jpg";
+import customW27 from "./helpers/images/custom-prod/woman/27.jpg";
+import customW28 from "./helpers/images/custom-prod/woman/28.jpg";
+import customW29 from "./helpers/images/custom-prod/woman/29.jpg";
+import customW30 from "./helpers/images/custom-prod/woman/30.jpg";
+import customW31 from "./helpers/images/custom-prod/woman/31.jpg";
+
+// woman suit color: молочний 32-38
+import customW32 from "./helpers/images/custom-prod/woman/32.jpg";
+import customW33 from "./helpers/images/custom-prod/woman/33.jpg";
+import customW34 from "./helpers/images/custom-prod/woman/34.jpg";
+import customW35 from "./helpers/images/custom-prod/woman/35.jpg";
+import customW36 from "./helpers/images/custom-prod/woman/36.jpg";
+import customW37 from "./helpers/images/custom-prod/woman/37.jpg";
+import customW38 from "./helpers/images/custom-prod/woman/38.jpg";
+
+// custom
+
+export const cards = [
+	{
+		id: 1,
+		images: [
+			customW5,
+			customW1,
+			customW2,
+			customW3,
+			customW4,
+			customW6,
+			customW7,
+		],
+		oldPrice: 2070,
+		price: 1099,
+		sale: "49%",
+		color: "небесний",
+		sizeTop: ["S", "M", "L", "XL"],
+		sizeBottom: ["2XL", "3XL", "4XL"],
+		material: "двосторонній фліс (Polar)",
+	},
+	{
+		id: 2,
+		images: [customW8, customW9, customW10, customW11, customW12],
+		oldPrice: 2070,
+		price: 1099,
+		sale: "49%",
+		color: "бежевий",
+		sizeTop: ["S", "M", "L", "XL"],
+		sizeBottom: ["2XL", "3XL", "4XL"],
+		material: "двосторонній фліс (Polar)",
+	},
+	{
+		id: 6,
+		images: [
+			customW25,
+			customW29,
+			customW26,
+			customW27,
+			customW28,
+			customW30,
+			customW31,
+		],
+		oldPrice: 2070,
+		price: 1099,
+		sale: "49%",
+		color: "мокко",
+		sizeTop: ["S", "M", "L", "XL"],
+		sizeBottom: ["2XL", "3XL", "4XL"],
+		material: "двосторонній фліс (Polar)",
+	},
+	{
+		id: 3,
+		images: [customW13, customW14, customW15],
+		oldPrice: 2070,
+		price: 1099,
+		sale: "49%",
+		color: "т.синій",
+		sizeTop: ["S", "M", "L", "XL"],
+		sizeBottom: ["2XL", "3XL", "4XL"],
+		material: "двосторонній фліс (Polar)",
+	},
+	{
+		id: 4,
+		images: [customW16, customW17, customW18, customW19, customW20],
+		oldPrice: 2070,
+		price: 1099,
+		sale: "49%",
+		color: "чорний",
+		sizeTop: ["S", "M", "L", "XL"],
+		sizeBottom: ["2XL", "3XL", "4XL"],
+		material: "двосторонній фліс (Polar)",
+	},
+	{
+		id: 5,
+		images: [customW21, customW22, customW23, customW24],
+		oldPrice: 2070,
+		price: 1099,
+		sale: "49%",
+		color: "шоколад",
+		sizeTop: ["S", "M", "L", "XL"],
+		sizeBottom: ["2XL", "3XL", "4XL"],
+		material: "двосторонній фліс (Polar)",
+	},
+	{
+		id: 7,
+		images: [
+			customW32,
+			customW33,
+			customW34,
+			customW35,
+			customW36,
+			customW37,
+			customW38,
+		],
+		oldPrice: 2070,
+		price: 1099,
+		sale: "49%",
+		color: "молочний",
+		sizeTop: ["S", "M", "L", "XL"],
+		sizeBottom: ["2XL", "3XL", "4XL"],
+		material: "двосторонній фліс (Polar)",
+	},
+];
+
+//===================
+
 export const imagesForSuitManSlider = [
 	suit1,
 	suit2,
@@ -239,7 +399,7 @@ export const detailsForSuitWoman = [
 	},
 	{
 		title: "Кольори:",
-		descr: "8 кольорів",
+		descr: "7 кольорів",
 	},
 	{
 		title: "Базовий крій, підійде на будь-яку фігуру",
@@ -345,9 +505,6 @@ export const colorForSuitWoman = [
 	},
 	{
 		sm: "чорний",
-	},
-	{
-		sm: "графіт",
 	},
 	{
 		sm: "мокко",

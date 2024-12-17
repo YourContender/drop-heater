@@ -1,43 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Slider } from '../../../slider/Slider';
 import "./card.scss";
-import sale from "../../../images/custom-prod/sale.png";
 
-import w1 from "../../../images/suit-prod/woman/1.jpg";
-import w2 from "../../../images/suit-prod/woman/2.jpg";
-import w3 from "../../../images/suit-prod/woman/3.jpg";
-import w4 from "../../../images/suit-prod/woman/4.jpg";
-import w5 from "../../../images/suit-prod/woman/5.jpg";
-import w6 from "../../../images/suit-prod/woman/6.jpg";
-import w7 from "../../../images/suit-prod/woman/7.jpg";
-import w8 from "../../../images/suit-prod/woman/8.jpg";
-import w9 from "../../../images/suit-prod/woman/9.jpg";
-import w10 from "../../../images/suit-prod/woman/10.jpg";
+export const Card = ({ 
+    images, 
+    oldPrice, 
+    price, 
+    sale, 
+    color, 
+    sizeTop, 
+    sizeBottom, 
+    material, 
+    setOpenOrderModal, 
+    setOrderProd
+}) => {
+    const [changeSize, setChangeSize] = useState("S");
 
+    const placingOrder = (size) => {
+        const data = {
+            title: "Жіночий теплий костюм преміум якості",
+            color: {color},
+            price: {price},
+            size: {size}
+        }
+        setOrderProd(data);
+        setOpenOrderModal(true);
+    }
 
-const imagesForSuitWomanSlider = [
-	w1,
-	w2,
-	w3,
-	w4,
-	w5,
-	w6,
-	w7,
-	w8,
-	w9,
-	w10,
-];
-
-export const Card = () => {
     return (
         <div className="card">
-            {/* 
-                // slider
-                // price
-                // size
-                // order 
-            */}
-            <Slider data={imagesForSuitWomanSlider}/>
+            <Slider data={images}/>
 
             <div className="card-title">
                 <h3>Жіночий теплий костюм преміум якості</h3>
@@ -45,18 +37,28 @@ export const Card = () => {
 
             <div className="card-color">
                 <span>Колір:</span>
-                <span>графіт</span>
+                <span>{color}</span>
+            </div>
+            
+            <div className="card-material">
+                <span>Матеріал:</span>
+                <span>{material}</span>
             </div>
             
             <div className="card-price">
                 <div className="card-price-old">
                     <span>Стара ціна: </span>
-                    <span className="line">2070 грн</span>
+                    <span className="line">{oldPrice} грн</span>
                 </div>
                 <div className="card-price-new">
                     <span>Нова ціна: </span>
-                    <span className="curr">1099 грн</span>
+                    <span className="curr">{price} грн</span>
                 </div>
+            </div>
+
+            <div className="card-sale">
+                <span>Знижка:</span>
+                <span className="card-sale-percent">-{sale}</span>
             </div>
 
             <div className="card-size">
@@ -65,21 +67,45 @@ export const Card = () => {
                 </div>
                 <div className="card-size-list">
                     <div className="card-size-list-little">
-                        <span className="card-size-item current">S</span>
-                        <span className="card-size-item">M</span>
-                        <span className="card-size-item">L</span>
-                        <span className="card-size-item ">XL</span>
+                        {/* <span className="card-size-item current">S</span> */}
+                        
+                        {
+                            sizeTop.map((item, index) => {
+                                return (
+                                    <span 
+                                        className={changeSize === item ? "card-size-item current" : "card-size-item"} 
+                                        key={index}
+                                        onClick={() => setChangeSize(item)}
+                                    >
+                                        {item}
+                                    </span>
+                                )
+                            })
+                        }
                     </div>
                     <div className="card-size-list-big">
-                        <span className="card-size-item">2XL</span>
-                        <span className="card-size-item">3XL</span>
+                        {
+                            sizeBottom.map((item, index) => {
+                                return (
+                                    <span 
+                                        className={changeSize === item ? "card-size-item current" : "card-size-item"} 
+                                        key={index} 
+                                        onClick={() => setChangeSize(item)}
+                                    >
+                                        {item}
+                                    </span>
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </div>
 
             <div className="card-order">
-                <button>Замовити</button>
+                <button onClick={() => placingOrder(changeSize)}>Замовити</button>
             </div>
+
+            
         </div>
     )
 }

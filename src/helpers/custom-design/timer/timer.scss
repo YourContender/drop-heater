@@ -1,29 +1,33 @@
 .timer {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    // flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    background-color: #2b2b2b;
-    padding: 10px 2px;
+    background-color: #d3dcee;
+    // padding: 10px 2px;
+    padding: 20px 10px;
     &-title {
         display: flex;
         align-items: center;
         span {
             font-family: "Podkova", serif;
-            font-size: 14px;
+            font-size: 16px;
             letter-spacing: 1px;
             text-transform: uppercase;
             padding-left: 10px;
-            color: rgb(255, 169, 9);
+            color: #d31313;
+            font-weight: 900;
         }
     }
     &-down {
         display: flex;
+        color: #000;
+        font-weight: 700;
         &-item {
             margin: 0 5px;
         }
         &-text {
-            font-size: 14px;
+            font-size: 15px;
             letter-spacing: .5px;
         }
     }

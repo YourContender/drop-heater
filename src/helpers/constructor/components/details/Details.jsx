@@ -18,7 +18,7 @@ export const Details = ({ details, equipment, title, other, size, ten }) => {
                 })
             }
 
-            <div className="details-other">
+            <div className="details-other" id="details-curr">
                 <div className="details-other-title">
                     {
                         equipment.length !== 0 ? <h2>{other}:</h2> : null

@@ -68,7 +68,7 @@
 @media (max-width: 476px) {
     .header {
         justify-content: space-between;
-        padding: 20px 10px;
+        padding: 20px 10px !important;
         &_logo {
             font-size: 16px;
         }
