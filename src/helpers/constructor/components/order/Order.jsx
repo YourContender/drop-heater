@@ -180,7 +180,7 @@ export const Order = ({
                             </div>
                         </div> : null
                 }
-                {
+                {/* {
                     color ?            
                         <div className="order-size">
                             <h4>Оберіть колір: </h4>
@@ -201,7 +201,7 @@ export const Order = ({
                                 }
                             </div>
                         </div> : null
-                }
+                } */}
 
                 <div className="order-container-send">
                     <button type="submit">

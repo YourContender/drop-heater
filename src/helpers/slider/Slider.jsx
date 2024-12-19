@@ -10,6 +10,8 @@ import "./slider.scss";
 import { Keyboard, Pagination, Navigation } from 'swiper/modules';
 
 export const Slider = ({ data }) => {
+    console.log("images: ", data);
+    
     return (
         <div className="slider">
             <Swiper

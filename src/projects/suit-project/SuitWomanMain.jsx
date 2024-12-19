@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { 
     imagesForSuitWomanSlider,
     prodTitleSuitWoman,
@@ -11,7 +11,8 @@ import {
     reviewsForSuitWoman,
     sizeForSuitWoman,
     colorForSuitWoman,
-    tenWoman
+    tenWoman,
+    cardsProductsWomanSuits
 } from "../../clothes";
 import { Header } from "../../helpers/constructor/components/header/Header";
 import { Main } from "../../helpers/constructor/components/main/Main";
@@ -24,9 +25,20 @@ import { Marquee } from "../../helpers/constructor/components/marquee/Marquee";
 import { Delivery } from "../../helpers/constructor/components/delivery/Delivery";
 import { Footer } from "../../helpers/constructor/components/footer/Footer";
 import './SuitManMain.scss';
+import { Palette } from "../../helpers/constructor/components/pallete/Palette";
 
 export const SuitWomanMain = () => {
 	const [openBurger, setOpenBurger] = useState(false);
+    const [changeColorWomanSuit, setChangeColorWomanSuit] = useState("небесний");
+    const [selectedColorWomanSuit, setSelectedColorWomanSuit] = useState(cardsProductsWomanSuits[0]);
+
+    useEffect(() => {
+        cardsProductsWomanSuits.map(item => {
+            if (item.color === changeColorWomanSuit) {
+                return setSelectedColorWomanSuit(item);
+            } 
+        })
+    }, [changeColorWomanSuit])
 
 	return (
 		<div className="container">
@@ -41,14 +53,21 @@ export const SuitWomanMain = () => {
                 setOpenBurger={setOpenBurger}
                 // nameProd={nameProdRubber}
             />
-			<Main 
-                images={imagesForSuitWomanSlider}
-            />
-            <Marquee cost={costSuitWoman} />
             <Info 
                 info={infoSuitWoman}
                 nameProd={prodTitleSuitWoman}
             />
+
+			<Main 
+                images={selectedColorWomanSuit.images}
+            />
+            <Marquee cost={costSuitWoman} />
+
+            <Palette 
+                changeColor={setChangeColorWomanSuit}
+                color={changeColorWomanSuit}
+            />
+            
 			<Details 
                 details={detailsForSuitWoman} 
                 equipment={equipmentForSuitWoman}

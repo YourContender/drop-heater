@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import call from "../../img/delivery/call.jpg";
 import post from "../../img/delivery/post.png";
 import replace from "../../img/delivery/replace.jpg";
-import { ModalTel } from '../modal/modal-tel/ModalTel';
+import manager from "../../img/manager.png";
+import money from "../../img/money.png";
+import way from "../../img/way.png";
+
 import "./delivery.scss";
 
 export const Delivery = ({ nameProduct }) => {
@@ -14,7 +17,7 @@ export const Delivery = ({ nameProduct }) => {
                 <h2>Доставка та оплата:</h2>
             </div>
             <div className="delivery_item">
-                <img src={call} alt="" />
+                <img src={manager} alt="" />
 
                 <div className="delivery_item-call">
                     <h2>Зробити замовлення на сайті заповнити всі дані вірно</h2>
@@ -22,7 +25,7 @@ export const Delivery = ({ nameProduct }) => {
                 </div>
             </div>
             <div className="delivery_item">
-                <img src={post} alt="" />
+                <img src={way} alt="" />
 
                 <div className="delivery_item-call">
                     <h2>Оплачуйте на Новій Пошті (накладений платіж)</h2>
@@ -30,7 +33,7 @@ export const Delivery = ({ nameProduct }) => {
                 </div>
             </div>
             <div className="delivery_item">
-                <img src={replace} alt="" />
+                <img src={money} alt="" />
 
                 <div className="delivery_item-call">
                     <h2>ПОВЕРНЕННЯ</h2>

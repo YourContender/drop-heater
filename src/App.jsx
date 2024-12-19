@@ -21,11 +21,8 @@ export const App = () => {
                     {subdomain === "custom" && <Route path="/" element={<MainCustom />} /> }
 
                     {/* Fallback for path-based routing */}
-                   
                     <Route path="/suit" element={<SuitManMain/>} /> 
                     <Route path="/suitt" element={<SuitWomanMain/>} /> 
-
-
                     <Route path="/custom" element={<MainCustom/>} /> 
                 </Routes>
             </Router>
