@@ -5,6 +5,7 @@ import "./index.css";
 import { SuitManMain } from "./projects/suit-project/SuitManMain.jsx";
 import { SuitWomanMain } from "./projects/suit-project/SuitWomanMain.jsx";
 import { MainCustom } from "./helpers/custom-design/MainCustom.jsx";
+import { RobeMan } from "./projects/easy-prod/robe/RobeMan.jsx";
 
 export const App = () => {
     const hostname = window.location.hostname;
@@ -19,8 +20,10 @@ export const App = () => {
                     {subdomain === "suit" && <Route path="/" element={<SuitManMain />} /> }
                     {subdomain === "suitt" && <Route path="/" element={<SuitWomanMain />} /> }
                     {subdomain === "custom" && <Route path="/" element={<MainCustom />} /> }
+                    {subdomain === "robe" && <Route path="/" element={<RobeMan />} /> }
 
                     {/* Fallback for path-based routing */}
+                    <Route path="/robe" element={<RobeMan/>} /> 
                     <Route path="/suit" element={<SuitManMain/>} /> 
                     <Route path="/suitt" element={<SuitWomanMain/>} /> 
                     <Route path="/custom" element={<MainCustom/>} /> 

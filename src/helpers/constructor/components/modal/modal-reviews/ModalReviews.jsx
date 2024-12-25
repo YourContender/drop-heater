@@ -57,7 +57,7 @@ export const ModalReviews = ({ setOpenModal, title }) => {
     return (
         <div className="modal-reviews">
             <FontAwesomeIcon 
-                className="modal-tel-close" 
+                className="modal-tel-close-btn" 
                 icon={faXmark} 
                 onClick={() => setOpenModal(false)}
             />

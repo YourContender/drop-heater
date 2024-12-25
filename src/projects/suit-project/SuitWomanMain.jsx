@@ -26,6 +26,7 @@ import { Delivery } from "../../helpers/constructor/components/delivery/Delivery
 import { Footer } from "../../helpers/constructor/components/footer/Footer";
 import './SuitManMain.scss';
 import { Palette } from "../../helpers/constructor/components/pallete/Palette";
+import { OrderProduct } from "../../helpers/constructor/components/order-product/OrderProduct";
 
 export const SuitWomanMain = () => {
 	const [openBurger, setOpenBurger] = useState(false);
@@ -56,6 +57,7 @@ export const SuitWomanMain = () => {
             <Info 
                 info={infoSuitWoman}
                 nameProd={prodTitleSuitWoman}
+                details={detailsForSuitWoman}
             />
 
 			<Main 
@@ -67,8 +69,7 @@ export const SuitWomanMain = () => {
                 changeColor={setChangeColorWomanSuit}
                 color={changeColorWomanSuit}
             />
-            
-			<Details 
+            <Details 
                 details={detailsForSuitWoman} 
                 equipment={equipmentForSuitWoman}
                 title={detailsTitleSuitWoman}
@@ -76,13 +77,16 @@ export const SuitWomanMain = () => {
                 size={true}
                 ten={tenWoman}
             />
-            <Order 
+            <OrderProduct/>
+            
+			
+            {/* <Order 
                 cost={costSuitWoman} 
                 size={sizeForSuitWoman}
                 nameProduct="Костюм флісовий теплий жіночий"
                 orderPrice={1099}
                 color={colorForSuitWoman}
-            />
+            /> */}
             <Delivery 
                 nameProduct="Костюм флісовий теплий жіночий"
             />

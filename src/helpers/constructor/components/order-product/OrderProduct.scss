@@ -1,0 +1,207 @@
+.custom {
+    &-prod {
+        width: 100%;
+        height: 100%;
+        background-color: #2b2b2b;
+        z-index: 999;
+        overflow-y: hidden;
+        border-radius: 25px;
+        span {
+            color: red;
+        }
+        &-price {
+            display: flex;
+            justify-content: space-around;
+            margin: 25px 0;
+            &-old, &-new {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &-text, &-sum {
+                    margin: 0;
+                    color: #bebcbc;
+                    font-size: 24px;
+                    letter-spacing: 1px;
+                }
+            }
+            &-old {
+                &-sum {
+                    text-decoration: line-through;
+                    font-size: 26px;
+                }
+            }
+            &-new {
+                &-sum {
+                    font-size: 26px;
+                    color: rgb(255, 168, 7);
+                    border-bottom: 1px solid rgb(255, 168, 7);
+                }
+            }
+        }
+        &-title {
+            text-align: center;
+            font-family: "Podkova", serif;
+            font-size: 20px;
+            letter-spacing: 1px;
+            color: #bebcbc;
+            h2 {
+                margin: 10px 0;
+                font-weight: 600;
+            }
+        }
+        &-color, &-size {
+            &-title {
+                font-family: "Podkova", serif;
+                letter-spacing: 1px;
+                font-size: 24px;
+                margin: 20px 0;
+                padding-left: 35px;
+                color: #bebcbc;
+                font-weight: 400;
+            }
+        }
+        &-color {
+            &-title {
+                margin-top: 30px !important;
+                margin-bottom: 0;
+            }
+        }
+        &-size {
+            &-title {
+                margin-top: 45px;
+            }
+        }
+        &-modal {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &-close {
+                position: absolute;
+                top: 10px;
+                right: 40px;
+                height: 40px;
+                font-size: 32px;
+                background: none;
+                border: none;
+                outline: none;
+                color: #fff;
+                right: 0;
+            }
+            &-size {
+                display: flex;
+                justify-content: center;
+                &-item {
+                    margin: 0 5px;
+                    width: 55px;
+                    height: 30px;
+                    color: #bebcbc;
+                    font-size: 26px;
+                    text-align: center;
+                }
+            }
+            &-color {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 10px;
+                padding: 0 20px;
+                &-item {
+                    width: 110px;
+                    height: 30px;
+                    background: none;
+                    border: 1px solid #bebcbc;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: rgb(204, 147, 42);
+                    letter-spacing: 1px;
+                    border-radius: 15px;
+                    font-size: 24px;
+                    margin: 7px 10px;
+                }
+            }
+            .current-size {
+                color: rgb(204, 147, 42);
+                border-bottom: 1px solid rgb(204, 147, 42);
+            }
+
+            .current-color {
+                background-color: rgb(255, 168, 7);
+                color: #2b2b2b;
+                font-weight: 900;
+                border: 1px solid rgb(204, 147, 42);;
+            }
+            &-title {
+                margin-bottom: 20px;
+                h2 {
+                    font-family: "Podkova", serif;
+                    font-size: 30px;
+                    text-align: center;
+                    letter-spacing: 1px;
+                    line-height: 35px;
+                    span {
+                        position: relative;
+                        display: inline-block;
+                        color: #172250;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: 6px;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background: rgb(255, 169, 9);
+                            z-index: -1;
+                            transform: rotate(-5deg);
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+            &-descr {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &-color, &-size, &-price {
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 15px;
+                    span {
+                        font-size: 22px;
+                        color: #fff;
+                    }
+                }
+                &-price {
+                    &-sum {
+                        font-size: 26px !important;
+                        color: rgb(255, 169, 9) !important;
+                    }
+                }
+            }
+            &-send {
+                text-align: center;
+                padding: 35px 0;
+                
+                button {
+                    background-color: rgb(255, 169, 9);
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 30px;
+                    font-family: "Podkova", serif;
+                    color: #2b2b2b;
+                    border-radius: 10px;
+                    padding: 5px 20px;
+                    letter-spacing: 1px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    
+    
+}

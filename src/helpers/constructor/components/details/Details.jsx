@@ -4,7 +4,7 @@ import "./details.scss";
 export const Details = ({ details, equipment, title, other, size, ten }) => {
     return (
         <div className="details" id="details">
-            <div className="details-title">
+            {/* <div className="details-title">
                 <h2>{title}: </h2>
             </div>
             {
@@ -16,7 +16,7 @@ export const Details = ({ details, equipment, title, other, size, ten }) => {
                         </div>
                     )
                 })
-            }
+            } */}
 
             <div className="details-other" id="details-curr">
                 <div className="details-other-title">
@@ -35,7 +35,7 @@ export const Details = ({ details, equipment, title, other, size, ten }) => {
                 }
             </div>
 
-            {
+            {/* {
                 size ? 
                     <div className="details-size">
                         <h2>Розмірна сітка: </h2>
@@ -44,7 +44,7 @@ export const Details = ({ details, equipment, title, other, size, ten }) => {
                         <span>Наш менеджер обо'язково допоможе Вам підібрати ідеальний розмір.</span>
                     </div>
                     : null
-            }
+            } */}
         </div>
     )
 }

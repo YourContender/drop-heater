@@ -1,0 +1,40 @@
+.size-table {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+    &__title {
+        font-size: 24px;
+        font-family: "Podkova", serif;
+        text-align: center;
+        color: #333;
+        margin: 0;
+    }
+  
+    &__table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        margin-top: 10px;
+        font-family: "Podkova", serif;
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+    
+        th {
+            background-color: #f3f3f3;
+            font-weight: bold;
+        }
+    
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+    
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    }
+}
+  

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./Palette.scss";
-import { cardsProductsWomanSuits } from '../../../../clothes';
+import { cardsProductsMansRobe } from '../../../../robe';
 
 export const Palette = ({ changeColor, color }) => {
     const chooseNewColor = (currentColor) => {
@@ -10,13 +10,12 @@ export const Palette = ({ changeColor, color }) => {
     return (
         <div className="palette">
             <div className="palette-title">
-                <h2>Оберіть колір: </h2>
+                <h2>Кольори в наявності: </h2>
             </div>
-
 
             <div className="palette-list">
                 {
-                    cardsProductsWomanSuits.map(item => {
+                    cardsProductsMansRobe.map(item => {
                         return (
                             <div 
                                 key={item.id}

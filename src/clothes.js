@@ -313,9 +313,11 @@ export const cards = [
 	},
 ];
 
-//===================
+//=================== ROBE
 
-export const imagesForSuitManSlider = [
+export const cardsProductsManRobe = null;
+
+export const imagesForRobeManSlider = [
 	suit1,
 	suit2,
 	suit3,
@@ -338,43 +340,38 @@ export const imagesForSuitManSlider = [
 	suit20,
 ];
 
-export const prodTitleSuitMan =
-	"Чоловічий теплий плюшевий костюм преміум якості ";
+export const prodTitleRobeMan = "Чоловічий теплий халат преміум якості ";
 
-export const costSuitMan = {
-	old: 2070,
+export const costRobeMan = {
+	old: 2250,
 	new: 1099,
 };
 
-export const infoSuitMan =
+export const infoRobeMan =
 	"Костюми виконані із натурального щільного матеріалу, який буде зігрівати щодня, м'яка плюшева тканина подарує затишок у будь-яку погоду. З нашим костюмом ві будете виглядати сучасно та впевнено. Ідеально підходить як для прогулянок, так і для дому.";
 
-export const detailsTitleSuitMan = "Опис";
+export const detailsTitleRobeMan = "Опис";
 
-export const detailsForSuitMan = [
+export const detailsForRobeMan = [
 	{
 		title: "Матеріал: ",
-		descr: "двосторонній фліс (Polar)",
+		descr: "тканина махра welsoft",
 	},
 	{
 		title: "Розмір: ",
-		descr: "S M L XL 2XL",
+		descr: "L, XL, 2XL, 3XL",
 	},
 	{
-		title: "Комфортна та зручна",
+		title: "мʼякий та приємний до тіла",
 		descr: "",
 	},
 	{
-		title: "Кольори:",
-		descr: "хакі, т.синій, графіт, чорний",
-	},
-	{
-		title: "Базовий крій, підійде на будь-яку фігуру",
+		title: "халат з кишенями, поясом та капюшоном",
 		descr: "",
 	},
 ];
 
-export const equipmentForSuitMan = [
+export const equipmentForRobeMan = [
 	"🔥 Костюм складається зі стильного худі та зручних штанів із манжетами",
 	"🔥 Легко підійде для активного відпочинку, прогулянок чи домашнього затишку",
 	"🔥 Мінімалістичний, універсальний стиль, що підходить для будь-якого віку",
@@ -383,9 +380,9 @@ export const equipmentForSuitMan = [
 	"🔥 Тканина стійка до зносу і прання, не втрачає вигляд навіть після багаторазового використання",
 ];
 
-export const equipmentTitleForSuitMan = "Детальніше";
+export const equipmentTitleForRobeMan = "Детальніше";
 
-export const reviewsForSuitMan = [
+export const reviewsForRobeMan = [
 	{
 		rating: "5",
 		name: "Віта",
@@ -413,9 +410,9 @@ export const reviewsForSuitMan = [
 	},
 ];
 
-export const marqueeSuitMan = "ВСТИГНИ ПРИДБАТИ НАБІР ЗІ ЗНИЖКОЮ ВІД ";
+export const marqueeRobeMan = "ВСТИГНИ ПРИДБАТИ НАБІР ЗІ ЗНИЖКОЮ ВІД ";
 
-export const sizeForSuitMan = [
+export const sizeForRobeMan = [
 	{
 		sm: "S",
 		old: 2070,
@@ -443,22 +440,9 @@ export const sizeForSuitMan = [
 	},
 ];
 
-export const colorForSuitMan = [
-	{
-		sm: "хакі",
-	},
-	{
-		sm: "т. синій",
-	},
-	{
-		sm: "графіт",
-	},
-	{
-		sm: "чорний",
-	},
-];
+export const colorForRobeMan = [];
 
-export const ten = sizeMan;
+export const ten = null;
 
 // =======================================================================
 

@@ -4,7 +4,7 @@ import "./main.scss";
 
 export const Main = ({ images }) => {
     return (
-        <div className="main">
+        <div className="main" id="colors">
             <Slider data={images}/>
         </div>
     )

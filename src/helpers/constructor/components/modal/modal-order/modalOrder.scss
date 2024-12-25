@@ -21,6 +21,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    &-subtitle {
+        font-size: 24px;
+        margin: 0;
+        color: #9f68dd;
+    }
+    &-ordered {
+        width: 80%;
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+            p {
+                color: #bebcbc;
+                font-size: 20px;
+                letter-spacing: 1px;
+            }
+        }
+    }
 }
 
 .modal-icon {
@@ -45,10 +63,11 @@
 .modal-promo-message {
     color: #7e7d7d;
     font-size: 18px;
+    margin-top: 40px;
     letter-spacing: 1px;
     span {
         font-size: 22px;
-        color: red;
+        color: rgb(12, 12, 12);
     }
 }
 
@@ -56,7 +75,7 @@
     color: #b6b4b4;
     font-size: 18px;
     span {
-        background-color: #5169f3;
+        background-color: #131520;
         padding: 5px 10px;
         font-size: 20px;
         border-radius: 15px;

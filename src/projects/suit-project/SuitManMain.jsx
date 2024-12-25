@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { 
-    imagesForSuitManSlider,
-    prodTitleSuitMan,
-    costSuitMan,
-    infoSuitMan,
-    detailsTitleSuitMan,
-    detailsForSuitMan,
-    equipmentForSuitMan,
-    equipmentTitleForSuitMan,
-    reviewsForSuitMan,
-    sizeForSuitMan,
-    colorForSuitMan,
+    imagesForRobeManSlider,
+    prodTitleRobeMan,
+    costRobeMan,
+    infoRobeMan,
+    detailsTitleRobeMan,
+    detailsForRobeMan,
+    equipmentForRobeMan,
+    equipmentTitleForRobeMan,
+    reviewsForRobeMan,
+    sizeForRobeMan,
+    colorForRobeMan,
     ten
 } from "../../clothes";
 import { Header } from "../../helpers/constructor/components/header/Header";
@@ -33,7 +33,7 @@ export const SuitManMain = () => {
 			{openBurger ? 
                 <Modal 
                     setOpenBurger={setOpenBurger} 
-                    title={equipmentTitleForSuitMan}
+                    title={equipmentTitleForRobeMan}
                 /> : null
             }
 			<Header 
@@ -41,35 +41,35 @@ export const SuitManMain = () => {
                 setOpenBurger={setOpenBurger}
                 // nameProd={nameProdRubber}
             />
-			<Main 
-                images={imagesForSuitManSlider}
-            />
-            <Marquee cost={costSuitMan} />
             <Info 
-                info={infoSuitMan}
-                nameProd={prodTitleSuitMan}
+                info={infoRobeMan}
+                nameProd={prodTitleRobeMan}
+                details={detailsForRobeMan} 
             />
+			<Main 
+                images={imagesForRobeManSlider}
+            />
+            <Marquee cost={costRobeMan} />
 			<Details 
-                details={detailsForSuitMan} 
-                equipment={equipmentForSuitMan}
-                title={detailsTitleSuitMan}
-                other={equipmentTitleForSuitMan}
+                equipment={equipmentForRobeMan}
+                title={detailsTitleRobeMan}
+                other={equipmentTitleForRobeMan}
                 size={true}
                 ten={ten}
             />
             <Order 
-                cost={costSuitMan} 
-                size={sizeForSuitMan}
+                cost={costRobeMan} 
+                size={sizeForRobeMan}
                 nameProduct="Костюм флісовий теплий чоловічий"
                 orderPrice={1099}
-                color={colorForSuitMan}
+                color={colorForRobeMan}
             />
             <Delivery 
                 nameProduct="Костюм флісовий теплий чоловічий"
             />
 			<Reviews 
-                review={reviewsForSuitMan} 
-                title={prodTitleSuitMan}
+                review={reviewsForRobeMan} 
+                title={prodTitleRobeMan}
             />
             <Footer/>
 		</div>
