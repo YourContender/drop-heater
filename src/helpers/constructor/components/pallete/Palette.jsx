@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "./Palette.scss";
 import { cardsProductsMansRobe } from '../../../../robe';
 
-export const Palette = ({ changeColor, color }) => {
+export const Palette = ({ changeColor, color, listColors }) => {
     const chooseNewColor = (currentColor) => {
         changeColor(currentColor);
     }
@@ -15,7 +15,7 @@ export const Palette = ({ changeColor, color }) => {
 
             <div className="palette-list">
                 {
-                    cardsProductsMansRobe.map(item => {
+                    listColors.map(item => {
                         return (
                             <div 
                                 key={item.id}

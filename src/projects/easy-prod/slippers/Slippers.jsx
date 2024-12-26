@@ -11,41 +11,41 @@ import { Footer } from "../../../helpers/constructor/components/footer/Footer";
 import { Palette } from "../../../helpers/constructor/components/pallete/Palette";
 import { OrderProduct } from "../../../helpers/constructor/components/order-product/OrderProduct";
 import { 
-    cardsProductsMansRobe,
-    prodTitleRobeMan,
-    costRobeMan,
-    infoRobeMan,
-    detailsTitleRobeMan,
-    detailsForRobeMan,
-    equipmentForRobeMan,
-    equipmentTitleForRobeMan,
-    reviewsForRobeMan,
-    sizeForRobeMan,
-    colorForRobeMan
-} from "../../../robe";
+    cardsProductsSlippers,
+    prodTitleSlippers,
+    costSlippers,
+    infoSlippers,
+    detailsTitleSlippers,
+    detailsForSlippers,
+    equipmentForSlippers,
+    equipmentTitleForSlippers,
+    reviewsForSlippers,
+    sizeForSlippers,
+    colorForSlippers
+} from "../../../slippers";
 
-import './Robe.scss';
-import SizeTable from "../../../helpers/constructor/components/size-table/SizeTable";
+import './Slippers.scss';
+import ShoeSizeTable from "../../../helpers/constructor/components/size-table/shoes-size-table/ShoesSizeTable";
 
-export const RobeMan = () => {
+export const Slippers = () => {
     const [openBurger, setOpenBurger] = useState(false);
-    const [changeColorMansRobe, setChangeColorMansRobe] = useState("сірий");
-    const [selectedColorMansRobe, setSelectedColorMansRobe] = useState(cardsProductsMansRobe[0]);
+    const [changeColorSlippers, setChangeColorSlippers] = useState("рожевий");
+    const [selectedColorSlippers, setSelectedColorSlippers] = useState(cardsProductsSlippers[0]);
 
     useEffect(() => {
-        cardsProductsMansRobe.map(item => {
-            if (item.color === changeColorMansRobe) {
-                return setSelectedColorMansRobe(item);
+        cardsProductsSlippers.map(item => {
+            if (item.color === changeColorSlippers) {
+                return setSelectedColorSlippers(item);
             } 
         })
-    }, [changeColorMansRobe])
+    }, [changeColorSlippers])
 
     return (
         <div className="container">
             {openBurger ? 
                 <Modal 
                     setOpenBurger={setOpenBurger} 
-                    title={equipmentTitleForRobeMan}
+                    title={equipmentTitleForSlippers}
                 /> : null
             }
             <Header 
@@ -53,37 +53,37 @@ export const RobeMan = () => {
                 setOpenBurger={setOpenBurger}
             />
             <Info 
-                info={infoRobeMan}
-                nameProd={prodTitleRobeMan}
-                details={detailsForRobeMan}
-                title="Теплий чоловічий халат"
+                info={infoSlippers}
+                nameProd={prodTitleSlippers}
+                details={detailsForSlippers}
+                title="Теплі плюшеві капці"
             />
 
             <Main 
-                images={selectedColorMansRobe.images}
+                images={selectedColorSlippers.images}
             />
-            <Marquee cost={costRobeMan} />
+            <Marquee cost={costSlippers} />
 
             <Palette 
-                changeColor={setChangeColorMansRobe}
-                color={changeColorMansRobe}
-                listColors={cardsProductsMansRobe}
+                changeColor={setChangeColorSlippers}
+                color={changeColorSlippers}
+                listColors={cardsProductsSlippers}
             />
             <Details 
-                equipment={equipmentForRobeMan}
-                title={detailsTitleRobeMan}
-                other={equipmentTitleForRobeMan}
+                equipment={equipmentForSlippers}
+                title={detailsTitleSlippers}
+                other={equipmentTitleForSlippers}
                 size={true}
             />
-            <SizeTable/>
+            <ShoeSizeTable/>
             <OrderProduct
-                cost={costRobeMan} 
-                size={sizeForRobeMan}
+                cost={costSlippers} 
+                size={sizeForSlippers}
                 nameProduct="Халат теплий чоловічий"
-                orderPrice={999}
-                color={colorForRobeMan}
-                defaultSize="L"
-                defaultColor="сірий"
+                orderPrice={550}
+                color={colorForSlippers}
+                defaultSize="37"
+                defaultColor="рожевий"
             />
             
             
@@ -95,13 +95,13 @@ export const RobeMan = () => {
                                 color={colorForSuitWoman}
                             /> */}
             <Delivery 
-                nameProduct="Теплий чоловічий халат"
+                nameProduct="Теплі плюшеві капці"
             />
             <Reviews 
-                review={reviewsForRobeMan} 
-                title={prodTitleRobeMan}
+                review={reviewsForSlippers} 
+                title={prodTitleSlippers}
             />
             <Footer/>
         </div>
     );
-};
+}

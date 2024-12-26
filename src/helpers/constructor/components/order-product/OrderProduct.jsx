@@ -7,11 +7,11 @@ import MaskName from './mask-name/MaskName';
 import { ModalOrder } from '../modal/modal-order/ModalOrder';
 // import { ModalOrder } from '../../constructor/components/modal/modal-order/ModalOrder';
 
-export const OrderProduct = ({ size, color, orderPrice, cost }) => {
+export const OrderProduct = ({ size, color, orderPrice, cost, defaultSize, defaultColor }) => {
     const [tel, setTel] = useState("");
     const [user, setUser] = useState("");
-    const [sizeProduct, setSizeProduct] = useState("L");
-    const [colorProduct, setColorProduct] = useState("сірий");
+    const [sizeProduct, setSizeProduct] = useState(defaultSize);
+    const [colorProduct, setColorProduct] = useState(defaultColor);
     const [successRequest, setSuccessRequest] = useState(false); 
 
     const handleSetUserName = (name) => {
