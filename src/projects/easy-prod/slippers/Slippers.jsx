@@ -79,7 +79,7 @@ export const Slippers = () => {
             <OrderProduct
                 cost={costSlippers} 
                 size={sizeForSlippers}
-                nameProduct="Халат теплий чоловічий"
+                nameProduct="Теплі плюшеві капці"
                 orderPrice={550}
                 color={colorForSlippers}
                 defaultSize="37"
