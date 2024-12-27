@@ -1,0 +1,48 @@
+.user-phone {
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 35px;
+    &-box {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        min-width: 250px;
+        align-items: center;
+        label {
+            margin-bottom: 10px;
+            font-family: "Podkova", serif;
+            font-size: 22px;
+            letter-spacing: 1px;
+            align-self: flex-start;
+        }
+    }
+    &-input {
+        width: 100%;
+        padding: 10px 10px;
+        border-radius: 7px;
+        outline: none;
+        border: 1px solid #696969;
+        background-color: #3a3a3a;
+        font-family: "Podkova", serif;
+        font-size: 20px;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+    &-error {
+        position: absolute;
+        top: 130px;
+        left: auto;
+        right: auto;
+        color: rgb(216, 68, 68);
+        font-family: "Podkova", serif;
+        font-size: 18px;
+    }
+    .line {
+        border: 1px solid rgb(216, 68, 68);
+        color: rgb(216, 68, 68);
+    }
+}

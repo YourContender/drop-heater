@@ -1,0 +1,137 @@
+.card {
+    width: 95%;
+    background-color: #2b2b2b;
+    position: relative;
+    border-radius: 7px 7px 15px 15px;
+    margin-bottom: 40px;
+    &-title {
+        text-align: center;
+        padding: 0 10px;
+        h3 {
+            font-family: "Podkova", serif;
+            font-size: 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #e6e3e3;
+        }
+    }
+    &-color, &-sale {
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        span {
+            font-family: "Podkova", serif;
+            font-size: 22px;
+            letter-spacing: 1px;
+            color: #c9c6c6;
+            margin-bottom: 5px;
+        }
+    }
+
+    &-material {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+
+        span {
+            font-family: "Podkova", serif;
+            font-size: 22px;
+            letter-spacing: 1px;
+            color: #c9c6c6;
+            margin-bottom: 5px;
+            text-align: right;
+        }
+    }
+
+    &-sale {
+        &-percent {
+            color: rgb(255, 169, 9) !important;
+            padding: 2px 5px;
+            border-radius: 15px;
+            font-size: 26px !important;
+        }
+    }
+    &-price {
+        padding: 0 20px;
+        &-old, &-new {
+            display: flex;
+            justify-content: space-between;
+            span {
+                font-family: "Podkova", serif;
+                font-size: 22px;
+                letter-spacing: 1px;
+                color: #c9c6c6;
+                margin-bottom: 5px;
+            }
+            .line {
+                text-decoration: line-through;
+                font-size: 24px;
+                color: #949494;
+            }
+            .curr {
+                background-color: rgb(32, 129, 32);
+                padding: 0 5px;
+                font-size: 24px;
+                border-radius: 10px;
+                color: #fff;
+            }
+        }
+    }
+    &-size {
+        padding: 0 20px;
+        &-title {
+            span {
+                font-family: "Podkova", serif;
+                font-size: 22px;
+                letter-spacing: 1px;
+                color: #c9c6c6;
+                margin-bottom: 5px;
+            }
+        }
+        &-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &-little {
+                margin: 10px 0;
+            }
+            &-big {
+                margin-bottom: 10px;
+            }
+        }
+        &-item {
+            font-size: 26px;
+            font-family: "Podkova", serif;
+            color: #c9c6c6;
+            width: 60px;
+            margin: 10px 15px;
+            text-align: center;
+        }
+        .current {
+            color: rgb(255, 169, 9);
+            // color: #2b2b2b;
+            border-bottom: 1px solid rgb(255, 169, 9);
+            border-radius: 5px;
+        }
+    }
+    &-order {
+        display: flex;
+        justify-content: center;
+        margin: 15px 0;
+        button {
+            background-color: rgb(255, 169, 9);
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-size: 30px;
+            font-family: "Podkova", serif;
+            color: #2b2b2b;
+            border-radius: 10px;
+            padding: 5px 20px;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+    }
+}
+

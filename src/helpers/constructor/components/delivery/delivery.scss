@@ -1,0 +1,46 @@
+.delivery {
+    color: #000;
+    font-family: "Podkova", serif;
+    margin-bottom: 40px;
+    &_title {
+        text-align: center;
+        margin-top: 30px;
+        h2 {
+            text-transform: uppercase;
+        }
+    }
+    &_item {
+        display: flex;
+        margin-top: 20px;
+        img {
+            height: 120px;
+            padding-top: 20px;
+        }
+        &-call {
+            margin-left: 10px;
+            h2 {
+                font-size: 20px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+    &_question {
+        margin: 60px 15px 0px 15px;
+        text-align: center;
+        border-top: 1px solid #b9b8b8;
+
+        button {
+            color: #fff;
+            background-color: #6888e2;
+            border: none;
+            outline: none;
+            padding: 10px 40px;
+            border-radius: 8px;
+            font-family: "Podkova", serif;
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+    }
+}
