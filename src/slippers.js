@@ -219,7 +219,7 @@ export const reviewsForSlippers = [
 	{
 		rating: "5",
 		name: "Діма",
-		text: "Прикольні, подарував татові, в захваті )",
+		text: "Прикольні, подарував мамі, в захваті )",
 	},
 	{
 		rating: "5",
