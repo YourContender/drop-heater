@@ -250,7 +250,7 @@ export const reviewsForSlippers = [
 
 export const marqueeSlippers = "ВСТИГНИ ПРИДБАТИ ЗІ ЗНИЖКОЮ ВІД ";
 
-export const colorForSlippers = ["рожевий", "сірий", "молочний", "шоколад"];
+export const colorForSlippers = ["рожевий", "сірий", "молочний", "мокко"];
 
 export const sizeForSlippers = [
 	{

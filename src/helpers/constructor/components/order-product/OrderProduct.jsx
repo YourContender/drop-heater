@@ -7,7 +7,7 @@ import MaskName from './mask-name/MaskName';
 import { ModalOrder } from '../modal/modal-order/ModalOrder';
 // import { ModalOrder } from '../../constructor/components/modal/modal-order/ModalOrder';
 
-export const OrderProduct = ({ size, color, orderPrice, cost, defaultSize, defaultColor }) => {
+export const OrderProduct = ({ size, color, orderPrice, cost, defaultSize, defaultColor, nameProduct }) => {
     const [tel, setTel] = useState("");
     const [user, setUser] = useState("");
     const [sizeProduct, setSizeProduct] = useState(defaultSize);
@@ -39,24 +39,27 @@ export const OrderProduct = ({ size, color, orderPrice, cost, defaultSize, defau
         let userData = {
             name: user,
             phone: tel,
-            product: "Халат теплий чоловічий",
+            product: nameProduct,
             price: orderPrice,
             size: sizeProduct,
             color: colorProduct
         }
         
-        setSuccessRequest(true);
+        
+        if (user, tel) {
+            setSuccessRequest(true);
 
-        await fetch('https://api.heater.pp.ua/send', {
-            method: 'POST',
-            body: JSON.stringify({
-                ...userData
-            }),
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            }
-        });
+            await fetch('https://api.heater.pp.ua/send', {
+                method: 'POST',
+                body: JSON.stringify({
+                    ...userData
+                }),
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                }
+            });
+        }
     }
     
     return (
