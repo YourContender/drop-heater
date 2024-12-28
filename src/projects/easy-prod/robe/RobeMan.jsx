@@ -80,7 +80,7 @@ export const RobeMan = () => {
                 cost={costRobeMan} 
                 size={sizeForRobeMan}
                 nameProduct="Халат теплий чоловічий"
-                orderPrice={999}
+                orderPrice={1040}
                 color={colorForRobeMan}
                 defaultSize="L"
                 defaultColor="сірий"

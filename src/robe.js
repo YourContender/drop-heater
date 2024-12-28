@@ -134,7 +134,7 @@ export const prodTitleRobeMan = "Чоловічий теплий халат пр
 
 export const costRobeMan = {
 	old: 1950,
-	new: 999,
+	new: 1040,
 };
 
 export const infoRobeMan =
