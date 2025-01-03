@@ -24,7 +24,7 @@ export const App = () => {
                     {subdomain === "custom" && <Route path="/" element={<MainCustom />} /> }
                     {subdomain === "robe" && <Route path="/" element={<RobeMan />} /> }
                     {subdomain === "slippers" && <Route path="/" element={<Slippers />} /> }
-                    {subdomain === "asian" && <Route path="/" element={<Asian />} /> }
+                    {subdomain === "bodysuit" && <Route path="/" element={<Asian />} /> }
 
                     {/* Fallback for path-based routing */}
                     <Route path="/robe" element={<RobeMan/>} /> 
@@ -32,7 +32,7 @@ export const App = () => {
                     <Route path="/suitt" element={<SuitWomanMain/>} /> 
                     <Route path="/custom" element={<MainCustom/>} /> 
                     <Route path="/slippers" element={<Slippers/>} /> 
-                    <Route path="/asian" element={<Asian/>} /> 
+                    <Route path="/bodysuit" element={<Asian/>} /> 
                 </Routes>
             </Router>
 		</div>
