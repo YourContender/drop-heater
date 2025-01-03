@@ -7,6 +7,7 @@ import { SuitWomanMain } from "./projects/suit-project/SuitWomanMain.jsx";
 import { MainCustom } from "./helpers/custom-design/MainCustom.jsx";
 import { RobeMan } from "./projects/easy-prod/robe/RobeMan.jsx";
 import { Slippers } from "./projects/easy-prod/slippers/Slippers.jsx";
+import { Asian } from "./projects/easy-prod/complect/Asian.jsx";
 
 export const App = () => {
     const hostname = window.location.hostname;
@@ -30,6 +31,7 @@ export const App = () => {
                     <Route path="/suitt" element={<SuitWomanMain/>} /> 
                     <Route path="/custom" element={<MainCustom/>} /> 
                     <Route path="/slippers" element={<Slippers/>} /> 
+                    <Route path="/asian" element={<Asian/>} /> 
                 </Routes>
             </Router>
 		</div>

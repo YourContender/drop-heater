@@ -5,8 +5,8 @@
 
 .swiper-slide{
     max-width: 500px;
-    max-height: 430px;
-    min-height: 460px;
+    max-height: 500px;
+    min-height: 500px;
     width: calc(var(--index) * 15);
     height: calc(var(--index) * 32);
 }
@@ -24,6 +24,6 @@
     .swiper-slide{
         width: calc(var(--index) * 15);
         height: calc(var(--index) * 29);
-        min-height: 460px;
+        min-height: 500px;
     }
 }

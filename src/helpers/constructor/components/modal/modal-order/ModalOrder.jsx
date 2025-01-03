@@ -48,7 +48,7 @@ export const ModalOrder = ({ setSuccessOrder, tel, name, size, color, product })
                     
                 </div>
 
-                <div className="modal-promo">
+                {/* <div className="modal-promo">
                     <p className="modal-promo-message">
                         Для Вас є чудова пропозиція, даруємо Вам промокод <span>-10% </span>
                         на додадкову одиницю замовленого Вами товару. Просто назвіть його менеджеру і додадкова знижка буде активована.
@@ -56,7 +56,7 @@ export const ModalOrder = ({ setSuccessOrder, tel, name, size, color, product })
                     <div className="modal-promo-code">
                         Ваш промокод - <span>PROMO10</span>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )

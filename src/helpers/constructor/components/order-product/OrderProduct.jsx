@@ -1,13 +1,20 @@
 import React, { useState } from 'react';
 import "./OrderProduct.scss";
-import { faXmark } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { MaskTel } from './mask-tel/MaskTel';
 import MaskName from './mask-name/MaskName';
 import { ModalOrder } from '../modal/modal-order/ModalOrder';
 // import { ModalOrder } from '../../constructor/components/modal/modal-order/ModalOrder';
 
-export const OrderProduct = ({ size, color, orderPrice, cost, defaultSize, defaultColor, nameProduct }) => {
+export const OrderProduct = ({ 
+    size, 
+    color, 
+    orderPrice, 
+    cost, 
+    defaultSize, 
+    defaultColor, 
+    nameProduct, 
+    article 
+}) => {
     const [tel, setTel] = useState("");
     const [user, setUser] = useState("");
     const [sizeProduct, setSizeProduct] = useState(defaultSize);
@@ -42,11 +49,11 @@ export const OrderProduct = ({ size, color, orderPrice, cost, defaultSize, defau
             product: nameProduct,
             price: orderPrice,
             size: sizeProduct,
-            color: colorProduct
+            color: defaultColor,
+            article: article,
         }
         
-        
-        if (user, tel) {
+        if (user, tel, article) {
             setSuccessRequest(true);
 
             await fetch('https://api.heater.pp.ua/send', {
@@ -111,7 +118,9 @@ export const OrderProduct = ({ size, color, orderPrice, cost, defaultSize, defau
                     }
                 </div>
 
-                <h2 className="custom-prod-color-title">Оберіть колір: </h2>
+                {
+                    color.length > 1 ? <h2 className="custom-prod-color-title">Оберіть колір: </h2> : null
+                }
                 <div className="custom-prod-modal-color">
                     {
                         color.map((item, index) => {
