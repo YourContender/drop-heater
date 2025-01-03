@@ -14,13 +14,25 @@ export const cardsProductsAsian = [
 		images: [asian1, asian4, asian2, asian3, asian5, asian6, asian8, asian9],
 		oldPrice: 999,
 		price: 780,
-		article: "SM2268",
+		article: "SM2263",
 		sale: "47%",
 		color: "чорний",
 		backgroundColor: "",
 		size: ["S", "M", "L", "XL"],
 		material: "",
 	},
+];
+
+// S: груди 79-88 см, талія 60-66 см, стегна 86-92 см
+// М: груди 88-94 см, талія 66-76 см, стегна 88-96 см
+// L: груди 94-100 см, талія 74-80 см, стегна 94-100 см
+// XL: груди 98-105 см, талія 78-85 см, стегна 98-105 см
+
+export const sizeTenForAsian = [
+	{ size: "S", bust: "79-88", waist: "60-66", hips: "86-92" },
+	{ size: "M", bust: "88-94", waist: "66-76", hips: "88-96" },
+	{ size: "L", bust: "94-100", waist: "74-80", hips: "94-100" },
+	{ size: "XL", bust: "98-105", waist: "78-85", hips: "98-105" },
 ];
 
 // export const cardsProductsManRobe = null;

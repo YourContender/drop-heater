@@ -11,42 +11,42 @@ import { Footer } from "../../../helpers/constructor/components/footer/Footer";
 import { Palette } from "../../../helpers/constructor/components/pallete/Palette";
 import { OrderProduct } from "../../../helpers/constructor/components/order-product/OrderProduct";
 import { 
-    cardsProductsAsian,
-    prodTitleAsian,
-    costAsian,
-    infoAsian,
-    detailsTitleAsian,
-    detailsForAsian,
-    equipmentForAsian,
-    equipmentTitleForAsian,
-    reviewsForAsian,
-    sizeForAsian,
-    colorForAsian,
-    sizeTenForAsian
-} from "../../../tmp/asian";
+    cardsProductsLeopard,
+    prodTitleLeopard,
+    costLeopard,
+    infoLeopard,
+    detailsTitleLeopard,
+    detailsForLeopard,
+    equipmentForLeopard,
+    equipmentTitleForLeopard,
+    reviewsForLeopard,
+    sizeForLeopard,
+    colorForLeopard,
+    sizeTenForLeopard
+} from "../../../tmp/leopard";
 
-import './Asian.scss';
+import './Leopard.scss';
 import SizeTable from "../../../helpers/constructor/components/size-table/SizeTable";
 
-export const Asian = () => {
+export const Leopard = () => {
     const [openBurger, setOpenBurger] = useState(false);
-    const [changeColorAsian, setChangeColorAsian] = useState("чорний");
-    const [selectedColorAsian, setSelectedColorAsian] = useState(cardsProductsAsian[0]);
+    const [changeColorLeopard, setChangeColorLeopard] = useState("чорний");
+    const [selectedColorLeopard, setSelectedColorLeopard] = useState(cardsProductsLeopard[0]);
 
     useEffect(() => {
-        cardsProductsAsian.map(item => {
-            if (item.color === changeColorAsian) {
-                return setSelectedColorAsian(item);
+        cardsProductsLeopard.map(item => {
+            if (item.color === changeColorLeopard) {
+                return setSelectedColorLeopard(item);
             } 
         })
-    }, [changeColorAsian])
+    }, [changeColorLeopard])
 
     return (
         <div className="container">
             {openBurger ? 
                 <Modal 
                     setOpenBurger={setOpenBurger} 
-                    title={equipmentTitleForAsian}
+                    title={equipmentTitleForLeopard}
                 /> : null
             }
             <Header 
@@ -54,16 +54,16 @@ export const Asian = () => {
                 setOpenBurger={setOpenBurger}
             />
             <Info 
-                info={infoAsian}
-                nameProd={prodTitleAsian}
-                details={detailsForAsian}
-                title="Спокусливе боді з відкритим доступом та спідничка"
+                info={infoLeopard}
+                nameProd={prodTitleLeopard}
+                details={detailsForLeopard}
+                title="Розкішний комплект з леопардовим принтом"
             />
 
             <Main 
-                images={selectedColorAsian.images}
+                images={selectedColorLeopard.images}
             />
-            <Marquee cost={costAsian} />
+            <Marquee cost={costLeopard} />
 {/* 
             <Palette 
                 changeColor={setChangeColorAsian}
@@ -71,28 +71,28 @@ export const Asian = () => {
                 listColors={cardsProductsAsian}
             /> */}
             <Details 
-                equipment={equipmentForAsian}
-                title={detailsTitleAsian}
-                other={equipmentTitleForAsian}
+                equipment={equipmentForLeopard}
+                title={detailsTitleLeopard}
+                other={equipmentTitleForLeopard}
                 size={true}
             />
-            <SizeTable sizes={sizeTenForAsian}/>
+            <SizeTable sizes={sizeTenForLeopard}/>
             <OrderProduct
-                cost={costAsian} 
-                size={sizeForAsian}
-                nameProduct="Спокусливе боді з відкритим доступом та спідничка"
-                orderPrice={780}
-                color={colorForAsian}
+                cost={costLeopard} 
+                size={sizeForLeopard}
+                nameProduct="Розкішний комплект з леопардовим принтом"
+                orderPrice={880}
+                color={colorForLeopard}
                 defaultSize="S"
                 defaultColor="чорний"
-                article={cardsProductsAsian[0].article}
+                article={cardsProductsLeopard[0].article}
             />
             <Delivery 
-                nameProduct="Спокусливе боді з відкритим доступом та спідничка"
+                nameProduct="Розкішний комплект з леопардовим принтом"
             />
             <Reviews 
-                review={reviewsForAsian} 
-                title={prodTitleAsian}
+                review={reviewsForLeopard} 
+                title={prodTitleLeopard}
             />
             <Footer/>
         </div>
