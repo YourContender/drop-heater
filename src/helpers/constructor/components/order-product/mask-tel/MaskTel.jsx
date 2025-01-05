@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import MaskedInput from "react-text-mask";
 import "./MaskTel.scss";
 
-export const MaskTel = ({ setTel }) => {
+export const MaskTel = ({ setTel, setCheckCorrectTel }) => {
     const [phone, setPhone] = useState("");
     const [error, setError] = useState("");
 
@@ -33,8 +33,10 @@ export const MaskTel = ({ setTel }) => {
         const digitsOnly = input.replace(/\D/g, ""); 
         if (digitsOnly[3] === "0" || digitsOnly[2] !== "0") {
             setError("Перевірте привильність номеру телефону!");
+            setCheckCorrectTel("Перевірте привильність номеру телефону!")
         } else {
             setError("");
+            setCheckCorrectTel("")
         }
 
         // console.log(digitsOnly.length)
@@ -47,10 +49,12 @@ export const MaskTel = ({ setTel }) => {
 
         if (phone.length !== 17) {
             setError("Введіть повний номер телефону!");
+            setCheckCorrectTel("Перевірте привильність номеру телефону!")
             return;
         } 
 
         setError("");
+        setCheckCorrectTel("")
     };
 
     return (

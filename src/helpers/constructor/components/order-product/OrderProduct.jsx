@@ -21,6 +21,8 @@ export const OrderProduct = ({
     const [colorProduct, setColorProduct] = useState(defaultColor);
     const [successRequest, setSuccessRequest] = useState(false); 
 
+    const [checkCorrectTel, setCheckCorrectTel] = useState("");
+
     const handleSetUserName = (name) => {
         setUser(name);
     };
@@ -43,6 +45,8 @@ export const OrderProduct = ({
     }
 
     const sendRequest = async (data) => {
+        // console.log("whhhhat", tel[17]);
+        
         let userData = {
             name: user,
             phone: tel,
@@ -53,8 +57,10 @@ export const OrderProduct = ({
             article: article,
         }
         
-        if (user, tel, article) {
+        if (user.length >= 2 && tel[17] >= 0 && checkCorrectTel.length === 0) {
             setSuccessRequest(true);
+            // console.log(userData);
+            
 
             await fetch('https://api.heater.pp.ua/send', {
                 method: 'POST',
@@ -99,7 +105,7 @@ export const OrderProduct = ({
 
             <div className="custom-prod-modal">
                 <MaskName setUser={handleSetUserName}/>
-                <MaskTel setTel={handleSetTelUser}/>
+                <MaskTel setTel={handleSetTelUser} setCheckCorrectTel={setCheckCorrectTel}/>
 
                 <h2 className="custom-prod-size-title">Оберіть розмір: </h2>
                 <div className="custom-prod-modal-size">
