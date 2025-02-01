@@ -9,6 +9,7 @@ import { RobeMan } from "./projects/easy-prod/robe/RobeMan.jsx";
 import { Slippers } from "./projects/easy-prod/slippers/Slippers.jsx";
 import { Asian } from "./projects/easy-prod/complect/Asian.jsx";
 import { Leopard } from "./projects/easy-prod/complect-leopard/Leopard.jsx";
+import { CustomDesignSite } from "./projects/easy-prod/new-design-prod/CustomDesignSite.jsx";
 
 export const App = () => {
     const hostname = window.location.hostname;
@@ -36,6 +37,8 @@ export const App = () => {
                     <Route path="/slippers" element={<Slippers/>} /> 
                     <Route path="/bodysuit" element={<Asian/>} /> 
                     <Route path="/underwear" element={<Leopard/>} /> 
+
+                    <Route path="/course" element={<CustomDesignSite/>} /> 
                 </Routes>
             </Router>
 		</div>
