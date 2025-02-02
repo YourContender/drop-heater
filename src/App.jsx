@@ -21,24 +21,24 @@ export const App = () => {
 			<Router>
                 <Routes>
                     {/* Subdomain routing with nested routes */}
-                    {subdomain === "suit" && <Route path="/" element={<SuitManMain />} /> }
+                    {/* {subdomain === "suit" && <Route path="/" element={<SuitManMain />} /> }
                     {subdomain === "suitt" && <Route path="/" element={<SuitWomanMain />} /> }
                     {subdomain === "custom" && <Route path="/" element={<MainCustom />} /> }
                     {subdomain === "robe" && <Route path="/" element={<RobeMan />} /> }
                     {subdomain === "slippers" && <Route path="/" element={<Slippers />} /> }
-                    {subdomain === "bodysuit" && <Route path="/" element={<Asian />} /> }
-                    {subdomain === "underwear" && <Route path="/" element={<Leopard />} /> }
+                    {subdomain === "bodysuit" && <Route path="/" element={<Asian />} /> } */}
+                    {subdomain === "suit" && <Route path="/" element={<CustomDesignSite />} /> }
 
                     {/* Fallback for path-based routing */}
-                    <Route path="/robe" element={<RobeMan/>} /> 
+                    {/* <Route path="/robe" element={<RobeMan/>} /> 
                     <Route path="/suit" element={<SuitManMain/>} /> 
                     <Route path="/suitt" element={<SuitWomanMain/>} /> 
                     <Route path="/custom" element={<MainCustom/>} /> 
                     <Route path="/slippers" element={<Slippers/>} /> 
-                    <Route path="/bodysuit" element={<Asian/>} /> 
+                    <Route path="/bodysuit" element={<Asian/>} />  */}
                     <Route path="/underwear" element={<Leopard/>} /> 
 
-                    <Route path="/course" element={<CustomDesignSite/>} /> 
+                    <Route path="/suit" element={<CustomDesignSite/>} /> 
                 </Routes>
             </Router>
 		</div>
