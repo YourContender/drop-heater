@@ -1,0 +1,38 @@
+.descr-wrapper {
+    background-color: #fff;
+    color: #353a4b;
+    &-title {
+        padding: 20px 10px;
+        h2 {
+            margin: 0;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: "Montserrat", serif;
+            font-size: 26px;
+        }
+    }
+    &-subtitle {
+        padding: 0 15px;
+        text-align: center;
+        img {
+            width: 100%;
+            margin-top: 15px;
+        }
+        span {
+            font-family: "Montserrat", serif;
+        }
+    }
+    &-text {
+        padding: 5px 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        span {
+            font-family: "Montserrat", serif;
+            margin: 10px 0;
+        }
+        .special-text {
+            font-weight: 700;
+        }
+    }
+}
