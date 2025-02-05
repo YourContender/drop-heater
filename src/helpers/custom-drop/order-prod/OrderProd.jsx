@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
-import "./OrderProd.scss";
 import { MaskTel } from './mask-phone/MaskTel';
 import MaskName from './mask-text/MaskName';
-import mainPhoto from "../../images/course/1.png";
-// import { ModalOrder } from '../modal/modal-order/ModalOrder';
-// import { ModalOrder } from '../../constructor/components/modal/modal-order/ModalOrder';
+import "./OrderProd.scss";
 
-export const OrderProd = () => {
+export const OrderProd = ({ title, image, oldPrice, newPrice}) => {
     const [tel, setTel] = useState("");
     const [user, setUser] = useState("");
 
@@ -21,8 +18,6 @@ export const OrderProd = () => {
     };
 
     const sendRequest = async (data) => {
-        // console.log("whhhhat", tel[17]);
-        
         let userData = {
             name: user,
             phone: tel,
@@ -30,10 +25,6 @@ export const OrderProd = () => {
         }
         
         if (user.length >= 2 && tel[17] >= 0 && checkCorrectTel.length === 0) {
-            // setSuccessRequest(true);
-            // console.log(userData);
-            
-
             await fetch('https://api.heater.pp.ua/send', {
                 method: 'POST',
                 body: JSON.stringify({
@@ -50,11 +41,11 @@ export const OrderProd = () => {
     return (
         <div className="custom-prod" id='order'>
             <div className="header-top">
-                <h1>Фітнес тренажер для преса і віджимань</h1>
+                <h1>{title}</h1>
             </div>
             <div className="main-wrapper">
                 <div className="main-wrapper-photo">
-                    <img src={mainPhoto}alt="" />
+                    <img src={image}alt="" />
                 </div>
                 <div className="main-wrapper-price">
                     <div className="main-wrapper-price-block">
@@ -62,13 +53,13 @@ export const OrderProd = () => {
                             <div className="block-text">
                                 Звичайна ціна
                             </div>
-                            <div className="block-sum">ХХХ</div>
+                            <div className="block-sum">{oldPrice}</div>
                         </div>
                         <div className="main-wrapper-price-block-right">
                             <div className="block-text">
                                 Акційна ціна
                             </div>
-                            <div className="block-sum">ХХХ</div>
+                            <div className="block-sum">{newPrice}</div>
                         </div>
                     </div>
                 </div>
