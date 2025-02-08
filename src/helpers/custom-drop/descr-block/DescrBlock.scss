@@ -34,5 +34,28 @@
         .special-text {
             font-weight: 700;
         }
+        &-list {
+            margin: 0;
+            padding: 0 15px;
+            .list-title {
+                h3 {
+                    margin: 12px 0;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-family: "Montserrat", serif;
+                    font-size: 26px;
+                }
+            }
+            .list-items {
+                display: flex;
+                flex-direction: column;
+                span {
+                    font-family: "Montserrat", serif;
+                    margin: 7px 0;
+                    font-size: 18px;
+                    text-align: left;
+                }
+            }
+        }
     }
 }

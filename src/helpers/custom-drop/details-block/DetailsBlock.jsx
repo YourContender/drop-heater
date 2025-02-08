@@ -1,4 +1,5 @@
 import React from 'react';
+import { scrollToSection } from "../../scroll/scrollToSection";
 import "./DetailsBlock.scss";
 
 export const DetailsBlock = ({ details }) => {
@@ -21,7 +22,7 @@ export const DetailsBlock = ({ details }) => {
                 }
             </div>
             <div className="details-wrapper-btn">
-                <button>Замовити</button>
+                <button onClick={() => scrollToSection("order")}>Замовити</button>
             </div>
         </div>
     )

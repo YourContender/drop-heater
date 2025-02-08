@@ -33,6 +33,51 @@ export const DescrBlock = ({
                                         {item.descr}
                                     </span>
                                 )
+                            case "advantages" :
+                                return (
+                                    <div className="descr-wrapper-text-list" key={index}>
+                                        <div className="list-title">
+                                            <h3>{item.titleAdvantage}</h3>
+                                        </div>
+                                        <div className="list-items">
+                                            {
+                                                item.listAdvantage.map((item, index) => {
+                                                    return <span key={index}>{item}</span>
+                                                })
+                                            }
+                                        </div>
+                                    </div>
+                                )
+                            case "use" :
+                                return (
+                                    <div className="descr-wrapper-text-list" key={index}>
+                                        <div className="list-title">
+                                            <h3>{item.titleUse}</h3>
+                                        </div>
+                                        <div className="list-items">
+                                            {
+                                                item.listUse.map((item, index) => {
+                                                    return <span key={index}>{item}</span>
+                                                })
+                                            }
+                                        </div>
+                                    </div>
+                                )
+                            case "package" :
+                                return (
+                                    <div className="descr-wrapper-text-list" key={index}>
+                                        <div className="list-title">
+                                            <h3>{item.titlePackage}</h3>
+                                        </div>
+                                        <div className="list-items">
+                                            {
+                                                item.listPackage.map((item, index) => {
+                                                    return <span key={index}>{item}</span>
+                                                })
+                                            }
+                                        </div>
+                                    </div>
+                                )
                             default : 
                                 return null;
                         }

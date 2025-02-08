@@ -4,11 +4,11 @@ import first from "./11.png"
 import second from "./12.png"
 import third from "./13.png"
 
-export const QuestionBlock = () => {
+export const QuestionBlock = ({ title }) => {
     return (
         <div className="question-wrapper">
             <div className="question-wrapper-title">Як замовити</div>
-            <div className="question-wrapper-subtitle">Фітнес тренажер</div>
+            <div className="question-wrapper-subtitle">{title}</div>
 
             <div className="question-wrapper-steps">
                 <div className="question-wrapper-steps-item">

@@ -2,7 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Home } from "./projects/home/Home";
 import "./index.css";
-import { CustomDesignSite } from "./projects/CustomDesignSite.jsx";
+import { CustomDesignSite } from "./projects/press-desk/CustomDesignSite.jsx";
+import { JuiceProd } from "./projects/juice-prod/JuiceProd.jsx";
+// import { CustomDesignSite } from "./projects/press-desk/CustomDesignSite.jsx";
 
 export const App = () => {
     const hostname = window.location.hostname;
@@ -14,9 +16,11 @@ export const App = () => {
 			<Router>
                 <Routes>
                     {/* Subdomain routing with nested routes */}
-                    {subdomain === "suit" && <Route path="/" element={<CustomDesignSite />} /> }
+                    {subdomain === "fitness" && <Route path="/" element={<CustomDesignSite />} /> }
+                    {subdomain === "juice" && <Route path="/" element={<JuiceProd />} /> }
 
-                    <Route path="/suit" element={<CustomDesignSite/>} /> 
+                    <Route path="/fitness" element={<CustomDesignSite/>} /> 
+                    <Route path="/juice" element={<JuiceProd/>} /> 
                 </Routes>
             </Router>
 		</div>

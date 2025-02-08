@@ -1,4 +1,5 @@
 import "./MainBlock.scss";
+import { scrollToSection } from "../../scroll/scrollToSection";
 
 export const MainBlock = ({ src, oldPrice, newPrice }) => {
     return (
@@ -23,7 +24,7 @@ export const MainBlock = ({ src, oldPrice, newPrice }) => {
                 </div>
             </div>
             <div className="main-wrapper-btn">
-                <button>Замовити</button>
+                <button onClick={() => scrollToSection("order")}>Замовити</button>
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./MaskName.scss";
 
-const MaskName = ({ setUser }) => {
+const MaskName = ({ setUser, successRequest }) => {
     const [name, setName] = useState("");
     const [error, setError] = useState("");
 
@@ -13,9 +13,14 @@ const MaskName = ({ setUser }) => {
         } else {
             setError("");
         }
-        setName(input)
-        setUser(input)
+        setName(input);
+        setUser(input);
     };
+
+    useEffect(() => {
+        setName("");
+        setUser("");
+    }, [successRequest])
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -26,7 +31,6 @@ const MaskName = ({ setUser }) => {
         } 
 
         setError("");
-        
     };
 
     return (

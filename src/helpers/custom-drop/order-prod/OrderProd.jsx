@@ -6,6 +6,7 @@ import "./OrderProd.scss";
 export const OrderProd = ({ title, image, oldPrice, newPrice}) => {
     const [tel, setTel] = useState("");
     const [user, setUser] = useState("");
+    const [successRequest, setSuccessRequest] = useState(false);
 
     const [checkCorrectTel, setCheckCorrectTel] = useState("");
 
@@ -21,7 +22,7 @@ export const OrderProd = ({ title, image, oldPrice, newPrice}) => {
         let userData = {
             name: user,
             phone: tel,
-            product: "тренажер тест",
+            product: title,
         }
         
         if (user.length >= 2 && tel[17] >= 0 && checkCorrectTel.length === 0) {
@@ -35,6 +36,9 @@ export const OrderProd = ({ title, image, oldPrice, newPrice}) => {
                     'Content-Type': 'application/json'
                 }
             });
+            setSuccessRequest(true);
+            setUser("");
+            setTel("");
         }
     }
     
@@ -65,8 +69,8 @@ export const OrderProd = ({ title, image, oldPrice, newPrice}) => {
                 </div>
             </div>
             <div className="custom-prod-modal">
-                <MaskName setUser={handleSetUserName}/>
-                <MaskTel setTel={handleSetTelUser} setCheckCorrectTel={setCheckCorrectTel}/>
+                <MaskName setUser={handleSetUserName} successRequest={successRequest}/>
+                <MaskTel setTel={handleSetTelUser} setCheckCorrectTel={setCheckCorrectTel} successRequest={successRequest}/>
 
                 <div className="custom-prod-modal-send">
                     <button

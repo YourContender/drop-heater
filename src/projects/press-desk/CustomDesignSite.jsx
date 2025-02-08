@@ -1,23 +1,24 @@
 import React from 'react'
-import { HeaderBlock } from '../helpers/custom-drop/header-block/HeaderBlock';
+import { HeaderBlock } from '../../helpers/custom-drop/header-block/HeaderBlock';
 import "./CustomDesignSite.scss";
-import { MainBlock } from '../helpers/custom-drop/main-block/MainBlock';
-import TimerBlock from '../helpers/custom-drop/timer-block/TimerBlock';
-import { DetailsBlock } from '../helpers/custom-drop/details-block/DetailsBlock';
-import { QuestionBlock } from '../helpers/custom-drop/question-block/QuestionBlock';
-import { OrderProd } from '../helpers/custom-drop/order-prod/OrderProd';
-import { DescrBlock } from '../helpers/custom-drop/descr-block/DescrBlock';
-import { DeliveryBlock } from '../helpers/custom-drop/delivery-block/DeliveryBlock';
-import { FooterBlock } from '../helpers/custom-drop/footer-block/FooterBlock';
-import { pageConfig } from '../pageConfig';
+import { MainBlock } from '../../helpers/custom-drop/main-block/MainBlock';
+import TimerBlock from '../../helpers/custom-drop/timer-block/TimerBlock';
+import { DetailsBlock } from '../../helpers/custom-drop/details-block/DetailsBlock';
+import { QuestionBlock } from '../../helpers/custom-drop/question-block/QuestionBlock';
+import { OrderProd } from '../../helpers/custom-drop/order-prod/OrderProd';
+import { DescrBlock } from '../../helpers/custom-drop/descr-block/DescrBlock';
+import { DeliveryBlock } from '../../helpers/custom-drop/delivery-block/DeliveryBlock';
+import { FooterBlock } from '../../helpers/custom-drop/footer-block/FooterBlock';
+import { pageConfig } from '../../pageConfig';
 
 export const CustomDesignSite = () => {
     return (
         <div className="custom-container">
-            <HeaderBlock title={pageConfig.title}/>
             {
                 pageConfig.content.map((obj, index) => {
                     switch (obj.type) {
+                        case "basicHeaderBlock":
+                            return <HeaderBlock {...obj} key={index}/>
                         case "promoBlock" : 
                             return <MainBlock {...obj} key={index}/> ;
                         case "timerBlock" :

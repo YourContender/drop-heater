@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import MaskedInput from "react-text-mask";
 import "./MaskTel.scss";
 
-export const MaskTel = ({ setTel, setCheckCorrectTel }) => {
+export const MaskTel = ({ setTel, setCheckCorrectTel, successRequest }) => {
     const [phone, setPhone] = useState("");
     const [error, setError] = useState("");
 
@@ -43,6 +43,11 @@ export const MaskTel = ({ setTel, setCheckCorrectTel }) => {
         setPhone(input)
         setTel(input)
     };
+
+    useEffect(() => {
+        setPhone("");
+        setTel("");
+    }, [successRequest])
 
     const handleSubmit = (e) => {
         e.preventDefault();

@@ -1,16 +1,27 @@
 import promoImage from "./helpers/images/course/1.png";
-import firstImage from "./helpers/images/course/2.png";
+import firstImage from "./helpers/images/course/7.png";
 import secondImage from "./helpers/images/course/3.png";
 import thirdImage from "./helpers/images/course/4.png";
+
+//Juice 
+import promoJuice from "./helpers/images/juice/4.png"
+import firstJuice from "./helpers/images/juice/2.png"
+import secondJuice from "./helpers/images/juice/3.png"
+import thirdJuice from "./helpers/images/juice/1.png"
+import fourthJuice from "./helpers/images/juice/5.png"
 
 export const pageConfig = {
     title: 'Фітнес тренажер для преса і віджимань',
     content: [
         {
+            "type": "basicHeaderBlock",
+            "title": "Фітнес тренажер для преса і віджимань"
+        },
+        {
             "type": "promoBlock",
             "src": promoImage,
-            "oldPrice": "799 грн",
-            "newPrice": "599 грн",
+            "oldPrice": "1100 грн",
+            "newPrice": "799 грн",
         },
 
         {
@@ -113,15 +124,158 @@ export const pageConfig = {
         },
 
         {
-            "type": "questionBlock"
+            "type": "questionBlock",
+            "title": "Фітнес тренажер"
         },
 
         {
             "type": "orderBlock",
             "title": "Фітнес тренажер для преса і віджимань",
             "image": promoImage,
-            "oldPrice": "799 грн",
-            "newPrice": "599 грн",
+            "oldPrice": "1100 грн",
+            "newPrice": "799 грн",
+        }
+    ],
+};
+
+
+
+// JUICE PROD
+export const pageConfigJuice = {
+    title: 'Акумуляторна соковичавниця Citrus Juicer',
+    content: [
+        {
+            "type": "basicHeaderBlock",
+            "title": "Акумуляторна соковичавниця Citrus Juicer"
+        },
+        {
+            "type": "promoBlock",
+            "src": promoJuice,
+            "oldPrice": "790 грн",
+            "newPrice": "469 грн",
+        },
+
+        {
+            "type": "timerBlock",
+            "text": `
+                Цiну знижено через випуск нової моделi. Додаткову iнформацiю Вам 
+                надасть наш менеджер. Ваша розмова може бути записана з метою 
+                покращення якостi обслуговування.
+            `
+        },
+
+        {
+            "type": "descriptionBlock",
+            "title": "Захотілося свіжовичавленого соку, але не хочеться витрачатися на кухонний комбайн і Ви не маєте багато місця для його зберігання? ",
+            "subtitle": `
+                Отже, портативний USB-соковичавниця Citrus Juicer — Ваш вибір! Компактна та потужна, 
+                вона за кілька хвилин перетворить будь-який цитрусовий фрукт на смачний і корисний свіжовичавлений сік, 
+                а наявність дрібного фільтра дасть змогу відокремити смачну м'якоть і сік від шкірки та кісточок.
+            `,
+            "descrList": [
+                {
+                    "type": "photo",
+                    "image": firstJuice
+                },
+                {
+                    "type": "text",
+                    "boldType": "Соковичавниця заряджається від кабелю USB",
+                    "descr": `
+                        і підтримує автономну роботу до 1 години роботи залежно від навантаження. Час повного заряджання становить 
+                        майже 2,5 години. Стильний дизайн дасть змогу розмістити пристрій у будь-якому місці кухні, а невеликі розміри дадуть змогу не займати багато місця або взагалі сховати соковичавницю на полицю.
+                    `
+                },
+                {
+                    "type": "photo",
+                    "image": secondJuice
+                },
+                {
+                    "type": "text",
+                    "boldType": "Соковичавниця проста у використанні",
+                    "descr": `
+                        , просто помийте фрукт, розріжте його на половинки або чверті завантажте в прилад, натисніть кнопку та через хвилинку 
+                        насолоджуйтеся склянкою свіжого соку.
+                    `,
+                },
+                
+                {
+                    "type" : "advantages",
+                    "titleAdvantage": "Переваги",
+                    "listAdvantage": ["- Потужна", "- Компактна", "- Простота керування", "- Портативний", "- Свіжий сік за лічені хвилини"]
+                },
+
+                {
+                    "type": "photo",
+                    "image": thirdJuice
+                },
+
+                {
+                    "type" : "use",
+                    "titleUse": "Як використовувати ?",
+                    "listUse": [
+                        "1. Натисніть і утримуйте перемикач упродовж 2 секунд для вмикання живлення і скидання, індикатор залишиться увімкненим.",
+                        "2. Покладіть фрукт у чашку (шкірою вгору)",
+                        "3. Поверніть за годинниковою стрілкою, щоб закріпити верхню кришку.",
+                        "4. Натисніть перемикач, для початку приготування соку",
+                        "5. Зачекайте, поки не закінчеться приготування соку",
+                        "6. Помістіть чашку під носик і відкрийте затвор."
+                    ]
+                },
+                
+                {
+                    "type": "photo",
+                    "image": fourthJuice
+                },
+
+                {
+                    "type" : "package",
+                    "titlePackage": "Комплектація",
+                    "listPackage": ["Електрична соковичавниця", "USB-кабель", "Заводське паковання"]
+                }
+            ]
+        },
+
+        {
+            "type": "detailsBlock",
+            "details": [
+                {
+                    "title": "Номінальна напруга: ",
+                    "descr": "3,7 V"
+                },
+                {
+                    "title": "Номінальний струм: ",
+                    "descr": "12 А"
+                },
+                {
+                    "title": "Номінальна потужність: ",
+                    "descr": "45 Вт"
+                },
+                {
+                    "title": "Матеріал:",
+                    "descr": "ABS-плистик"
+                },
+                {
+                    "title": "Тип батареї:",
+                    "descr": "літієва батарея"
+                },
+                {
+                    "title": "Розмір продукту:",
+                    "descr": "10,5 x 23,5см"
+                },
+            ]
+        },
+
+        {
+            "type": "questionBlock",
+            "title": "Акумуляторна соковичавниця"
+        },
+
+        {
+            "type": "orderBlock",
+            "title": "Акумуляторна соковичавниця Citrus Juicer",
+            "image": promoJuice,
+            "oldPrice": "790 грн",
+            "newPrice": "469 грн",
         }
     ],
 };
