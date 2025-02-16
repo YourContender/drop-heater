@@ -275,7 +275,7 @@ export const pageConfigJuice = {
             "title": "Акумуляторна соковичавниця Citrus Juicer",
             "image": promoJuice,
             "oldPrice": "790 грн",
-            "newPrice": "469 грн",
+            "newPrice": "499 грн",
         }
     ],
 };
