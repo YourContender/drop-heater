@@ -3,7 +3,7 @@ import { MaskTel } from './mask-phone/MaskTel';
 import MaskName from './mask-text/MaskName';
 import "./OrderProd.scss";
 
-export const OrderProd = ({ title, image, oldPrice, newPrice}) => {
+export const OrderProd = ({ title, image, oldPrice, newPrice, setModalOpen, setModalTel, setModalName}) => {
     const [tel, setTel] = useState("");
     const [user, setUser] = useState("");
     const [successRequest, setSuccessRequest] = useState(false);
@@ -39,6 +39,9 @@ export const OrderProd = ({ title, image, oldPrice, newPrice}) => {
             setSuccessRequest(true);
             setUser("");
             setTel("");
+            setModalOpen(true);
+            setModalTel(tel);
+            setModalName(user);
         }
     }
     

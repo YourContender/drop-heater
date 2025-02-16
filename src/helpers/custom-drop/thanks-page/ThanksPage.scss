@@ -1,0 +1,64 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        color: #f0ad1d;
+        font-family: "Montserrat", serif;
+        margin: 5px 0;
+    }
+    span {
+        color: #2b2b2b;
+        font-family: "Montserrat", serif;
+        font-size: 14px;
+    }
+    p {
+        color: #2b2b2b;
+        font-family: "Montserrat", serif;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+    }
+  }
+  
+  .close-button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    background: red;
+    color: #2b2b2b;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+  
+  button {
+    width: 70%;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: blue;
+    font-family: "Montserrat", serif;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
