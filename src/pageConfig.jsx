@@ -152,7 +152,7 @@ export const pageConfigJuice = {
             "type": "promoBlock",
             "src": promoJuice,
             "oldPrice": "790 грн",
-            "newPrice": "469 грн",
+            "newPrice": "499 грн",
         },
 
         {
