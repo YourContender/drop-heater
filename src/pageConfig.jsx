@@ -267,7 +267,7 @@ export const pageConfigJuice = {
 
         {
             "type": "questionBlock",
-            "title": "Акумуляторна соковичавниця"
+            "title": "Акумуляторнa соковичавниця"
         },
 
         {
