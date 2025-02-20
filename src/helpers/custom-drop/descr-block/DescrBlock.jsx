@@ -1,5 +1,6 @@
 import React from 'react';
 import "./DescrBlock.scss";
+import gif from "../../images/2.avif"
 
 export const DescrBlock = ({ 
     title, 
@@ -83,7 +84,6 @@ export const DescrBlock = ({
                         }
                     })
                 }
-
             </div>
         </div>
     )

@@ -10,6 +10,8 @@ import secondJuice from "./helpers/images/juice/3.png"
 import thirdJuice from "./helpers/images/juice/1.png"
 import fourthJuice from "./helpers/images/juice/5.png"
 
+import gif from "./helpers/images/2.avif";
+
 export const pageConfig = {
     title: 'Фітнес тренажер для преса і віджимань',
     content: [
@@ -224,7 +226,7 @@ export const pageConfigJuice = {
                 
                 {
                     "type": "photo",
-                    "image": fourthJuice
+                    "image": gif
                 },
 
                 {
