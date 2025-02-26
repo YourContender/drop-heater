@@ -17,10 +17,10 @@ export const App = () => {
                 <Routes>
                     {/* Subdomain routing with nested routes */}
                     {subdomain === "fitness" && <Route path="/" element={<CustomDesignSite />} /> }
-                    {subdomain === "juice" && <Route path="/" element={<JuiceProd />} /> }
+                    {/* {subdomain === "juice" && <Route path="/" element={<JuiceProd />} /> } */}
 
                     <Route path="/fitness" element={<CustomDesignSite/>} /> 
-                    <Route path="/juice" element={<JuiceProd/>} /> 
+                    <Route path="/flower" element={<JuiceProd/>} /> 
                 </Routes>
             </Router>
 		</div>

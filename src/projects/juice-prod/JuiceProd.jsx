@@ -11,6 +11,7 @@ import { DeliveryBlock } from '../../helpers/custom-drop/delivery-block/Delivery
 import { FooterBlock } from '../../helpers/custom-drop/footer-block/FooterBlock';
 import { pageConfigJuice } from '../../pageConfig';
 import { ThanksPage } from '../../helpers/custom-drop/thanks-page/ThanksPage';
+import { SaleBlock } from '../../helpers/custom-drop/sale-block/SaleBlock';
 
 export const JuiceProd = () => {
     const [isModalOpen, setModalOpen] = useState(false);
@@ -28,6 +29,8 @@ export const JuiceProd = () => {
                             return <MainBlock {...obj} key={index}/> ;
                         case "timerBlock" :
                             return <TimerBlock {...obj} key={index}/>;
+                        case "sale" :
+                            return <SaleBlock {...obj} key={index}/>;
                         case "descriptionBlock" :
                             return <DescrBlock {...obj} key={index}/>;
                         case "detailsBlock" :

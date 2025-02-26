@@ -46,7 +46,7 @@ export const OrderProd = ({ title, image, oldPrice, newPrice, setModalOpen, setM
     }
     
     return (
-        <div className="custom-prod" id='order'>
+        <div className="custom-prod">
             <div className="header-top">
                 <h1>{title}</h1>
             </div>
@@ -54,7 +54,7 @@ export const OrderProd = ({ title, image, oldPrice, newPrice, setModalOpen, setM
                 <div className="main-wrapper-photo">
                     <img src={image}alt="" />
                 </div>
-                <div className="main-wrapper-price">
+                <div className="main-wrapper-price" id='order'>
                     <div className="main-wrapper-price-block">
                         <div className="main-wrapper-price-block-left">
                             <div className="block-text">

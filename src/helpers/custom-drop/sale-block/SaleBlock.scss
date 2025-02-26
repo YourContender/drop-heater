@@ -1,0 +1,35 @@
+.sale {
+    background-color: #fff;
+    color: #353a4b;
+    text-align: center;
+    padding: 20px 0;
+    padding-bottom: 0;
+    &_title {
+        margin: 0;
+        font-family: "Montserrat", serif;
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+    &_math {
+        font-family: "Montserrat", serif;
+        display: block;
+        font-size: 42px;
+        font-weight: 700;
+        color: rgb(247, 36, 47);
+        text-shadow: 4px 5px 8px rgba(51, 24, 24, 0.562);
+        padding: 10px 0;
+    }
+    &_text {
+        font-family: "Montserrat", serif;
+        font-size: 24px;
+        
+    }
+    &_wrap {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    img {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
