@@ -1,0 +1,42 @@
+.modal-thanks {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-wrap {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+  }
+  
+  .modal-thanks-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .modal-thanks-text {
+    color: #4b5563;
+    margin-top: 5px;
+  }
+  
+  .close-thanks-button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background: #d1d5db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  
+    &:hover {
+      background: #9ca3af;
+    }
+  }
+  

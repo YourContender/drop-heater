@@ -1,11 +1,10 @@
-import { thanksPage } from "../../../pageConfig";
 import { Slider } from "../../slider/Slider";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import "./ThanksPage.scss";
 import { useEffect, useCallback, useState } from "react";
 
-export const ThanksPage = ({ isOpen, onClose, modalTel, modalName, setModalName, setModalTel }) => {
+export const ThanksPage = ({ thanksPage, isOpen, onClose, modalTel, modalName, setModalName, setModalTel }) => {
     const [openModalThk, setOpenModalTnk] = useState(false);
 
     if (!isOpen) return null;
@@ -76,7 +75,7 @@ export const ThanksPage = ({ isOpen, onClose, modalTel, modalName, setModalName,
                                 <div className="card-poster-text">
                                     <span>
                                         {item.saleMessage}
-                                        <span className="card-poster-text-percent"> -{item.percent}%</span>
+                                        <span className="card-poster-text-percent"> {item.percent}</span>
                                     </span>
                                 </div>
                             </div>

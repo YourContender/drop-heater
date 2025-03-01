@@ -4,27 +4,43 @@ import secondImage from "./helpers/images/course/3.png";
 import thirdImage from "./helpers/images/course/4.png";
 
 //Juice 
-import promoFlower from "./helpers/images/flowers/11.png"
-import firstFlower from "./helpers/images/flowers/5.jpg"
-import secondFlower from "./helpers/images/flowers/6.jpg"
-import thirdFlower from "./helpers/images/flowers/1.jpg"
-import fourthFlower from "./helpers/images/flowers/4.jpg"
+import promoFlower from "./helpers/images/flowers/11.png";
+import firstFlower from "./helpers/images/flowers/5.jpg";
+import secondFlower from "./helpers/images/flowers/6.jpg";
+import thirdFlower from "./helpers/images/flowers/1.jpg";
+import fourthFlower from "./helpers/images/flowers/4.jpg";
 
 
 // thanks page
-import s1 from "./helpers/images/thanks/s1.jpg"
-import s2 from "./helpers/images/thanks/s2.jpg"
-import s3 from "./helpers/images/thanks/s3.jpg"
-import s4 from "./helpers/images/thanks/s4.jpg"
-import s5 from "./helpers/images/thanks/s5.jpg"
+import s1 from "./helpers/images/thanks/s1.jpg";
+import s2 from "./helpers/images/thanks/s2.jpg";
+import s3 from "./helpers/images/thanks/s3.jpg";
+import s4 from "./helpers/images/thanks/s4.jpg";
+import s5 from "./helpers/images/thanks/s5.jpg";
 
 // lamp
-import l1 from "./helpers/images/thanks/lamp/l1.jpg"
-import l2 from "./helpers/images/thanks/lamp/l2.jpg"
-import l3 from "./helpers/images/thanks/lamp/l3.jpg"
-import l4 from "./helpers/images/thanks/lamp/l4.jpg"
-import l5 from "./helpers/images/thanks/lamp/l5.jpg"
-import l6 from "./helpers/images/thanks/lamp/l6.jpg"
+import l1 from "./helpers/images/thanks/lamp/l1.jpg";
+import l2 from "./helpers/images/thanks/lamp/l2.jpg";
+import l3 from "./helpers/images/thanks/lamp/l3.jpg";
+import l4 from "./helpers/images/thanks/lamp/l4.jpg";
+import l5 from "./helpers/images/thanks/lamp/l5.jpg";
+import l6 from "./helpers/images/thanks/lamp/l6.jpg";
+
+// flower lilia
+import li1 from "./helpers/images/thanks/lilia/li1.jpg";
+import li2 from "./helpers/images/thanks/lilia/li2.png";
+import li3 from "./helpers/images/thanks/lilia/li3.png";
+import li4 from "./helpers/images/thanks/lilia/li4.png";
+import li5 from "./helpers/images/thanks/lilia/li5.png";
+
+// flower troyanda
+import t1 from "./helpers/images/thanks/troyanda/t1.jpg";
+import t2 from "./helpers/images/thanks/troyanda/t2.jpg";
+import t3 from "./helpers/images/thanks/troyanda/t3.jpg";
+import t6 from "./helpers/images/thanks/troyanda/t6.jpg";
+import tk1 from "./helpers/images/thanks/troyanda/tk1.jpg";
+import tk2 from "./helpers/images/thanks/troyanda/tk2.jpg";
+import tk3 from "./helpers/images/thanks/troyanda/tk3.jpg";
 
 
 export const thanksPage = [
@@ -35,17 +51,47 @@ export const thanksPage = [
         old: "680",
         new: "399",
         saleMessage: "Встигни придбати за акційною ціною",
-        percent: "42"
+        percent: "-42%"
     },
     {
-        id: 1,
+        id: 2,
         images: [l1, l2, l3, l4, l5, l6],
         title: "Лампа-пастка для комарів із зарядкою від Usb ",
         old: "799",
         new: "450",
         saleMessage: "Встигни придбати за акційною ціною",
-        percent: "44"
+        percent: "-44%"
     }
+];
+
+export const thanksPageForFlower = [
+    {
+        id: 1,
+        images: [li4, li2, li3, li1, li5],
+        title: "Лілія Преміум-мікс (3 цибулини)",
+        old: "370",
+        new: "220",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "1 + 1 = 3"
+    },
+    {
+        id: 2,
+        images: [t1, t2, t3, t6],
+        title: "Блакитна троянда (25 г.)",
+        old: "255",
+        new: "175",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "1 + 1 = 3"
+    },
+    {
+        id: 3,
+        images: [tk1, tk2, tk3],
+        title: "Троянда кущова (25 г.)",
+        old: "250",
+        new: "165",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "1 + 1 = 3"
+    },
 ]
 
 
