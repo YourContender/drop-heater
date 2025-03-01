@@ -3,24 +3,31 @@ import { Slider } from "../../slider/Slider";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import "./ThanksPage.scss";
-import { useEffect, useCallback } from "react";
+import { useEffect, useCallback, useState } from "react";
 
 export const ThanksPage = ({ isOpen, onClose, modalTel, modalName, setModalName, setModalTel }) => {
+    const [openModalThk, setOpenModalTnk] = useState(false);
+
     if (!isOpen) return null;
 
-    useEffect(() => {
-        document.body.style.overflow = "hidden";
-        return () => {
-            document.body.style.overflow = "auto"; // Очистка при размонтировании
-        };
-    }, []);
+    // useEffect(() => {
+    //     document.body.style.overflow = "hidden";
+    //     return () => {
+    //         document.body.style.overflow = "auto";
+    //     };
+    // }, []);
 
-    const closeModal = useCallback(() => {
-        document.body.style.overflow = "auto";
+    const testFunc = (title, newPrice) => {
+        sendUpsell(title, newPrice);
+        setOpenModalTnk(true);
+    }
+
+    const closeModal = (() => {
+        // document.body.style.overflow = "auto";
         onClose(); 
         setModalName("");
         setModalTel("")
-    }, [onClose]);
+    });
 
     const sendUpsell = async (title, price) => {
         let upsell = {
@@ -80,8 +87,8 @@ export const ThanksPage = ({ isOpen, onClose, modalTel, modalName, setModalName,
                             </div>
 
                             <button className="card-btn" onClick={(e) => {
-                                e.stopPropagation();
-                                sendUpsell(item.title, item.new);
+                                // e.stopPropagation();
+                                testFunc(item.title, item.new);
                             }}>
                                 Замовити
                             </button>
@@ -89,6 +96,22 @@ export const ThanksPage = ({ isOpen, onClose, modalTel, modalName, setModalName,
                     ))}
                 </div>
             </div>
+            {
+                openModalThk && 
+                    <div className="modal-wrapper">
+                        <div className="modal-body">
+                            <h1>
+                                Дякуємо Вам, наш менеджер додасть цей товар до основного замовлення та 
+                                проконсультує Вас, якщо у є питання.
+                            </h1>
+                            <FontAwesomeIcon 
+                                className="modal-body-btn" 
+                                onClick={() => setOpenModalTnk(false)} 
+                                icon={faXmark} 
+                            />
+                        </div>
+                    </div>
+            }
         </div>
     );
 };
