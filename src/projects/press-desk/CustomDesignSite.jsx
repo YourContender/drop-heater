@@ -53,6 +53,8 @@ export const CustomDesignSite = () => {
                 onClose={() => setModalOpen(false)} 
                 modalTel={modalTel}
                 modalName={modalName}
+                setModalTel={setModalTel}
+                setModalName={setModalName}
             />
             <DeliveryBlock/>
             <FooterBlock/>

@@ -37,8 +37,6 @@ export const OrderProd = ({ title, image, oldPrice, newPrice, setModalOpen, setM
                 }
             });
             setSuccessRequest(true);
-            setUser("");
-            setTel("");
             setModalOpen(true);
             setModalTel(tel);
             setModalName(user);

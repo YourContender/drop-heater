@@ -1,64 +1,164 @@
 .modal-overlay {
-    position: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(253, 253, 253);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  overflow-y: auto; 
+  padding: 20px 0; 
+}
+
+.modal-content {
+  background: white;
+  position: relative;
+  padding: 20px 0;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: none; 
+  h2 {
+      color: #f0ad1d;
+      font-family: "Montserrat", serif;
+      margin: 5px 0;
+  }
+  span {
+      color: #2b2b2b;
+      font-family: "Montserrat", serif;
+      font-size: 14px;
+  }
+  p {
+      color: #2b2b2b;
+      font-family: "Montserrat", serif;
+      font-size: 18px;
+      letter-spacing: 1.5px;
+  }
+  .close-modal {
+    color: #000;
+    position: absolute;
+    right: 10px;
     top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
   }
-  
-  .modal-content {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
+}
+
+.close-button {
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  background: red;
+  color: #2b2b2b;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+button {
+  width: 70%;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: blue;
+  font-family: "Montserrat", serif;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.modal_market {
+// max-width: 400px;
+&-title {
+  text-align: center;
+  font-family: "Montserrat", serif;
+  color: #353a4b;
+  max-width: 420px;
+  h2 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+&-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &-card {
     max-width: 420px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h2 {
-        color: #f0ad1d;
+    background-color: #a7a5a55b;
+    padding: 0px 0px 20px 0px;
+    margin: 0 15px;
+    border-radius: 15px;
+    box-shadow: 4px 5px 8px rgba(34, 31, 31, 0.644);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    .card-title {
+        color: #000;
         font-family: "Montserrat", serif;
-        margin: 5px 0;
+        padding: 10px 10px;
+        text-transform: uppercase;
     }
-    span {
-        color: #2b2b2b;
-        font-family: "Montserrat", serif;
-        font-size: 14px;
+    .card-btn {
+      margin-top: 30px;
+      width: 240px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-radius: 35px;
+      font-weight: 700;
+      background-color: #e7b630;
+      border: none;
+      outline: none;
+      color: #353a4b;
+      box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.479);
+      cursor: pointer;
     }
-    p {
-        color: #2b2b2b;
-        font-family: "Montserrat", serif;
-        font-size: 18px;
-        letter-spacing: 1.5px;
+
+    .card-poster {
+      text-align: center;
+      font-family: "Montserrat", serif;
+      color: #353a4b;
+      padding: 0px 15px;
+      font-size: 20px;
+      margin-top: 20px;
+      &-text {
+        &-percent {
+          color: rgb(197, 36, 36);
+          font-weight: 700;
+          font-size: 26px;
+        }
+      }
+    }
+    
+    .card-price {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+      font-family: "Montserrat", serif;
+      color: #353a4b;
+      font-size: 26px;
+      &-old {
+        text-decoration: line-through;
+        color: #696767;
+      }
+      &-new {
+        font-weight: 700;
+        border-bottom: 3px solid #e7b630;
+      }
+    }
+
+    img {
+      object-fit: cover;
     }
   }
-  
-  .close-button {
-    margin-top: 15px;
-    padding: 10px;
-    border: none;
-    background: red;
-    color: #2b2b2b;
-    cursor: pointer;
-    border-radius: 5px;
-    color: #fff;
-    letter-spacing: 1px;
-    font-weight: 700;
-  }
-  
-  button {
-    width: 70%;
-    padding: 10px 20px;
-    cursor: pointer;
-    background: blue;
-    font-family: "Montserrat", serif;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-  }
-  
+}
+}
