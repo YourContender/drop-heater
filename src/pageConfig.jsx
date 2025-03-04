@@ -291,10 +291,10 @@ export const thanksPageForFlower = [
         id: 6,
         images: [b7, b8, b9],
         title: "Антаут - захист від різних видів мурах",
-        old: "240",
-        new: "170",
+        old: "220",
+        new: "120",
         saleMessage: "Встигни придбати за акційною ціною",
-        percent: "-30%",
+        percent: "-46%",
         details: [
             {
                 t: "Повне знищення колонії мурах:",
