@@ -80,7 +80,7 @@ export const thanksPageForFlower = [
         images: [li4, li2, li3, li1, li5],
         title: "Лілія Преміум-мікс (3 цибулини)",
         old: "370",
-        new: "220",
+        new: "239",
         saleMessage: "На цей товар також діє акційна пропозиція",
         percent: "1 + 1 = 3",
         details: [
@@ -130,13 +130,13 @@ export const thanksPageForFlower = [
         id: 2,
         images: [t1, t2, t3, t6],
         title: "Блакитна троянда (25 г.)",
-        old: "255",
-        new: "175",
+        old: "250",
+        new: "150",
         saleMessage: "На цей товар також діє акційна пропозиція",
         percent: "1 + 1 = 3",
         details: [
             {
-                t: "Вага:",
+                t: "Вага насіння:",
                 d: "25 г."
             },
             {
@@ -178,12 +178,12 @@ export const thanksPageForFlower = [
         images: [tk1, tk2, tk3],
         title: "Троянда кущова (25 г.)",
         old: "250",
-        new: "165",
+        new: "150",
         saleMessage: "На цей товар також діє акційна пропозиція",
         percent: "1 + 1 = 3",
         details: [
             {
-                t: "Вага:",
+                t: "Вага насіння:",
                 d: "25 г."
             },
             {
@@ -467,7 +467,7 @@ export const pageConfigJuice = {
             "type": "promoBlock",
             "src": promoFlower,
             "oldPrice": "379 грн",
-            "newPrice": "250 грн",
+            "newPrice": "259 грн",
         },
 
         {
@@ -622,7 +622,7 @@ export const pageConfigJuice = {
             "title": "Тюльпани Преміум-мікс (Преміум цибулини - 10 шт)",
             "image": promoFlower,
             "oldPrice": "379 грн",
-            "newPrice": "250 грн",
+            "newPrice": "259 грн",
         }
     ],
 };
