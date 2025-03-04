@@ -10,7 +10,6 @@ import secondFlower from "./helpers/images/flowers/6.jpg";
 import thirdFlower from "./helpers/images/flowers/1.jpg";
 import fourthFlower from "./helpers/images/flowers/4.jpg";
 
-
 // thanks page
 import s1 from "./helpers/images/thanks/s1.jpg";
 import s2 from "./helpers/images/thanks/s2.jpg";
@@ -41,6 +40,17 @@ import t6 from "./helpers/images/thanks/troyanda/t6.jpg";
 import tk1 from "./helpers/images/thanks/troyanda/tk1.jpg";
 import tk2 from "./helpers/images/thanks/troyanda/tk2.jpg";
 import tk3 from "./helpers/images/thanks/troyanda/tk3.jpg";
+
+// bottle
+import b1 from "./helpers/images/thanks/bottle/b1.jpg";
+import b2 from "./helpers/images/thanks/bottle/b2.jpg";
+import b3 from "./helpers/images/thanks/bottle/b3.jpg";
+import b4 from "./helpers/images/thanks/bottle/b4.jpg";
+import b5 from "./helpers/images/thanks/bottle/b5.jpg";
+import b6 from "./helpers/images/thanks/bottle/b6.jpg";
+import b7 from "./helpers/images/thanks/bottle/b7.jpg";
+import b8 from "./helpers/images/thanks/bottle/b8.jpg";
+import b9 from "./helpers/images/thanks/bottle/b9.jpg";
 
 
 export const thanksPage = [
@@ -91,6 +101,33 @@ export const thanksPageForFlower = [
         new: "165",
         saleMessage: "На цей товар також діє акційна пропозиція",
         percent: "1 + 1 = 3"
+    },
+    {
+        id: 4,
+        images: [b1, b2, b3],
+        title: "Біопрепарат-інсектицид для захисту овочів та саду від шкідників",
+        old: "240",
+        new: "170",
+        saleMessage: "Встигни придбати за акційною ціною",
+        percent: "-30%"
+    },
+    {
+        id: 5,
+        images: [b4, b5, b6],
+        title: "Засіб від бур'янів Tolimo",
+        old: "240",
+        new: "170",
+        saleMessage: "Встигни придбати за акційною ціною",
+        percent: "-30%"
+    },
+    {
+        id: 6,
+        images: [b7, b8, b9],
+        title: "Антаут - захист від різних видів мурах",
+        old: "240",
+        new: "170",
+        saleMessage: "Встигни придбати за акційною ціною",
+        percent: "-30%"
     },
 ]
 

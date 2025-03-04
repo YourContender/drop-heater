@@ -2,19 +2,20 @@ import { Slider } from "../../slider/Slider";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import "./ThanksPage.scss";
-import { useEffect, useCallback, useState } from "react";
+import { useState } from "react";
 
-export const ThanksPage = ({ thanksPage, isOpen, onClose, modalTel, modalName, setModalName, setModalTel }) => {
+export const ThanksPage = ({ 
+    thanksPage, 
+    isOpen, 
+    onClose, 
+    modalTel, 
+    modalName, 
+    setModalName, 
+    setModalTel 
+}) => {
     const [openModalThk, setOpenModalTnk] = useState(false);
 
     if (!isOpen) return null;
-
-    // useEffect(() => {
-    //     document.body.style.overflow = "hidden";
-    //     return () => {
-    //         document.body.style.overflow = "auto";
-    //     };
-    // }, []);
 
     const testFunc = (title, newPrice) => {
         sendUpsell(title, newPrice);
@@ -22,10 +23,9 @@ export const ThanksPage = ({ thanksPage, isOpen, onClose, modalTel, modalName, s
     }
 
     const closeModal = (() => {
-        // document.body.style.overflow = "auto";
         onClose(); 
         setModalName("");
-        setModalTel("")
+        setModalTel("");
     });
 
     const sendUpsell = async (title, price) => {
@@ -53,7 +53,7 @@ export const ThanksPage = ({ thanksPage, isOpen, onClose, modalTel, modalName, s
         <div className="modal-overlay">
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <h2>{modalName}, дякуємо за замовлення!</h2>
-                <p>Менеджер зв’яжеться з вами найближчим часом за номером {modalTel}.</p>
+                <p>Менеджер зв’яжеться з Вами найближчим часом за номером {modalTel}.</p>
                 <span>Якщо ви допустили помилку, поверніться на сторінку замовлення та відправте форму повторно.</span>
                 <button className="close-button" onClick={closeModal}>ПОВЕРНУТИСЯ</button>
                 <div className="close-modal" onClick={closeModal}>
@@ -63,7 +63,7 @@ export const ThanksPage = ({ thanksPage, isOpen, onClose, modalTel, modalName, s
 
             <div className="modal_market">
                 <div className="modal_market-title">
-                    <h2>Також ви можете додати до своєї покупки наступні товари:</h2>
+                    <h2>Даруємо Вам додаткову знижку на наші кращі товари:</h2>
                 </div>
                 <div className="modal_market-list">
                     {thanksPage.map((item, index) => (
@@ -101,7 +101,7 @@ export const ThanksPage = ({ thanksPage, isOpen, onClose, modalTel, modalName, s
                         <div className="modal-body">
                             <h1>
                                 Дякуємо Вам, наш менеджер додасть цей товар до основного замовлення та 
-                                проконсультує Вас, якщо у є питання.
+                                проконсультує Вас, якщо у Вас є питання.
                             </h1>
                             <FontAwesomeIcon 
                                 className="modal-body-btn" 
