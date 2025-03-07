@@ -82,3 +82,39 @@
         }
     }
 }
+
+.main-quantity-order {
+    width: 170px;
+    background-color: #f5f3f3e8;
+    color: #fff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    padding: 10px 0;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 8px 8px 18px 12px rgba(0, 0, 0, 0.479);
+    &-block {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: "Montserrat", serif;
+        color: #000;
+        font-weight: 700;
+        padding: 0 10px;
+        img {
+            width: 40px;
+        }
+        span {
+            font-size: 24px;
+            text-shadow: 4px 5px 8px rgba(0, 0, 0, 0.479);
+        }
+    }
+    &-title {
+        font-family: "Montserrat", serif;
+        color: #000;
+        font-weight: 700;
+        font-size: 14px;
+    }
+}

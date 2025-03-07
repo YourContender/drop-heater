@@ -3,7 +3,7 @@ import "./FooterBlock.scss";
 
 export const FooterBlock = () => {
     return (
-        <div className="footer">
+        <footer className="footer" id='footer'>
             <div className="footer-work">
                 <h2>Графік роботи: </h2>
                 <span className="footer-work-item">Понеділок: 10:00 - 21:00</span>
@@ -14,6 +14,6 @@ export const FooterBlock = () => {
                 <span className="footer-work-item">Субота: 10:00 - 16:00</span>
                 <span className="footer-work-item">Неділя: вихідний</span>
             </div>
-        </div>
+        </footer>
     )
 }
