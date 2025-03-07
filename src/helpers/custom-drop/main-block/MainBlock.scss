@@ -84,16 +84,17 @@
 }
 
 .main-quantity-order {
-    width: 170px;
-    background-color: #f5f3f3e8;
+    width: 140px;
+    background-color: #f5f3f3cb;
     color: #fff;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    top: 120px;
+    left: 20px;
     z-index: 999;
     padding: 10px 0;
     border-radius: 20px;
     text-align: center;
+    border: 1px solid #000;
     box-shadow: 8px 8px 18px 12px rgba(0, 0, 0, 0.479);
     &-block {
         display: flex;
@@ -104,7 +105,7 @@
         font-weight: 700;
         padding: 0 10px;
         img {
-            width: 40px;
+            width: 30px;
         }
         span {
             font-size: 24px;
@@ -115,6 +116,6 @@
         font-family: "Montserrat", serif;
         color: #000;
         font-weight: 700;
-        font-size: 14px;
+        font-size: 12px;
     }
 }
