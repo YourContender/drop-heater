@@ -8,29 +8,32 @@ export const MainBlock = ({ src, oldPrice, newPrice }) => {
     const [num, setNum] = useState(0);
 
     useEffect(() => {
-        setNum(Math.floor(Math.random() * (30 - 20 + 1)) + 20)
+        setNum(Math.floor(Math.random() * (30 - 20 + 1)) + 20);
+    
         const orderSection = document.getElementById("order");
-        const footer = document.querySelector("footer"); 
-        const delivery = document.querySelector("delivery-prod"); 
-
-        const observer = new IntersectionObserver(
-            (entries) => {
-                const isIntersecting = entries.some(entry => entry.isIntersecting);
-                setIsVisible(!isIntersecting);
-            },
-            { root: null, threshold: 1.0 }
-        );
-
-        if (orderSection) observer.observe(orderSection);
-        if (footer) observer.observe(footer);
-        if (delivery) observer.observe(delivery);
-
+        const footer = document.querySelector("footer");
+        const delivery = document.querySelector(".delivery-prod");
+    
+        const handleScroll = () => {
+            const orderRect = orderSection?.getBoundingClientRect();
+            const footerRect = footer?.getBoundingClientRect();
+            const deliveryRect = delivery?.getBoundingClientRect();
+    
+            const isOrderVisible = orderRect && orderRect.top < window.innerHeight && orderRect.bottom > 0;
+            const isDeliveryVisible = deliveryRect && deliveryRect.top < window.innerHeight && deliveryRect.bottom > 0;
+            const isFooterVisible = footerRect && footerRect.top < window.innerHeight;
+    
+            setIsVisible(!isOrderVisible && !isDeliveryVisible && !isFooterVisible);
+        };
+    
+        window.addEventListener("scroll", handleScroll);
+        handleScroll(); // Вызываем сразу, чтобы учесть текущую позицию
+    
         return () => {
-            if (orderSection) observer.unobserve(orderSection);
-            if (footer) observer.unobserve(footer);
-            if (delivery) observer.unobserve(delivery);
+            window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+    
 
     return (
         <div className="main-wrapper">

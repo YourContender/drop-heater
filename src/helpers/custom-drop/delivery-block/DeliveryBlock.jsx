@@ -5,7 +5,7 @@ import "./DeliveryBlock.scss";
 export const DeliveryBlock = () => {
     return (
         <div className="delivery-prod" id="delivery">
-            <img src={delivery} alt="" />
+            <img className="delivery-prod-img" src={delivery} alt="" />
         </div>
     )
 }
