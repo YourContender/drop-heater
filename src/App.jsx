@@ -4,6 +4,7 @@ import { Home } from "./projects/home/Home";
 import "./index.css";
 import { CustomDesignSite } from "./projects/press-desk/CustomDesignSite.jsx";
 import { JuiceProd } from "./projects/juice-prod/JuiceProd.jsx";
+import { FaucetProd } from "./projects/faucet/FaucetProd.jsx";
 // import { CustomDesignSite } from "./projects/press-desk/CustomDesignSite.jsx";
 
 export const App = () => {
@@ -21,6 +22,7 @@ export const App = () => {
 
                     <Route path="/fitness" element={<CustomDesignSite/>} /> 
                     <Route path="/flower" element={<JuiceProd/>} /> 
+                    <Route path="/faucet" element={<FaucetProd/>} /> 
                 </Routes>
             </Router>
 		</div>

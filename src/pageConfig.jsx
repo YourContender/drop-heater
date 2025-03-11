@@ -53,6 +53,14 @@ import b8 from "./helpers/images/thanks/bottle/b8.jpg";
 import b9 from "./helpers/images/thanks/bottle/b9.jpg";
 
 
+// faucet - kran 
+import k1 from "./helpers/images/faucet/k1.png"
+import k2 from "./helpers/images/faucet/k2.png"
+import k3 from "./helpers/images/faucet/k3.png"
+import k4 from "./helpers/images/faucet/k4.png"
+import k5 from "./helpers/images/faucet/k5.png"
+
+
 export const thanksPage = [
     {
         id: 1,
@@ -318,6 +326,155 @@ export const thanksPageForFlower = [
             },
         ],
 
+    },
+]
+
+// thanks Page For Faucet
+import n1 from "./helpers/images/thanks/faucet-knife/n1.png";
+import n2 from "./helpers/images/thanks/faucet-knife/n2.png";
+import n3 from "./helpers/images/thanks/faucet-knife/n3.png";
+import tr1 from "./helpers/images/thanks/fauset-bottle/tr1.png";
+import tr2 from "./helpers/images/thanks/fauset-bottle/tr2.png";
+import tr3 from "./helpers/images/thanks/fauset-bottle/tr3.png";
+import ss1 from "./helpers/images/thanks/fauset-pan/s1.png";
+import ss2 from "./helpers/images/thanks/fauset-pan/s2.png";
+import ss3 from "./helpers/images/thanks/fauset-pan/s3.png";
+import m1 from "./helpers/images/thanks/thanks-bbq/m1.png";
+import m2 from "./helpers/images/thanks/thanks-bbq/m2.png";
+import m3 from "./helpers/images/thanks/thanks-bbq/m3.png";
+
+export const thanksPageForFaucet = [
+    {
+        id: 4,
+        images: [m1, m2, m3 ],
+        title: "Складний переносний мангал - барбекю BBQ Grill Portable",
+        old: "750",
+        new: "499",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "-44%",
+        details: [
+            {
+                t: "Габарити:",
+                d: "35 x 27 x 20 см"
+            },
+            {
+                t: "Переваги:",
+                d: "вентеляційні отвори для кращого горіння"
+            },
+            {
+                t: "Зручність:",
+                d: "швидке збирання, займає мало місця"
+            },
+            {
+                t: "Наявність ручки:",
+                d: "так"
+            },
+            {
+                t: "Покриття:",
+                d: "антипригарне"
+            },
+        ],
+    },
+    {
+        id: 1,
+        images: [n1, n2, n3 ],
+        title: "Набір кухонних ножів на підставці Knife Set 7 предметів із нержавіючої сталі",
+        old: "950",
+        new: "599",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "-47%",
+        details: [
+            {
+                t: "Тип:",
+                d: "Набір кухонних ножів"
+            },
+            {
+                t: "Матеріал:",
+                d: "Нержавіюча сталь"
+            },
+            {
+                t: "макс. довжина леза:",
+                d: "20 см"
+            },
+            {
+                t: "Кількість ножів:",
+                d: "5"
+            },
+            {
+                t: "Кількість предметів:",
+                d: "7"
+            },
+            {
+                t: "Колір:",
+                d: "чорний"
+            },
+        ],
+    },
+    {
+        id: 2,
+        images: [tr1, tr2, tr3 ],
+        title: "Контейнер для зберігання зелені VERK GROUP Білий",
+        old: "450",
+        new: "249",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "-45%",
+        details: [
+            {
+                t: "Матеріал:",
+                d: "пластик"
+            },
+            {
+                t: "Заглушка:",
+                d: "силіконова"
+            },
+            {
+                t: "колір:",
+                d: "білий"
+            },
+            {
+                t: "Використання:",
+                d: "трави, спража та інші"
+            },
+            {
+                t: "Експлуатація:",
+                d: "залити водою через носик"
+            },
+            {
+                t: "Рекомендація:",
+                d: "змінюйте воду кожні 3 дні"
+            },
+        ],
+    },
+    {
+        id: 3,
+        images: [ss1, ss2, ss3 ],
+        title: "Сковорода 5в1 UNIQUE",
+        old: "1000",
+        new: "650",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "-35%",
+        details: [
+            {
+                t: "Розмір:",
+                d: "38х50х5 см"
+            },
+            {
+                t: "Форма:",
+                d: "прямокутна"
+            },
+            {
+                t: "Вага:",
+                d: "1.55 кг"
+            },
+            {
+                t: "Матеріал:",
+                d: "алюміній"
+            },
+            {
+                t: "Покриття:",
+                d: "антипригарне"
+            },
+        ],
     },
 ]
 
@@ -628,3 +785,146 @@ export const pageConfigJuice = {
 };
 
 
+
+export const pageConfigFaucet = {
+    title: 'Стильний кухонний змішувач Matte Black',
+    content: [
+        {
+            "type": "basicHeaderBlock",
+            "title": "Стильний кухонний змішувач Matte Black"
+        },
+        {
+            "type": "promoBlock",
+            "src": k2,
+            "oldPrice": "2199 грн",
+            "newPrice": "1599 грн",
+        },
+
+        {
+            "type": "timerBlock",
+            "text": `
+                Цiну знижено через випуск нової моделi. Додаткову iнформацiю Вам 
+                надасть наш менеджер. Ваша розмова може бути записана з метою 
+                покращення якостi обслуговування.
+            `
+        },
+
+        {
+            "type": "descriptionBlock",
+            "title": "Гнучкий кран з обертанням потоку в 360 градусів",
+            "subtitle": `
+                Стильний кухонний змішувач Matte Black поєднує цікавий дизайн і зручність у використанні.
+                Ця модель чудово підійде для кухонь, виконаних у стилі ганьби-тік.
+                Завдяки високому силіконовому виливу миття великої кількості посуду та продуктів більше не буде проблемою.
+            `,
+            "descrList": [
+                {
+                    "type": "photo",
+                    "image": k4
+                },
+                {
+                    "type": "text",
+                    "boldType": "Плавна зручна форма",
+                    "descr": `
+                         робить процес догляду за змішувачем набагато простішим.
+                        Сучасна та практична модель, яка стане чудовим доповненням кухні.
+                        Спробуйте першим, крокуйте в ногу з часом!
+                    `
+                },
+                {
+                    "type": "photo",
+                    "image": k3
+                },
+                {
+                    "type": "text",
+                    "boldType": "Елегантний та практичний",
+                    "descr": `
+                         кухонний змішувач Matte Black ідеально доповнить кухню в сучасному стилі.
+                    `
+                },
+                
+                {
+                    "type": "photo",
+                    "image": k5
+                },
+                {
+                    "type": "text",
+                    "boldType": "Гнучкий кран",
+                    "descr": `
+                         дозволяє з легкістю змінювати напрямок потоку води, а можливість обертання на 360° робить миття посуду ще зручнішим.
+                    `
+                },
+                {
+                    "type": "photo",
+                    "image": k1
+                },
+                {
+                    "type": "text",
+                    "boldType": "Високоякісні матеріали",
+                    "descr": `
+                         гарантують довговічність та надійність у щоденному використанні.
+                    `
+                },
+            ]
+        },
+
+        {
+            "type": "detailsBlock",
+            "details": [
+                {
+                    "title": "Функція:",
+                    "descr": "змішувач для кухонної раковини"
+                },
+                {
+                    "title": "Тип клапана:",
+                    "descr": "керамічний клапан"
+                },
+                {
+                    "title": "Матеріал корпусу:",
+                    "descr": "латунь"
+                },
+                {
+                    "title": "Матеріал ручки:",
+                    "descr": "латунь"
+                },
+                {
+                    "title": "Матеріал головки розпилювача:",
+                    "descr": "АБС-пластик З 2 трубами для холодної та гарячої води."
+                },
+                {
+                    "title": "Стиль:",
+                    "descr": "модерн"
+                },
+                {
+                    "title": "Оснащення:",
+                    "descr": "з витяжною лійкою"
+                },
+                {
+                    "title": "Підключення:",
+                    "descr": "до водопроводу"
+                },
+                {
+                    "title": "Класифікація змішувачів:",
+                    "descr": "для кухні"
+                },
+                {
+                    "title": "Вилив:",
+                    "descr": "Висувний, довгий, гнучкий"
+                },
+            ]
+        },
+
+        {
+            "type": "questionBlock",
+            "title": "Кухонний змішувач"
+        },
+
+        {
+            "type": "orderBlock",
+            "title": "Стильний кухонний змішувач Matte Black",
+            "image": k2,
+            "oldPrice": "2199 грн",
+            "newPrice": "1599 грн",
+        }
+    ],
+};
