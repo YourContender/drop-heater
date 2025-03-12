@@ -4,7 +4,7 @@ import k3 from "./helpers/images/faucet/k3.png"
 import k4 from "./helpers/images/faucet/k4.png"
 import k5 from "./helpers/images/faucet/k5.png"
 
-const pageConfigFaucet = {
+export const pageConfigBbq = {
     title: 'Стильний кухонний змішувач Matte Black',
     content: [
         {
