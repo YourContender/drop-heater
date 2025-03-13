@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { MaskTel } from './mask-phone/MaskTel';
 import MaskName from './mask-text/MaskName';
 import "./OrderProd.scss";
@@ -10,13 +10,32 @@ export const OrderProd = ({
     newPrice, 
     setModalOpen, 
     setModalTel, 
-    setModalName
+    setModalName,
+    quantityList
 }) => {
     const [tel, setTel] = useState("");
     const [user, setUser] = useState("");
     const [successRequest, setSuccessRequest] = useState(false);
     const [checkCorrectTel, setCheckCorrectTel] = useState("");
     const [quantity, setQuantity] = useState(1);
+    const [changePriceOld, setChangePriceOld] = useState(oldPrice);
+    const [changePriceNew, setChangePriceNew] = useState(newPrice);
+    
+    const changePriceDueToQuantity = (event) => {
+        console.log(event.target.value);
+        
+        setQuantity(event.target.value);
+    }
+
+    useEffect(() => {
+        if (quantity == "7") {
+            setChangePriceOld(oldPrice);
+            setChangePriceNew(newPrice);
+        } else {
+            setChangePriceOld(quantity * oldPrice);
+            setChangePriceNew(quantity * newPrice);
+        }
+    }, [quantity])
 
     const handleSetUserName = (name) => {
         setUser(name);
@@ -66,13 +85,13 @@ export const OrderProd = ({
                             <div className="block-text">
                                 Звичайна ціна
                             </div>
-                            <div className="block-sum">{oldPrice}</div>
+                            <div className="block-sum">{changePriceOld} грн</div>
                         </div>
                         <div className="main-wrapper-price-block-right">
                             <div className="block-text">
-                                Акційна ціна
+                                Акційна ціна 
                             </div>
-                            <div className="block-sum">{newPrice}</div>
+                            <div className="block-sum">{changePriceNew} грн</div>
                         </div>
                     </div>
                 </div>
@@ -81,16 +100,31 @@ export const OrderProd = ({
                 <MaskName setUser={handleSetUserName} successRequest={successRequest}/>
                 <MaskTel setTel={handleSetTelUser} setCheckCorrectTel={setCheckCorrectTel} successRequest={successRequest}/>
 
-                <div className="custom-prod-modal-quantity">
-                    <label htmlFor="quantity">Виберіть кількість:</label>
-                    <select id="quantity" value={quantity} onChange={(e) => setQuantity(e.target.value)}>
-                        <option value={1}>1 уп. за ціною 199 грн</option>
-                        <option value={2}>3 уп. за ціною 2-х уп.</option>
-                        <option value={3}>4 уп. за ціною 3-х уп.</option>
-                        <option value={4}>5 уп. за ціною 4-х уп.</option>
-                        <option value={5}>більше 5 уп. особлива акція</option>
-                    </select>
-                </div>
+                {
+                    quantityList && 
+                        <div className="custom-prod-modal-quantity">
+                            <label htmlFor="quantity">Виберіть кількість:</label>
+                            <select id="quantity" value={quantity} onChange={changePriceDueToQuantity}>
+                                {
+                                    quantityList.map(item => {
+                                        return (
+                                            <option 
+                                                value={item.value} 
+                                                key={item.price}
+                                                onClick={() => changePriceDueToQuantity(item.value)}
+                                            >
+                                                {item.message}
+                                            </option>
+                                        )
+                                    })
+                                }
+                            </select>
+                            <span className="text-attention">
+                                Кількість упаковок Ви можете обговорити з менеджером, який Вам зателефонує після оформлення завмовлення
+                                та скористатися нашими додатковими ЗНИЖКАМИ.
+                            </span>
+                        </div>
+                }
 
                 <div className="custom-prod-modal-send">
                     <button

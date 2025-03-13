@@ -623,8 +623,8 @@ export const pageConfigJuice = {
         {
             "type": "promoBlock",
             "src": promoFlower,
-            "oldPrice": "379 грн",
-            "newPrice": "199 грн",
+            "oldPrice": "379",
+            "newPrice": "199",
         },
 
         {
@@ -778,8 +778,35 @@ export const pageConfigJuice = {
             "type": "orderBlock",
             "title": "Тюльпани Преміум-мікс (Преміум цибулини - 10 шт)",
             "image": promoFlower,
-            "oldPrice": "379 грн",
-            "newPrice": "199 грн",
+            "oldPrice": "379",
+            "newPrice": "199",
+            "quantityList": [
+                {
+                    "value": 1,
+                    "message": "1 уп. за ціною 199 грн",
+                    "price": "199"
+                },
+                {
+                    "value": 2,
+                    "message": "3 уп. за ціною 2-х уп. - 398 грн.",
+                    "price": "398"
+                },
+                {
+                    "value": 4,
+                    "message": "6 уп. за ціною 4-х уп. - 796 грн.",
+                    "price": "796"
+                },
+                {
+                    "value": 6,
+                    "message": "9 уп. за ціною 6-х уп. - 1194 грн.",
+                    "price": "1194"
+                },
+                {
+                    "value": 7,
+                    "message": "більше 10 уп. особлива акція",
+                    "price": "залежить від кіл-ті"
+                },
+            ]
         }
     ],
 };
@@ -925,6 +952,7 @@ export const pageConfigFaucet = {
             "image": k2,
             "oldPrice": "2199 грн",
             "newPrice": "1599 грн",
+            "quantityList": null
         }
     ],
 };

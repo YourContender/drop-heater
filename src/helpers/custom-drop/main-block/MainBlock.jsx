@@ -46,13 +46,13 @@ export const MainBlock = ({ src, oldPrice, newPrice }) => {
                         <div className="block-text">
                             Звичайна ціна
                         </div>
-                        <div className="block-sum">{oldPrice}</div>
+                        <div className="block-sum">{oldPrice} грн</div>
                     </div>
                     <div className="main-wrapper-price-block-right">
                         <div className="block-text">
                             Акційна ціна
                         </div>
-                        <div className="block-sum">{newPrice}</div>
+                        <div className="block-sum">{newPrice} грн</div>
                     </div>
                 </div>
             </div>

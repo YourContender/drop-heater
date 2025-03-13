@@ -6,9 +6,9 @@
         z-index: 999;
         overflow-y: hidden;
         border-radius: 0;
-        span {
-            color: red;
-        }
+        // span {
+        //     color: red;
+        // }
         &-price {
             display: flex;
             justify-content: space-around;
@@ -185,7 +185,6 @@
             &-send {
                 text-align: center;
                 padding: 35px 0;
-                margin-top: 20px;
                 button {
                     width: 90%;
                     height: 100px;
@@ -218,6 +217,7 @@
         font-size: 24px;
         letter-spacing: 1px;
         margin-top: 20px;
+        padding-left: 15px;
     }
     select {
         width: 100%;
@@ -231,15 +231,25 @@
         background-color: #212638;
         color: #bebcbc;
         height: 50px;
+        padding: 10px 0;
         padding: 5px 10px;
-        font-size: 20px;
+        font-size: 17px;
     }
     option {
         max-width: 100%;
-        font-size: 18px;
+        font-size: 17px;
         // height: 25px;
         overflow: hidden;
         text-overflow: ellipsis; // Обрезка длинных вариантов
         white-space: nowrap;
     }
+}
+
+.text-attention {
+    color: #e2dfdf;
+    font-family: "Montserrat", serif;
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    font-style: italic;
 }
