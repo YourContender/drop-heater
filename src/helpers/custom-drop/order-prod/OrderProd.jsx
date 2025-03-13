@@ -18,13 +18,15 @@ export const OrderProd = ({
     const [successRequest, setSuccessRequest] = useState(false);
     const [checkCorrectTel, setCheckCorrectTel] = useState("");
     const [quantity, setQuantity] = useState(1);
+    const [quantityOrderSend, setQuantityOrderSend] = useState("null");
     const [changePriceOld, setChangePriceOld] = useState(oldPrice);
     const [changePriceNew, setChangePriceNew] = useState(newPrice);
     
     const changePriceDueToQuantity = (event) => {
-        console.log(event.target.value);
-        
         setQuantity(event.target.value);
+        const forSendRequest = quantityList.filter(item => item.value === +event.target.value);
+        
+        setQuantityOrderSend(forSendRequest[0].message)
     }
 
     useEffect(() => {
@@ -50,6 +52,7 @@ export const OrderProd = ({
             name: user,
             phone: tel,
             product: title,
+            quantity: quantityOrderSend
         }
         
         if (user.length >= 2 && tel[17] >= 0 && checkCorrectTel.length === 0) {
@@ -111,7 +114,6 @@ export const OrderProd = ({
                                             <option 
                                                 value={item.value} 
                                                 key={item.price}
-                                                onClick={() => changePriceDueToQuantity(item.value)}
                                             >
                                                 {item.message}
                                             </option>
