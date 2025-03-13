@@ -5,6 +5,7 @@ import "./index.css";
 import { CustomDesignSite } from "./projects/press-desk/CustomDesignSite.jsx";
 import { JuiceProd } from "./projects/juice-prod/JuiceProd.jsx";
 import { FaucetProd } from "./projects/faucet/FaucetProd.jsx";
+import { BarbecueProd } from "./projects/barbecue/Barbecue.jsx";
 // import { CustomDesignSite } from "./projects/press-desk/CustomDesignSite.jsx";
 
 export const App = () => {
@@ -23,6 +24,7 @@ export const App = () => {
                     <Route path="/fitness" element={<CustomDesignSite/>} /> 
                     <Route path="/flower" element={<JuiceProd/>} /> 
                     <Route path="/faucet" element={<FaucetProd/>} /> 
+                    <Route path="/barbecue" element={<BarbecueProd/>} /> 
                 </Routes>
             </Router>
 		</div>
