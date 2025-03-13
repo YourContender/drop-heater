@@ -1269,7 +1269,7 @@ export const pageConfigBarbecue = {
 
         {
             "type": "questionBlock",
-            "title": "Кухонний змішувач"
+            "title": "Складний мангал-гриль"
         },
 
         {
