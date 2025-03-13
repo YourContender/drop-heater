@@ -204,6 +204,42 @@
             }
         }
     }
-    
-    
+}
+
+.custom-prod-modal-quantity {
+    margin: 0 auto;
+    width: 85%;
+    label {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 5px;
+        font-family: "Montserrat", serif;
+        color: #bebcbc;
+        font-size: 24px;
+        letter-spacing: 1px;
+        margin-top: 20px;
+    }
+    select {
+        width: 100%;
+        min-width: 200px; // Установи минимальную ширину
+        max-width: 100%; 
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        font-family: "Montserrat", serif;
+        background-color: #212638;
+        color: #bebcbc;
+        height: 50px;
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+    option {
+        max-width: 100%;
+        font-size: 18px;
+        // height: 25px;
+        overflow: hidden;
+        text-overflow: ellipsis; // Обрезка длинных вариантов
+        white-space: nowrap;
+    }
 }
