@@ -8,7 +8,15 @@ export const MainBlock = ({ src, oldPrice, newPrice }) => {
     const [num, setNum] = useState(0);
 
     useEffect(() => {
-        setNum(Math.floor(Math.random() * (30 - 20 + 1)) + 20);
+        const storedNum = localStorage.getItem("dailyOrders");
+
+        if (storedNum) {
+            setNum(Number(storedNum));
+        } else {
+            const randomNum = Math.floor(Math.random() * (30 - 20 + 1)) + 20;
+            setNum(randomNum);
+            localStorage.setItem("dailyOrders", randomNum);
+        }
     
         const orderSection = document.getElementById("order");
         const footer = document.querySelector("footer");
