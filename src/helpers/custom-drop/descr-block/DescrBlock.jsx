@@ -1,11 +1,13 @@
 import React from 'react';
 import "./DescrBlock.scss";
+import { MarqueeProd } from '../marquee-block/MarqueeProd';
 
 export const DescrBlock = ({ 
     title, 
     subtitle, 
     firstImage, 
     descrList, 
+    marquee,
 }) => {
     return (
         <div className="descr-wrapper">
@@ -20,6 +22,7 @@ export const DescrBlock = ({
                 </span>
                 <img src={firstImage} alt="" />
             </div>
+            {marquee ? <MarqueeProd text={marquee} /> : null}
             <div className="descr-wrapper-text">
                 {
                     descrList.map((item, index) => {

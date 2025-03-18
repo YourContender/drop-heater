@@ -35,7 +35,7 @@
             font-weight: 700;
         }
         &-list {
-            margin: 0;
+            margin: 20px 0;
             padding: 0 15px;
             .list-title {
                 h3 {
@@ -49,6 +49,7 @@
             .list-items {
                 display: flex;
                 flex-direction: column;
+                margin-bottom: 20px;
                 span {
                     font-family: "Montserrat", serif;
                     margin: 7px 0;

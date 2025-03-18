@@ -52,7 +52,8 @@ export const OrderProd = ({
             name: user,
             phone: tel,
             product: title,
-            quantity: quantityOrderSend
+            quantity: quantityOrderSend,
+            price: newPrice
         }
         
         if (user.length >= 2 && tel[17] >= 0 && checkCorrectTel.length === 0) {

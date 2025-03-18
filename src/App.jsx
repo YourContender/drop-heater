@@ -2,10 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Home } from "./projects/home/Home";
 import "./index.css";
-import { CustomDesignSite } from "./projects/press-desk/CustomDesignSite.jsx";
 import { JuiceProd } from "./projects/juice-prod/JuiceProd.jsx";
-import { FaucetProd } from "./projects/faucet/FaucetProd.jsx";
 import { BarbecueProd } from "./projects/barbecue/Barbecue.jsx";
+import { WashProd } from "./projects/wash/Wash.jsx";
 // import { CustomDesignSite } from "./projects/press-desk/CustomDesignSite.jsx";
 
 export const App = () => {
@@ -13,20 +12,19 @@ export const App = () => {
     const [subdomain] = hostname.split(".");
     console.log(window.location.hostname, subdomain);
 
-	return (
-		<div>
-			<Router>
+    return (
+        <div>
+            <Router>
                 <Routes>
                     {/* Subdomain routing with nested routes */}
-                    {subdomain === "fitness" && <Route path="/" element={<CustomDesignSite />} /> }
+                    {/* {subdomain === "fitness" && <Route path="/" element={<CustomDesignSite />} /> } */}
                     {/* {subdomain === "juice" && <Route path="/" element={<JuiceProd />} /> } */}
 
-                    <Route path="/fitness" element={<CustomDesignSite/>} /> 
                     <Route path="/flower" element={<JuiceProd/>} /> 
-                    <Route path="/faucet" element={<FaucetProd/>} /> 
                     <Route path="/barbecue" element={<BarbecueProd/>} /> 
+                    <Route path="/wash" element={<WashProd/>} /> 
                 </Routes>
             </Router>
-		</div>
-	);
+        </div>
+    );
 };

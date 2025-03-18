@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { HeaderBlock } from '../../helpers/custom-drop/header-block/HeaderBlock';
-import "./CustomDesignSite.scss";
 import { MainBlock } from '../../helpers/custom-drop/main-block/MainBlock';
 import TimerBlock from '../../helpers/custom-drop/timer-block/TimerBlock';
 import { DetailsBlock } from '../../helpers/custom-drop/details-block/DetailsBlock';
@@ -9,18 +8,19 @@ import { OrderProd } from '../../helpers/custom-drop/order-prod/OrderProd';
 import { DescrBlock } from '../../helpers/custom-drop/descr-block/DescrBlock';
 import { DeliveryBlock } from '../../helpers/custom-drop/delivery-block/DeliveryBlock';
 import { FooterBlock } from '../../helpers/custom-drop/footer-block/FooterBlock';
-import { pageConfig, thanksPage } from '../../pageConfig';
+import { pageConfigBarbecue, thanksPageForBarbecue } from '../../pageConfig';
 import { ThanksPage } from '../../helpers/custom-drop/thanks-page/ThanksPage';
+import { SaleBlock } from '../../helpers/custom-drop/sale-block/SaleBlock';
 
-export const CustomDesignSite = () => {
+export const BerryProd = () => {
     const [isModalOpen, setModalOpen] = useState(false);
     const [modalTel, setModalTel] = useState("");
     const [modalName, setModalName] = useState("");
-    
+
     return (
         <div className="custom-container">
             {
-                pageConfig.content.map((obj, index) => {
+                pageConfigBarbecue.content.map((obj, index) => {
                     switch (obj.type) {
                         case "basicHeaderBlock":
                             return <HeaderBlock {...obj} key={index}/>
@@ -28,6 +28,8 @@ export const CustomDesignSite = () => {
                             return <MainBlock {...obj} key={index}/> ;
                         case "timerBlock" :
                             return <TimerBlock {...obj} key={index}/>;
+                        case "sale" :
+                            return <SaleBlock {...obj} key={index}/>;
                         case "descriptionBlock" :
                             return <DescrBlock {...obj} key={index}/>;
                         case "detailsBlock" :
@@ -54,7 +56,7 @@ export const CustomDesignSite = () => {
                 modalName={modalName}
                 setModalTel={setModalTel}
                 setModalName={setModalName}
-                thanksPage={thanksPage}
+                thanksPage={thanksPageForBarbecue}
             />
             <DeliveryBlock/>
             <FooterBlock/>
