@@ -1561,7 +1561,7 @@ import g36 from "./helpers/images/thanks/glasses-thk/g36.png";
 import g37 from "./helpers/images/thanks/glasses-thk/g37.png";
 import g38 from "./helpers/images/thanks/glasses-thk/g38.png";
 import g39 from "./helpers/images/thanks/glasses-thk/g39.png";
-import g40 from "./helpers/images/thanks/glasses-thk/g30.png";
+import g40 from "./helpers/images/thanks/glasses-thk/g40.png";
 
 export const pageConfigGlasses = {
     title: 'Сонцезахисні поляризовані окуляри антивідблиску Tac Glasses',
@@ -2201,3 +2201,188 @@ export const thanksPageForGlasses = [
     },
 
 ];
+
+
+// Hammock project 
+import h1 from "./helpers/images/hammock/h1.jpg";
+import h2 from "./helpers/images/hammock/h2.jpg";
+import h3 from "./helpers/images/hammock/h3.jpg";
+import h4 from "./helpers/images/hammock/h4.jpg";
+import h5 from "./helpers/images/hammock/h5.jpg";
+import h6 from "./helpers/images/hammock/h6.jpg";
+import h7 from "./helpers/images/hammock/h7.png";
+import h8 from "./helpers/images/hammock/h8.png";
+import h9 from "./helpers/images/hammock/h9.png";
+import h10 from "./helpers/images/hammock/h10.png";
+
+import reviews4 from "./helpers/images/reviews-viber/hammock/1.png"
+import reviews5 from "./helpers/images/reviews-viber/hammock/2.png"
+import reviews6 from "./helpers/images/reviews-viber/hammock/3.png"
+
+export const pageConfigHammock = {
+    title: 'Підвісний гамак з москітною сіткою',
+    content: [
+        {
+            "type": "basicHeaderBlock",
+            "title": "Підвісний гамак з антимоскітною сіткою"
+        },
+        {
+            "type": "promoBlock",
+            "src": h8,
+            "oldPrice": "1198",
+            "newPrice": "599",
+        },
+        {
+            "type": "timerBlock",
+            "text": `
+                Цiну знижено через випуск нової моделi. Додаткову iнформацiю Вам 
+                надасть наш менеджер. Ваша розмова може бути записана з метою 
+                покращення якостi обслуговування.
+            `
+        },
+        {
+            "type": "descriptionBlock",
+            "title": "Двомісний гамак з антимоскітною сіткою",
+            "subtitle": `
+               Двомісний гамак з антимоскітною сіткою дасть вам змогу відпочити та повністю розслабитися, перебуваючи на природі або на дачі.
+               Відпочивайте з комфортом у гамаку, що плавно погойдується, з антимоскітною захисною сіткою, яка вбереже від настирливих комарів, мух або ос.
+            `,
+            "firstImage": h1,
+            "marquee": "Акційна пропозиція! ☘️ ЗНИЖКА -50% ☘️",
+            "descrList": [
+                {
+                    "type": "text",
+                    "boldType": "Двомісний підвісний гамак з антимоскітною сіткою ",
+                    "descr": `
+                        — витримує до 200 кг ваги, стане в пригоді під час походу, риболовлі або полювання. Сітка застібається як зовні, так і зсередини, 
+                        завдяки двосторонньому замку. 
+                    `
+                },
+                {
+                    "type": "photo",
+                    "image": h2
+                },
+
+                {
+                    "type": "text",
+                    "boldType": "Нейлонова тканина",
+                    "descr": `
+                         легка, але міцна, добре пропускає повітря та, за необхідності, швидко сохне. У складеному вигляді гамак не займає 
+                        багато місця, важить всього 0,75 кг. стане незамінним супутником для любителів подорожей та пікніка або кемпінгу 
+                        в лісі і на березі моря в тіні дерев.
+                    `
+                },
+
+                {
+                    "type": "photo",
+                    "image": h10
+                },
+                
+                {
+                    "type": "text",
+                    "boldType": "Дачний вуличний гамак",
+                    "descr": `
+                         сподобається всім, він легко кріпиться до двох дорослих дерев за допомогою двох сталевих карабінів та ременів, 
+                         довжина кожного 2 м, відстань між рослинами має на 20-30 см перевищувати довжину полотна гамака для зручного 
+                         розміщення, бажано зав'язати ремені на одному рівні.
+                    `
+                },
+                {
+                    "type": "photo",
+                    "image": h3
+                },
+                {
+                    "type": "text",
+                    "boldType": "Поляризовані окуляри",
+                    "descr": `
+                        Сітка кріпиться за допомогою двох мотузок, довжина яких 350 см кожна. У затишному комфортному гамаку можна 
+                        розташуватися з улюбленою книжкою в руках, сховатися від спеки в тіні дерев або спокійно подрімати в спекотний день.
+                    `
+                },
+                {
+                    "type": "advantages",
+                    "titleAdvantage": "Комплектація",
+                    "listAdvantage": [
+                        "- Гамак - 1 шт.", "- чохол для транспортування та зберігання (пришитий та виконує функцію кишені)", 
+                        "- Мотузка для сітки - 2 шт", "Ремені - 2 шт.", "S гачки, 2 шт. (Сталь 5мм)", "мотузка-підвіс, 2 шт. (Нейлоновий плетений шнур діаметром 4 мм)",
+                         "стропи, 2 шт. (ремінь завдовжки 2 м)"
+                    ]
+                },
+                {
+                    "type": "photo",
+                    "image": h7
+                },
+                {
+                    "type": "advantages",
+                    "titleAdvantage": "Переваги",
+                    "listAdvantage": [
+                        "- Інноваційна технологія швидкого розгортання", 
+                        "- Інтегрована сітка захищає від комах та комарів", 
+                        "- Забезпечує зручну підтримку тіла", 
+                        "- Підходить для кемпінгу, пікніків, пляжного відпочинку", 
+                        "- Витримує вагу до 200 кг.", 
+                    ]
+                },
+
+                {
+                    "type": "photo",
+                    "image": h9
+                },
+            ]
+        },
+
+        {
+            "type": "detailsBlock",
+            "details": [
+                {
+                    "title": "Розміри в розкладеному вигляді: ",
+                    "descr": "263 х 135 см"
+                },
+                {
+                    "title": "Розміри в складеному вигляді:",
+                    "descr": "29 х 20 см"
+                },
+                {
+                    "title": "Вага:",
+                    "descr": "750 гр"
+                },
+                {
+                    "title": "Матеріали:",
+                    "descr": "поліестер, нейлон"
+                },
+                {
+                    "title": "Особливості :",
+                    "descr": "антимоскітна сітка"
+                },
+                {
+                    "title": "Максимальна вага: ",
+                    "descr": "200 кг"
+                },
+                {
+                    "title": "Москітна сітка з одного боку пришита",
+                    "descr": ""
+                },
+            ]
+        },
+        {
+            "type": "questionBlock",
+            "title": "Підвісний гамак з антимоскітною сіткою"
+        },
+
+        {
+            "type": "viber",
+            "title": "Відгуки покупців",
+            "images": [reviews4, reviews5, reviews6]
+        },
+
+        {
+            "type": "orderBlock",
+            "title": "Підвісний гамак з антимоскітною сіткою",
+            "image": h8,
+            "oldPrice": "1198",
+            "newPrice": "599",
+            "quantityList": null
+        }
+    ],
+};
+
