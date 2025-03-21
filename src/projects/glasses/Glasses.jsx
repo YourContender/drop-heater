@@ -12,6 +12,7 @@ import { pageConfigGlasses, thanksPageForGlasses } from '../../pageConfig';
 import { ThanksPage } from '../../helpers/custom-drop/thanks-page/ThanksPage';
 import { SaleBlock } from '../../helpers/custom-drop/sale-block/SaleBlock';
 import { ReviewsBlock } from '../../helpers/custom-drop/reviews-block/ReviewsBlock';
+import "./Glasses.scss";
 
 export const GlassesProd = () => {
     const [isModalOpen, setModalOpen] = useState(false);
