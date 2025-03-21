@@ -2,15 +2,20 @@ import React from 'react';
 import empty from "./empty.jpg";
 import reviewImg from "./review-img.png";
 import "./ReviewsBlock.scss";
+import { Slider } from '../../slider/Slider';
 
-export const ReviewsBlock = ({reviews}) => {
+export const ReviewsBlock = ({title, images}) => {
     return (
         <div className="reviews">
             <div className="reviews__container">
                 <div className="reviews__container-title">
                     <h1>Відгуки покупців</h1>
                 </div>
-                <div className="reviews__container-cards">
+
+                <div className="reviews__container-viber">
+                    <Slider data={images}/>
+                </div>
+                {/* <div className="reviews__container-cards">
                     {
                         reviews.map(item => {
                             return (
@@ -33,7 +38,7 @@ export const ReviewsBlock = ({reviews}) => {
                             )
                         })
                     }
-                </div>
+                </div> */}
             </div>
         </div>
     )

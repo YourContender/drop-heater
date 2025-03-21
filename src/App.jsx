@@ -6,6 +6,7 @@ import { JuiceProd } from "./projects/juice-prod/JuiceProd.jsx";
 import { BarbecueProd } from "./projects/barbecue/Barbecue.jsx";
 import { WashProd } from "./projects/wash/Wash.jsx";
 import { BerryProd } from "./projects/berry/Berry.jsx";
+import { GlassesProd } from "./projects/glasses/Glasses.jsx";
 // import { CustomDesignSite } from "./projects/press-desk/CustomDesignSite.jsx";
 
 export const App = () => {
@@ -25,6 +26,7 @@ export const App = () => {
                     <Route path="/barbecue" element={<BarbecueProd/>} /> 
                     <Route path="/wash" element={<WashProd/>} /> 
                     <Route path="/berry" element={<BerryProd/>} /> 
+                    <Route path="/glasses" element={<GlassesProd/>} /> 
                 </Routes>
             </Router>
         </div>
