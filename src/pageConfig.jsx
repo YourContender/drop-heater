@@ -1607,9 +1607,30 @@ import g5 from "./helpers/images/glasses/g5.jpg";
 import g6 from "./helpers/images/glasses/g6.jpg";
 import g7 from "./helpers/images/glasses/g7.jpg";
 
+// reviews
 import reviews1 from "./helpers/images/reviews-viber/glasses/1.png";
 import reviews2 from "./helpers/images/reviews-viber/glasses/2.png";
 import reviews3 from "./helpers/images/reviews-viber/glasses/3.png";
+
+// thanks page
+import g8 from "./helpers/images/thanks/glasses-thk/g8.png";
+import g10 from "./helpers/images/thanks/glasses-thk/g10.png";
+import g11 from "./helpers/images/thanks/glasses-thk/g11.png";
+import g12 from "./helpers/images/thanks/glasses-thk/g12.png";
+import g13 from "./helpers/images/thanks/glasses-thk/g13.png";
+import g14 from "./helpers/images/thanks/glasses-thk/g14.png";
+import g15 from "./helpers/images/thanks/glasses-thk/g15.png";
+import g16 from "./helpers/images/thanks/glasses-thk/g16.png";
+import g17 from "./helpers/images/thanks/glasses-thk/g17.png";
+import g21 from "./helpers/images/thanks/glasses-thk/g21.png";
+import g22 from "./helpers/images/thanks/glasses-thk/g22.png";
+import g23 from "./helpers/images/thanks/glasses-thk/g23.png";
+import g24 from "./helpers/images/thanks/glasses-thk/g24.png";
+import g25 from "./helpers/images/thanks/glasses-thk/g25.png";
+import g26 from "./helpers/images/thanks/glasses-thk/g26.png";
+import g27 from "./helpers/images/thanks/glasses-thk/g27.png";
+import g28 from "./helpers/images/thanks/glasses-thk/g28.png";
+import g29 from "./helpers/images/thanks/glasses-thk/g29.png";
 
 export const pageConfigGlasses = {
     title: 'Сонцезахисні поляризовані окуляри антивідблиску Tac Glasses',
@@ -1835,3 +1856,266 @@ export const pageConfigGlasses = {
         }
     ],
 };
+
+export const thanksPageForGlasses = [
+    {
+        id: 1,
+        images: [g8, g10, g11],
+        title: "Компресор автомобільний AIR COMPRESSOR 260PSI DC-12V",
+        old: "599",
+        new: "299",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "-51%",
+        details: [
+            {
+                t: "Розміри:",
+                d: "18,0 см x 18,0 см x 7,1 см"
+            },
+            {
+                t: "Переваги: ",
+                d: "Невеликий розмір, простота в експлуатації"
+            },
+            {
+                t: "Використання:",
+                d: "для автомобілів, мотоциклів, мячів, гумові човни"
+            },
+        ],
+    },
+
+    {
+        id: 3,
+        images: [g15, g16, g17],
+        title: "Коректор поперекового відділу",
+        old: "499",
+        new: "199",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "-40%",
+        details: [
+            {
+                t: "Ортопедична подушка під спину ПРИЗНАЧЕНА для: ",
+                d: ""
+            },
+            {
+                t: "",
+                d: "розвантаження поперекового відділу хребта в сидячому положенні;"
+            },
+            {
+                t: "",
+                d: "зменшення біль у спині попереку;"
+            },
+            {
+                t: "Ортопедична подушка під спину ПОКАЗАНА для:",
+                d: ""
+            },
+            {
+                t: "",
+                d: "запобігання невралгіям, остеохондрозу, артрозу поперекового відділу хребта;"
+            },
+            {
+                t: "",
+                d: "зняття больового синдрому в попереку у людей з сидячою роботою;"
+            },
+            {
+                t: "",
+                d: "розвантаження хребта;"
+            },
+            {
+                t: "",
+                d: "забезпечення хорошої постави;"
+            },
+            {
+                t: "",
+                d: "підтримки поперекового лордоза у правильному фізіологічному положенні;"
+            },
+            {
+                t: "",
+                d: "поліпшення м'язового тонусу."
+            },
+        ],
+    },
+    {
+        id: 4,
+        images: [g22, g23, g21],
+        title: "Сонцезахисна шторка на коліщатках для автомобіля 40*60 cм",
+        old: "499",
+        new: "199",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "-40%",
+        details: [
+            {
+                t: "Особливості: ",
+                d: ""
+            },
+            {
+                t: "",
+                d: "Світловідбивна сторона ефективно захищає від UV-променів та перегріву;"
+            },
+            {
+                t: "",
+                d: "Легке встановлення за допомогою присосок;"
+            },
+            {
+                t: "",
+                d: "Ви можете регулювати висоту за допомогою фіксатора на присосці;"
+            },
+            {
+                t: "",
+                d: "Компактне зберігання у вигляді рулону;"
+            },
+            {
+                t: "",
+                d: "Водовідштовхувальна поверхня для легкого догляду;"
+            },
+            {
+                t: "",
+                d: "Універсальне використання вдома, в офісі, в автомобілі;"
+            },
+            {
+                t: "",
+                d: "Надійно фіксується на склі вікон чи автомобіля;"
+            },
+            {
+                t: "Розмір:",
+                d: "60 x 40 cm"
+            },
+            {
+                t: "Матеріал:",
+                d: "ПВХ (термопластичний матеріал)"
+            },
+        ],
+    },
+
+    {
+        id: 6,
+        images: [g27, g28, g29],
+        title: "Автомобільний пилосос потужний бездротовий акумуляторний, 4 насадок",
+        old: "799",
+        new: "599",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "-25%",
+        details: [
+            {
+                t: "Потужність: ",
+                d: " 150 Вт;"
+            },
+            {
+                t: "Тип живлення: ",
+                d: "Акумулятор;"
+            },
+            {
+                t: "Кількість насадок:",
+                d: "4 шт;"
+            },
+            {
+                t: "Акумулятор, що знімається: ",
+                d: "так"
+            },
+            {
+                t: "Тип використання: ",
+                d: "Бездротовий"
+            },
+            {
+                t: "Метод збирання: ",
+                d: "Сухе збирання"
+            },
+            {
+                t: "Колір: ",
+                d: "Чорний"
+            },
+        ],
+    },
+    {
+        id: 2,
+        images: [g12, g13, g14],
+        title: "Паркувальна система | Парктронік на 8 датчиків Car Radar Parking",
+        old: "1570",
+        new: "799",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "-50%",
+        details: [
+            {
+                t: "Відстань визначення перешкод: ",
+                d: "0-2,5 м"
+            },
+            {
+                t: "Вертикальний кут визначення перешкод: ",
+                d: "90 °"
+            },
+            {
+                t: "Тип виявлення:",
+                d: "УЗД (40 кГц)"
+            },
+            {
+                t: "Кількість датчиків:",
+                d: "8 ПК"
+            },
+            {
+                t: "Діаметр тіла датчика (внутрішній):",
+                d: "2,5 см"
+            },
+            {
+                t: "Довжина датчикового кабелю:",
+                d: "4 датчики 2,5 м та 4 датчики 6 м"
+            },
+            {
+                t: "Дисплей:",
+                d: "тип - світлодіод"
+            },
+            {
+                t: "Довжина кабелю дисплея:",
+                d: "5 м"
+            },
+            {
+                t: "Тип сповіщення драйвера: ",
+                d: "візуальний (дисплей) + звук"
+            },
+            {
+                t: "Напруга джерела живлення: ",
+                d: "12 В"
+            },
+            {
+                t: "Довжина живлення: ",
+                d: "75 см"
+            },
+            {
+                t: "Робоча температура: ",
+                d: "від -20 ° C до +70 ° C"
+            },
+        ],
+    },
+    {
+        id: 5,
+        images: [g24, g25, g26],
+        title: "Автомобільний двопоршневий компресор із набором інструментів у кейсі YELLOW",
+        old: "2900",
+        new: "1499",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "-51%",
+        details: [
+            {
+                t: "Тип двигуна: ",
+                d: "Електричний;"
+            },
+            {
+                t: "Продуктивність",
+                d: "72 л/год;"
+            },
+            {
+                t: "Робоча напруга:",
+                d: "12 В;"
+            },
+            {
+                t: "Антивібраційна система: ",
+                d: "так"
+            },
+            {
+                t: "Монометр: ",
+                d: "так"
+            },
+            {
+                t: "Вага: ",
+                d: "1.822 кг"
+            },
+        ],
+    },
+];

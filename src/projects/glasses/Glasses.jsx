@@ -8,7 +8,7 @@ import { OrderProd } from '../../helpers/custom-drop/order-prod/OrderProd';
 import { DescrBlock } from '../../helpers/custom-drop/descr-block/DescrBlock';
 import { DeliveryBlock } from '../../helpers/custom-drop/delivery-block/DeliveryBlock';
 import { FooterBlock } from '../../helpers/custom-drop/footer-block/FooterBlock';
-import { pageConfigGlasses, thanksPageForFlower } from '../../pageConfig';
+import { pageConfigGlasses, thanksPageForGlasses } from '../../pageConfig';
 import { ThanksPage } from '../../helpers/custom-drop/thanks-page/ThanksPage';
 import { SaleBlock } from '../../helpers/custom-drop/sale-block/SaleBlock';
 import { ReviewsBlock } from '../../helpers/custom-drop/reviews-block/ReviewsBlock';
@@ -59,7 +59,7 @@ export const GlassesProd = () => {
                 modalName={modalName}
                 setModalTel={setModalTel}
                 setModalName={setModalName}
-                thanksPage={thanksPageForFlower}
+                thanksPage={thanksPageForGlasses}
             />
             <DeliveryBlock/>
             <FooterBlock/>
