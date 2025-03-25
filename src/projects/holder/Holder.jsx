@@ -8,13 +8,13 @@ import { OrderProd } from '../../helpers/custom-drop/order-prod/OrderProd';
 import { DescrBlock } from '../../helpers/custom-drop/descr-block/DescrBlock';
 import { DeliveryBlock } from '../../helpers/custom-drop/delivery-block/DeliveryBlock';
 import { FooterBlock } from '../../helpers/custom-drop/footer-block/FooterBlock';
-import { pageConfigHammock, thanksPageForGlasses } from '../../pageConfig';
+import { pageConfigHolder, thanksPageForGlasses } from '../../pageConfig';
 import { ThanksPage } from '../../helpers/custom-drop/thanks-page/ThanksPage';
 import { SaleBlock } from '../../helpers/custom-drop/sale-block/SaleBlock';
+import "./Holder.scss";
 import { ReviewsBlock } from '../../helpers/custom-drop/reviews-block/ReviewsBlock';
-import "./Hammock.scss";
 
-export const HammockProd = () => {
+export const HolderProd = () => {
     const [isModalOpen, setModalOpen] = useState(false);
     const [modalTel, setModalTel] = useState("");
     const [modalName, setModalName] = useState("");
@@ -22,7 +22,7 @@ export const HammockProd = () => {
     return (
         <div className="custom-container">
             {
-                pageConfigHammock.content.map((obj, index) => {
+                pageConfigHolder.content.map((obj, index) => {
                     switch (obj.type) {
                         case "basicHeaderBlock":
                             return <HeaderBlock {...obj} key={index}/>

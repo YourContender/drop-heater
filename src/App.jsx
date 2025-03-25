@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Home } from "./projects/home/Home";
 import "./index.css";
 import { GlassesProd } from "./projects/glasses/Glasses.jsx";
-import { HammockProd } from "./projects/hammock/Hammock.jsx";
+import { HolderProd } from "./projects/holder/Holder.jsx";
 // import { CustomDesignSite } from "./projects/press-desk/CustomDesignSite.jsx";
 
 export const App = () => {
@@ -24,7 +24,7 @@ export const App = () => {
                     <Route path="/wash" element={<WashProd/>} /> 
                     <Route path="/berry" element={<BerryProd/>} />  */}
                     <Route path="/glasses" element={<GlassesProd/>} /> 
-                    <Route path="/hammock" element={<HammockProd/>} /> 
+                    <Route path="/holder" element={<HolderProd/>} /> 
                 </Routes>
             </Router>
         </div>

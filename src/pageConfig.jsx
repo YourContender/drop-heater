@@ -1562,6 +1562,22 @@ import g37 from "./helpers/images/thanks/glasses-thk/g37.png";
 import g38 from "./helpers/images/thanks/glasses-thk/g38.png";
 import g39 from "./helpers/images/thanks/glasses-thk/g39.png";
 import g40 from "./helpers/images/thanks/glasses-thk/g40.png";
+import g50 from "./helpers/images/thanks/glasses-thk/g50.png";
+import g51 from "./helpers/images/thanks/glasses-thk/g51.png";
+import g52 from "./helpers/images/thanks/glasses-thk/g52.png";
+import g53 from "./helpers/images/thanks/glasses-thk/g53.png";
+import g54 from "./helpers/images/thanks/glasses-thk/g54.png";
+import g55 from "./helpers/images/thanks/glasses-thk/g55.png";
+import g56 from "./helpers/images/thanks/glasses-thk/g56.png";
+import g57 from "./helpers/images/thanks/glasses-thk/g57.png";
+import g58 from "./helpers/images/thanks/glasses-thk/g58.png";
+import g59 from "./helpers/images/thanks/glasses-thk/g59.png";
+import g60 from "./helpers/images/thanks/glasses-thk/g60.png";
+import g61 from "./helpers/images/thanks/glasses-thk/g61.png";
+import g62 from "./helpers/images/thanks/glasses-thk/g62.png";
+import g63 from "./helpers/images/thanks/glasses-thk/g63.png";
+import g64 from "./helpers/images/thanks/glasses-thk/g64.png";
+import g65 from "./helpers/images/thanks/glasses-thk/g65.png";
 
 export const pageConfigGlasses = {
     title: 'Сонцезахисні поляризовані окуляри антивідблиску Tac Glasses',
@@ -1789,6 +1805,193 @@ export const pageConfigGlasses = {
 };
 
 export const thanksPageForGlasses = [
+    {
+        id: 14,
+        images: [g58, g59, g60],
+        title: "Контейнер-лимонадник з краном - 2,5 л.",
+        old: "475",
+        new: "250",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "-48%",
+        details: [
+            {
+                t: "Колір: ",
+                d: "прозорий;"
+            },
+            {
+                t: "Склад: ",
+                d: "abs-пластик;"
+            },
+            {
+                t: "Кількість предметів в упакуванні: ",
+                d: "1 шт;"
+            },
+            {
+                t: "Об'єм товару: ",
+                d: "2,5л;"
+            },
+            {
+                t: "Особливості контейнера: ",
+                d: "клямки, кран;"
+            },
+            {
+                t: "Призначення контейнера: ",
+                d: "для напоїв, для маринування, універсальний;"
+            },
+            {
+                t: "Комплектація: ",
+                d: "контейнер лимонадник із краном для напоїв"
+            },
+        ],
+    },
+    {
+        id: 11,
+        images: [g50, g51, g52],
+        title: "Сітка-гриль для овочів GRIL ручка+щітка",
+        old: "650",
+        new: "315",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "-52%",
+        details: [
+            {
+                t: "Набір з 2 міцних грат дозволяє готувати смачні та ароматні страви",
+                d: ""
+            },
+            {
+                t: "Завдяки близько розташованим лозинам не потрібно турбуватися про те, що овочі, м'ясо або гриби випадуть з ґрат під час смаження.",
+                d: ""
+            },
+        ],
+    },
+    {
+        id: 12,
+        images: [g53, g54, g55],
+        title: "Набір викруток UKC 115 в 1 для ремонту",
+        old: "525",
+        new: "299",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "-44%",
+        details: [
+            {
+                t: "Матеріал біт: ",
+                d: "CR-V сталь;"
+            },
+            {
+                t: "Матеріал ручки: ",
+                d: "алюмінієвий сплав;"
+            },
+            {
+                t: "Довжина ручки: ",
+                d: "120 мм;"
+            },
+            {
+                t: "Довжина біт: ",
+                d: "25 мм;"
+            },
+            {
+                t: "Розмір футляра (Д*Ш*В): ",
+                d: "160 х 90 х 55 мм;"
+            },
+            {
+                t: "Намагнічений наконечник у бітах;",
+                d: ""
+            },
+            {
+                t: "Магнітний тримач біти у викрутці;",
+                d: ""
+            },
+        ],
+    },
+    {
+        id: 13,
+        images: [g56, g57],
+        title: "Килимок для дому розміром MAT AND200 40*60 см",
+        old: "355",
+        new: "199",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "-44%",
+        details: [
+            {
+                t: "Стильний дизайн із написом Home",
+                d: ""
+            },
+            {
+                t: "Високоякісні матеріали забезпечують м'якість та тепло",
+                d: ""
+            },
+            {
+                t: "Захищає підлогу від подряпин та забруднень",
+                d: ""
+            },
+            {
+                t: "Підтримує оптимальний температурний режим у приміщенні",
+                d: ""
+            },
+            {
+                t: "Розмір: 40 на 60 см",
+                d: ""
+            },
+        ],
+    },
+
+    {
+        id: 15,
+        images: [g61, g62],
+        title: "Універсальна миска – дуршлаг Mesh Strainer Drain Basket",
+        old: "475",
+        new: "250",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "-48%",
+        details: [
+            {
+                t: "Тип виробу: ",
+                d: "друшлаг"
+            },
+            {
+                t: "Матеріал: ",
+                d: "еластичний харчовий пластик"
+            },
+            {
+                t: "Висота: ",
+                d: "11.5 см"
+            },
+            {
+                t: "Довжина: ",
+                d: "24.5 см"
+            },
+            {
+                t: "Ширина: ",
+                d: "18 см"
+            },
+            {
+                t: "Вага: ",
+                d: "300 г."
+            },
+        ],
+    },
+    {
+        id: 16,
+        images: [g63, g64, g65],
+        title: "Овочерізка шинка з нержавіючої сталі 4 в1 Titan Peeler",
+        old: "275",
+        new: "150",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "-46%",
+        details: [
+            {
+                t: "Тип: ",
+                d: "ніж для фруктів та овочів;"
+            },
+            {
+                t: "Кількість тертьових/ріжучих поверхонь: ",
+                d: "4"
+            },
+            {
+                t: "Матеріал: ",
+                d: "нержавіюча сталь"
+            },
+        ],
+    },
     {
         id: 4,
         images: [g22, g23, g21],
@@ -2200,37 +2403,39 @@ export const thanksPageForGlasses = [
         ],
     },
 
+
+    
+
 ];
 
 
-// Hammock project 
-import h1 from "./helpers/images/hammock/h1.jpg";
-import h2 from "./helpers/images/hammock/h2.jpg";
-import h3 from "./helpers/images/hammock/h3.jpg";
-import h4 from "./helpers/images/hammock/h4.jpg";
-import h5 from "./helpers/images/hammock/h5.jpg";
-import h6 from "./helpers/images/hammock/h6.jpg";
-import h7 from "./helpers/images/hammock/h7.png";
-import h8 from "./helpers/images/hammock/h8.png";
-import h9 from "./helpers/images/hammock/h9.png";
-import h10 from "./helpers/images/hammock/h10.png";
+// Тримач-диспенсер для зубної пасти та щіток
+import ho1 from "./helpers/images/holder/1.png"
+import ho2 from "./helpers/images/holder/2.png"
+import ho3 from "./helpers/images/holder/3.png"
+import ho4 from "./helpers/images/holder/4.png"
+import ho5 from "./helpers/images/holder/5.png"
+import ho6 from "./helpers/images/holder/6.png"
+import ho7 from "./helpers/images/holder/7.png"
+import ho8 from "./helpers/images/holder/8.png"
 
-import reviews4 from "./helpers/images/reviews-viber/hammock/1.png"
-import reviews5 from "./helpers/images/reviews-viber/hammock/2.png"
-import reviews6 from "./helpers/images/reviews-viber/hammock/3.png"
+// reviews
+import reviews11 from "./helpers/images/reviews-viber/holder/1.png";
+import reviews22 from "./helpers/images/reviews-viber/holder/2.png";
+import reviews33 from "./helpers/images/reviews-viber/holder/3.png";
 
-export const pageConfigHammock = {
-    title: 'Підвісний гамак з москітною сіткою',
+export const pageConfigHolder = {
+    title: 'Тримач-диспенсер для зубної пасти та щіток Toothbrush sterilizer',
     content: [
         {
             "type": "basicHeaderBlock",
-            "title": "Підвісний гамак з антимоскітною сіткою"
+            "title": "Тримач-диспенсер для зубної пасти та щіток Toothbrush sterilizer"
         },
         {
             "type": "promoBlock",
-            "src": h8,
-            "oldPrice": "1198",
-            "newPrice": "599",
+            "src": ho1,
+            "oldPrice": "590",
+            "newPrice": "389",
         },
         {
             "type": "timerBlock",
@@ -2242,91 +2447,97 @@ export const pageConfigHammock = {
         },
         {
             "type": "descriptionBlock",
-            "title": "Двомісний гамак з антимоскітною сіткою",
+            "title": "Багатофункціональний пристрій у ванній кімнаті",
             "subtitle": `
-               Двомісний гамак з антимоскітною сіткою дасть вам змогу відпочити та повністю розслабитися, перебуваючи на природі або на дачі.
-               Відпочивайте з комфортом у гамаку, що плавно погойдується, з антимоскітною захисною сіткою, яка вбереже від настирливих комарів, мух або ос.
+                Під час очищення зубів на зубній щітці залишається безліч мікробів, які не можуть бути видалені промиванням водою. 
+                У ванній кімнаті є вологе середовище, яке сприяє швидкому розмноженню мікроорганізмів. Щоб вирішити цю проблему, 
+                пропонується використовувати дезінфектор (стерилізатор) зубних щіток.
             `,
-            "firstImage": h1,
-            "marquee": "Акційна пропозиція! ☘️ ЗНИЖКА -50% ☘️",
+            "firstImage": ho2,
+            "marquee": "Акційна пропозиція! ☘️ ЗНИЖКА -35% ☘️",
             "descrList": [
                 {
                     "type": "text",
-                    "boldType": "Двомісний підвісний гамак з антимоскітною сіткою ",
+                    "boldType": "Диспенсер для зубних щіток має вбудований літієвий акумулятор ",
                     "descr": `
-                        — витримує до 200 кг ваги, стане в пригоді під час походу, риболовлі або полювання. Сітка застібається як зовні, так і зсередини, 
-                        завдяки двосторонньому замку. 
+                        об’ємом 1500 мАг, можливе підзаряджання через USB, обладнаний РК-екраном з автоматичною синхронізацією, 
+                        а також УФ-лампа автоматично вимикається після завершення роботи 
                     `
                 },
                 {
                     "type": "photo",
-                    "image": h2
+                    "image": ho3
                 },
 
                 {
                     "type": "text",
-                    "boldType": "Нейлонова тканина",
+                    "boldType": "Світло ультрафіолетової лампи ",
                     "descr": `
-                         легка, але міцна, добре пропускає повітря та, за необхідності, швидко сохне. У складеному вигляді гамак не займає 
-                        багато місця, важить всього 0,75 кг. стане незамінним супутником для любителів подорожей та пікніка або кемпінгу 
-                        в лісі і на березі моря в тіні дерев.
+                        пристрою здатне ефективно знищити шкідливі мікроорганізми (до 99.99%), 
+                        які накопичуються на щетинках після кожного чищення.
                     `
                 },
 
                 {
                     "type": "photo",
-                    "image": h10
+                    "image": ho4
                 },
                 
                 {
                     "type": "text",
-                    "boldType": "Дачний вуличний гамак",
+                    "boldType": "У пристрої є магнітний датчик, ",
                     "descr": `
-                         сподобається всім, він легко кріпиться до двох дорослих дерев за допомогою двох сталевих карабінів та ременів, 
-                         довжина кожного 2 м, відстань між рослинами має на 20-30 см перевищувати довжину полотна гамака для зручного 
-                         розміщення, бажано зав'язати ремені на одному рівні.
+                        при якому УФ-лампа спрацьовує автоматично за відсутності рухів не більше 1.5 метрів.
                     `
                 },
                 {
                     "type": "photo",
-                    "image": h3
+                    "image": ho5
                 },
                 {
                     "type": "text",
-                    "boldType": "Поляризовані окуляри",
+                    "boldType": "Встановити пристрій дуже просто, ",
                     "descr": `
-                        Сітка кріпиться за допомогою двох мотузок, довжина яких 350 см кожна. У затишному комфортному гамаку можна 
-                        розташуватися з улюбленою книжкою в руках, сховатися від спеки в тіні дерев або спокійно подрімати в спекотний день.
+                         достатньо зняти двосторонній скотч, виконати три натискання, а потім прикріпити його до чистої та гладкої стіни.
                     `
                 },
                 {
-                    "type": "advantages",
-                    "titleAdvantage": "Комплектація",
-                    "listAdvantage": [
-                        "- Гамак - 1 шт.", "- чохол для транспортування та зберігання (пришитий та виконує функцію кишені)", 
-                        "- Мотузка для сітки - 2 шт", "Ремені - 2 шт.", "S гачки, 2 шт. (Сталь 5мм)", "мотузка-підвіс, 2 шт. (Нейлоновий плетений шнур діаметром 4 мм)",
-                         "стропи, 2 шт. (ремінь завдовжки 2 м)"
-                    ]
+                    "type": "photo",
+                    "image": ho6
                 },
+                {
+                    "type": "text",
+                    "boldType": "Механічний дозатор має легку конструкцію",
+                    "descr": `
+                        що полегшує процес очищення елементів. Для вичавлювання зубної пасти достатньо натиснути головкою 
+                        зубної щітки на важіль, дія якого легко проводиться однією рукою. Рівномірне видавлювання забезпечує 
+                        контроль кількості зубної пасти.
+                    `
+                },
+                // {
+                //     "type": "advantages",
+                //     "titleAdvantage": "Комплектація",
+                //     "listAdvantage": [
+                //         "- Окуляри - 1 шт.", "- Чохол - 1 шт.", "- Упаковка", 
+                //     ]
+                // },
                 {
                     "type": "photo",
-                    "image": h7
+                    "image": ho7
                 },
                 {
                     "type": "advantages",
-                    "titleAdvantage": "Переваги",
+                    "titleAdvantage": "Функціональні характеристики:",
                     "listAdvantage": [
-                        "- Інноваційна технологія швидкого розгортання", 
-                        "- Інтегрована сітка захищає від комах та комарів", 
-                        "- Забезпечує зручну підтримку тіла", 
-                        "- Підходить для кемпінгу, пікніків, пляжного відпочинку", 
-                        "- Витримує вагу до 200 кг.", 
+                        "- механічний дозатор зубної пасти;", 
+                        "- тримач для зубних щіток", 
+                        "- ультрафіолетовий стерилізатор (дезінфектор)", 
                     ]
                 },
 
                 {
                     "type": "photo",
-                    "image": h9
+                    "image": ho8
                 },
             ]
         },
@@ -2335,54 +2546,120 @@ export const pageConfigHammock = {
             "type": "detailsBlock",
             "details": [
                 {
-                    "title": "Розміри в розкладеному вигляді: ",
-                    "descr": "263 х 135 см"
+                    "title": "Тип: ",
+                    "descr": "диспенсер для зубних щіток і пасти"
                 },
                 {
-                    "title": "Розміри в складеному вигляді:",
-                    "descr": "29 х 20 см"
+                    "title": "Колір:",
+                    "descr": "білий"
                 },
                 {
-                    "title": "Вага:",
-                    "descr": "750 гр"
+                    "title": "Матеріал:",
+                    "descr": "ABS-пластик, силікон"
                 },
                 {
-                    "title": "Матеріали:",
-                    "descr": "поліестер, нейлон"
+                    "title": "УФ-стерилізатор:",
+                    "descr": "Є"
                 },
                 {
-                    "title": "Особливості :",
-                    "descr": "антимоскітна сітка"
+                    "title": "Режим зарядки:",
+                    "descr": "USB"
                 },
                 {
-                    "title": "Максимальна вага: ",
-                    "descr": "200 кг"
+                    "title": "Сила струму:",
+                    "descr": "345 мА"
                 },
                 {
-                    "title": "Москітна сітка з одного боку пришита",
-                    "descr": ""
+                    "title": "Термін служби лампи:",
+                    "descr": "понад 8000 годин"
+                },
+                {
+                    "title": "Джерело живлення:",
+                    "descr": "DC9V/AG220V"
+                },
+                {
+                    "title": "Акумулятор:",
+                    "descr": "вбудований літієвий, 1500 мА"
+                },
+                {
+                    "title": "Кріплення:",
+                    "descr": "скотч 3M"
+                },
+                {
+                    "title": "Розмір:",
+                    "descr": "200 × 75 × 40 мм"
                 },
             ]
         },
+
+        // {
+        //     "type": "reviewsBlock",
+        //     "reviews": [
+        //         {
+        //             "id": 1, 
+        //             "name": "Олександр Ярмолюк",
+        //             "city": "м. Бориспіль",
+        //             "text": "Відмінно! Дуже дякую"
+        //         },
+        //         {
+        //             "id": 2, 
+        //             "name": "Гончар О.",
+        //             "city": "м. Олександрія",
+        //             "text": "Замовила чоловіку на подарунок, йому сподобалось"
+        //         },
+        //         {
+        //             "id": 3, 
+        //             "name": "Katya Katya",
+        //             "city": "м. Кропивницький",
+        //             "text": "10 з 10 дякую"
+        //         },
+        //         {
+        //             "id": 4, 
+        //             "name": "Нагорний Ігор",
+        //             "city": "м. Вінниця",
+        //             "text": "Мийка хороша, вартує своєї ціни, отримав в подарунок ще й пилосос, то дуже приємно, спасибі"
+        //         },
+        //     ]
+        // },
         {
             "type": "questionBlock",
-            "title": "Підвісний гамак з антимоскітною сіткою"
+            "title": "Тримач-диспенсер"
         },
 
         {
             "type": "viber",
             "title": "Відгуки покупців",
-            "images": [reviews4, reviews5, reviews6]
+            "images": [reviews11, reviews22, reviews33]
         },
 
         {
             "type": "orderBlock",
-            "title": "Підвісний гамак з антимоскітною сіткою",
-            "image": h8,
-            "oldPrice": "1198",
-            "newPrice": "599",
-            "quantityList": null
+            "title": "Тримач-диспенсер для зубної пасти та щіток Toothbrush sterilizer",
+            "image": ho1,
+            "oldPrice": "590",
+            "newPrice": "389",
+            "quantityList": [
+                {
+                    "value": 1,
+                    "message": "1 шт. за ціною 389 грн",
+                    "price": "389"
+                },
+                {
+                    "value": 2,
+                    "message": "2 шт. зі знижкою 5% - 739 грн.",
+                    "price": "739"
+                },
+                {
+                    "value": 3,
+                    "message": "3 шт. зі знижкою 10% - 1050 грн.",
+                    "price": "1050"
+                },
+                {
+                    "value": 4,
+                    "message": "4 шт. зі знижкою 15% - 1322 грн.",
+                    "price": "1322"
+                },
+            ]
         }
     ],
 };
-
