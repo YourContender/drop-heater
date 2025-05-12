@@ -40,14 +40,14 @@ export const ThanksPage = ({
 
         console.log(upsell);
 
-        await fetch('https://api.heater.pp.ua/send', {
-            method: 'POST',
-            body: JSON.stringify(upsell),
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            }
-        });
+        // await fetch('https://api.heater.pp.ua/send', {
+        //     method: 'POST',
+        //     body: JSON.stringify(upsell),
+        //     headers: {
+        //         'Accept': 'application/json',
+        //         'Content-Type': 'application/json'
+        //     }
+        // });
     };
 
     return (
@@ -87,8 +87,8 @@ export const ThanksPage = ({
                     <div className="modal-wrapper">
                         <div className="modal-body">
                             <h1>
-                                Дякуємо Вам, наш менеджер додасть цей товар до основного замовлення та 
-                                проконсультує Вас, якщо у Вас є питання.
+                                Дякуємо Вам, щоб замовити вказаний продукт, назвіть його найменування менеджеру,
+                                який додасть його до основного замовлення.
                             </h1>
                             <FontAwesomeIcon 
                                 className="modal-body-btn" 
