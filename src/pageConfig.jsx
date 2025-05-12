@@ -2643,20 +2643,190 @@ import fan22 from "./projects/fan/img/22.webp";
 import fan222 from "./projects/fan/img/222.webp";
 import fan5 from "./projects/fan/img/5.webp";
 import fan7 from "./projects/fan/img/7.webp";
+
+// reviews
 import r1 from "./projects/fan/img/review/r1.png"
 import r2 from "./projects/fan/img/review/r2.png"
 import r3 from "./projects/fan/img/review/r3.png"
 
+// dop
+import d1 from "./projects/fan/img/reviews/d1.png";
+import d2 from "./projects/fan/img/reviews/1.webp";
+import d3 from "./projects/fan/img/reviews/r2.webp";
+import d4 from "./projects/fan/img/reviews/r3.webp";
+import d5 from "./projects/fan/img/reviews/r4.png";
+import d6 from "./projects/fan/img/reviews/r5.png";
+import d7 from "./projects/fan/img/reviews/r6.png";
+import d8 from "./projects/fan/img/reviews/r7.png";
+import d9 from "./projects/fan/img/reviews/r8.png";
+import d10 from "./projects/fan/img/reviews/r9.png";
+import d11 from "./projects/fan/img/reviews/r10.png";
+import d12 from "./projects/fan/img/reviews/r11.png";
+import d13 from "./projects/fan/img/reviews/r12.png";
+import d14 from "./projects/fan/img/reviews/r12.webp";
+import d15 from "./projects/fan/img/reviews/r13.webp";
+import d16 from "./projects/fan/img/reviews/r14.webp";
+import d17 from "./projects/fan/img/reviews/r15.webp";
+import d18 from "./projects/fan/img/reviews/r16.webp";
+import d19 from "./projects/fan/img/reviews/r17.webp";
+import d20 from "./projects/fan/img/reviews/r18.png";
+import d21 from "./projects/fan/img/reviews/r19.png";
+import d22 from "./projects/fan/img/reviews/r20.png";
 
 export const thanksPageForFan = [
     {
-        id: 16,
-        images: [g63, g64, g65],
+        id: 8,
+        images: [d20, d21, d22],
+        title: "Чохол Для Речів Постільної білизни БІЖ AND-50L",
+        old: "358",
+        new: "179",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "-50%",
+        details: [
+            {
+                t: "Матеріал: ",
+                d: "міцна, м’яка, вологостійка тканина"
+            },
+            {
+                t: "Колір: ",
+                d: "бежевий"
+            },
+            {
+                t: "Призначення: ",
+                d: "для зберігання постільної білизни, одягу, ковдр, подушок, іграшок"
+            },
+            {
+                t: "Конструкція: ",
+                d: "складна, портативна"
+            },
+            {
+                t: "Тип застібки: ",
+                d: "блискавка"
+            },
+            {
+                t: "Особливості: ",
+                d: "прозоре віконце для перегляду вмісту"
+            },
+            {
+                t: "Місце зберігання: ",
+                d: "під ліжком, у шафі, на антресолі, балконі, мансарді"
+            },
+            {
+                t: "Догляд: ",
+                d: "можна прати"
+            },
+            {
+                t: "Дизайн: ",
+                d: "універсальний, підходить до будь-якого інтер’єру"
+            },
+        ],
+    },
+    {
+        id: 7,
+        images: [d17, d18, d19],
+        title: "Складана каністра для води із краником 10 л",
+        old: "378",
+        new: "189",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "-50%",
+        details: [
+            {
+                t: "Зручність використання:",
+                d: "Для зручного перенесення є ручка, яка не відламається і не порветься."
+            },
+            {
+                t: "Універсальність:  ",
+                d: "Складна конструкція, дозволяє з легкістю помістити каністру в рюкзак або велику бокову кишеню."
+            },
+            {
+                t: "Практичність:  ",
+                d: "Буде зручна вдома, у поході, на пікніку тощо, відмінно замінює стандартні пластикові пляшки, які швидко зношуються, а ручки в них ламаються після кількох використань."
+            },
+        ],
+    },
+    {
+        id: 5,
+        images: [d11, d12, d13],
+        title: "Портативна міні швабра MINI MOP з автовіджимом, легка, для прибирання будинку, авто",
+        old: "338",
+        new: "169",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "-50%",
+        details: [
+            {
+                t: "Зручна конструкція:  ",
+                d: "Вертикальна конструкція для зручного зберігання не займає багато місця."
+            },
+            {
+                t: "ПОДВІЙНЕ ВИКОРИСТАННЯ ДЛЯ ВОЛОГОГО І СУХОГО ЗБИРАННЯ:",
+                d: "Плями від води можна витирати негайно, вбудоване прання та зневоднення, витягування та вичавлювання води однією рукою"
+            },
+            {
+                t: "ШВИДКЕ ВИСИХАННЯ:",
+                d: "Ви можете легко вичавити брудну воду і швидко висушити голівку швабри, не залишаючи слідів від води."
+            },
+            {
+                t: "МІЦНИЙ МАТЕРІАЛ: ",
+                d: "Виготовлена ​​з міцного ABS-матеріалу з високоякісною головкою з бавовни PU, міні-швабра витримує багаторазове використання та розрахована на тривалий час."
+            },
+            
+        ],
+    },
+    {
+        id: 6,
+        images: [d14, d15, d16],
+        title: "Водонепроникний ліхтар 52 см з ефектом полум'я Solar flame led light sensor activated",
+        old: "378",
+        new: "189",
+        saleMessage: "На цей товар також діє акційна пропозиція",
+        percent: "-50%",
+        details: [
+            {
+                t: "Джерело живлення:",
+                d: "сонячний"
+            },
+            {
+                t: "Джерело світла:  ",
+                d: "світлодіодні лампи"
+            },
+            {
+                t: "Світлодіодів:  ",
+                d: "12 шт."
+            },
+            {
+                t: "Висота:  ",
+                d: "52 см"
+            },
+            {
+                t: "Колір світіння:  ",
+                d: "білий теплий"
+            },
+            {
+                t: "Матеріал:  ",
+                d: "пластик"
+            },
+            {
+                t: "Сонячна панель:  ",
+                d: "800мАч, 0.88W, ефективність 17%"
+            },
+            {
+                t: "Водонепроникність:  ",
+                d: "IP 65"
+            },
+            {
+                t: "Перемикач:  ",
+                d: "ON/OFF/Auto"
+            },
+        ],
+    },
+    {
+        id: 1,
+        images: [d1],
         title: "Вентилятор портативний JX-998",
         old: "260",
         new: "130",
         saleMessage: "На цей товар також діє акційна пропозиція",
-        percent: "-46%",
+        percent: "-50%",
         details: [
             {
                 t: "(білий, жовтий, зелений, рожевий)",
@@ -2681,13 +2851,13 @@ export const thanksPageForFan = [
         ],
     },
     {
-        id: 1,
-        images: [g8, g10, g11],
+        id: 2,
+        images: [d2, d3, d4],
         title: "Пластир для зняття болю в спині pain Relief neck Patches",
         old: "220",
         new: "110",
         saleMessage: "На цей товар також діє акційна пропозиція",
-        percent: "-51%",
+        percent: "-50%",
         details: [
             {
                 t: "1:",
@@ -2716,13 +2886,13 @@ export const thanksPageForFan = [
         ],
     },
     {
-        id: 5,
-        images: [g24, g25, g26],
+        id: 3,
+        images: [d5, d6, d7],
         title: "Бездротові навушники M10 вкладиші з мікрофоном для Андроїд та IOS TWS WIRELESS",
         old: "378",
         new: "189",
         saleMessage: "На цей товар також діє акційна пропозиція",
-        percent: "-51%",
+        percent: "-50%",
         details: [
             {
                 t: "Частотний діапазон: ",
@@ -2759,13 +2929,13 @@ export const thanksPageForFan = [
         ],
     },
     {
-        id: 5,
-        images: [g24, g25, g26],
+        id: 4,
+        images: [d8, d9, d10],
         title: "Багатофункціональна насадка для душа високого тиску 5 режимів розпилення",
         old: "220",
         new: "110",
         saleMessage: "На цей товар також діє акційна пропозиція",
-        percent: "-51%",
+        percent: "-50%",
         details: [
             {
                 t: "Високий Тиск:  ",
@@ -2780,24 +2950,36 @@ export const thanksPageForFan = [
                 d: "Кнопка паузи допомагає зменшити споживання води під час використання."
             },
             {
-                t: "Об'єм акумулятора в кейсі:",
-                d: "1200 mAh"
+                t: "Простота Встановлення: ",
+                d: "Монтаж без інструментів і не вимагає виклику сантехніка."
             },
             {
-                t: "Місткість акумулятора навушника: ",
-                d: "50 mAh"
+                t: "Якісні Матеріали: ",
+                d: "Виготовлена з міцного та легкого АБС-пластика."
             },
             {
-                t: "Режим прослуховування музики: ",
-                d: "Стерео"
+                t: "Універсальність:",
+                d: "Підходить для догляду за дітьми, домашніми тваринами, купанням та прибиранням."
             },
             {
-                t: "Дистанція роботи:",
-                d: "10-15 метрів від пристрою"
+                t: "Матеріал: ",
+                d: "АБС-пластик"
             },
             {
-                t: "Водонепроникність:",
-                d: "IPX7"
+                t: "Кольори: ",
+                d: "Чорний, Білий."
+            },
+            {
+                t: "Розмір: ",
+                d: "25×9 см."
+            },
+            {
+                t: "Особливості:  ",
+                d: "5 режимів розпилення, кнопка паузи для економії води."
+            },
+            {
+                t: "У комплекті: ",
+                d: " 1 х насадка для душу."
             },
         ],
     },
