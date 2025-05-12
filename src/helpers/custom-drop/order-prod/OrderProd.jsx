@@ -53,7 +53,7 @@ export const OrderProd = ({
             name: user,
             phone: tel,
             product: title,
-            quantity: quantityOrderSend,
+            // quantity: quantityOrderSend,
             price: newPrice
         }
         
@@ -105,7 +105,7 @@ export const OrderProd = ({
                 <MaskName setUser={handleSetUserName} successRequest={successRequest}/>
                 <MaskTel setTel={handleSetTelUser} setCheckCorrectTel={setCheckCorrectTel} successRequest={successRequest}/>
 
-                {
+                {/* {
                     quantityList && 
                         <div className="custom-prod-modal-quantity">
                             <label htmlFor="quantity">Виберіть кількість:</label>
@@ -128,7 +128,7 @@ export const OrderProd = ({
                                 та скористатися нашими додатковими ЗНИЖКАМИ.
                             </span>
                         </div>
-                }
+                } */}
 
                 <div className="custom-prod-modal-send">
                     <button
