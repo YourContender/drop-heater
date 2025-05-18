@@ -2987,6 +2987,7 @@ export const thanksPageForFan = [
 
 
 export const pageConfigFan = {
+    
     "title": "Вентилятор настільний акумуляторний від usb електронний зі світлодіодним підсвічуванням",
     "content": [
       {
@@ -3120,6 +3121,7 @@ export const pageConfigFan = {
         "image": fan1,
         "oldPrice": "859",
         "newPrice": "449",
+        "productId": "id_714691",
         "quantityList": [
           {
             "value": 1,

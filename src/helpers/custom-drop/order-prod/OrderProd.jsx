@@ -11,7 +11,8 @@ export const OrderProd = ({
     setModalOpen, 
     setModalTel, 
     setModalName,
-    quantityList
+    quantityList,
+    productId
 }) => {
     const [tel, setTel] = useState("");
     const [user, setUser] = useState("");
@@ -49,7 +50,7 @@ export const OrderProd = ({
 
     const sendRequest = async (data) => {
         let userData = {
-            productId: "id_714691",
+            productId: productId,
             name: user,
             phone: tel,
             product: title,
@@ -68,6 +69,8 @@ export const OrderProd = ({
                     'Content-Type': 'application/json'
                 }
             });
+            console.log(userData);
+            
             setSuccessRequest(true);
             setModalOpen(true);
             setModalTel(tel);
