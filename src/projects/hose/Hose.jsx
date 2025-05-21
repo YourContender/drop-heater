@@ -12,7 +12,7 @@ import { pageConfigFan, thanksPageForFan } from '../../pageConfig';
 import { ThanksPage } from '../../helpers/custom-drop/thanks-page/ThanksPage';
 import { SaleBlock } from '../../helpers/custom-drop/sale-block/SaleBlock';
 import { ReviewsBlock } from '../../helpers/custom-drop/reviews-block/ReviewsBlock';
-import { pageConfigHose } from './data';
+import { pageConfigHose, thanksPageForHose } from './data';
 
 export const HoseProd = () => {
     const [isModalOpen, setModalOpen] = useState(false);
@@ -60,7 +60,7 @@ export const HoseProd = () => {
                 modalName={modalName}
                 setModalTel={setModalTel}
                 setModalName={setModalName}
-                thanksPage={thanksPageForFan}
+                thanksPage={thanksPageForHose}
             />
             <DeliveryBlock/>
             <FooterBlock/>

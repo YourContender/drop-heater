@@ -79,16 +79,16 @@ export const OrderProd = ({
         }
         
         if (user.length >= 2 && tel[17] >= 0 && checkCorrectTel.length === 0) {
-            // await fetch('https://api.heater.pp.ua/send', {
-            //     method: 'POST',
-            //     body: JSON.stringify({
-            //         ...userData
-            //     }),
-            //     headers: {
-            //         'Accept': 'application/json',
-            //         'Content-Type': 'application/json'
-            //     }
-            // });
+            await fetch('https://api.heater.pp.ua/send', {
+                method: 'POST',
+                body: JSON.stringify({
+                    ...userData
+                }),
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                }
+            });
             console.log(userData);
             
             setSuccessRequest(true);
