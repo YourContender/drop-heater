@@ -12,7 +12,9 @@ export const OrderProd = ({
     setModalTel, 
     setModalName,
     quantityList,
-    productId
+    productId,
+    sizeProduct, 
+    defaultSize
 }) => {
     const [tel, setTel] = useState("");
     const [user, setUser] = useState("");
@@ -22,6 +24,15 @@ export const OrderProd = ({
     const [quantityOrderSend, setQuantityOrderSend] = useState("null");
     const [changePriceOld, setChangePriceOld] = useState(oldPrice);
     const [changePriceNew, setChangePriceNew] = useState(newPrice);
+    const [changeSize, setChangeSize] = useState(1);
+    const [sendSize, setSendSize] = useState();
+
+    const changeSizeProductAndPrice = (num, newPrice, oldPrice, item) => {
+        setChangeSize(num);
+        setChangePriceNew(newPrice);
+        setChangePriceOld(oldPrice);
+        setSendSize(item)
+    }
     
     const changePriceDueToQuantity = (event) => {
         setQuantity(event.target.value);
@@ -31,6 +42,13 @@ export const OrderProd = ({
     }
 
     useEffect(() => {
+        setChangePriceOld(oldPrice);
+        setChangePriceNew(newPrice);
+        setSendSize(defaultSize);
+    }, [])
+
+    useEffect(() => {
+
         if (quantity == "7") {
             setChangePriceOld(oldPrice);
             setChangePriceNew(newPrice);
@@ -55,20 +73,22 @@ export const OrderProd = ({
             phone: tel,
             product: title,
             // quantity: quantityOrderSend,
-            price: newPrice
+            price: changePriceNew,
+            size: sendSize.size 
+            
         }
         
         if (user.length >= 2 && tel[17] >= 0 && checkCorrectTel.length === 0) {
-            await fetch('https://api.heater.pp.ua/send', {
-                method: 'POST',
-                body: JSON.stringify({
-                    ...userData
-                }),
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                }
-            });
+            // await fetch('https://api.heater.pp.ua/send', {
+            //     method: 'POST',
+            //     body: JSON.stringify({
+            //         ...userData
+            //     }),
+            //     headers: {
+            //         'Accept': 'application/json',
+            //         'Content-Type': 'application/json'
+            //     }
+            // });
             console.log(userData);
             
             setSuccessRequest(true);
@@ -101,6 +121,26 @@ export const OrderProd = ({
                             </div>
                             <div className="block-sum">{changePriceNew} грн</div>
                         </div>
+                    </div>
+                </div>
+
+                <div className="main-change-size">
+                    <h2>Оберіть довжину шлангу:</h2>
+
+                    <div className="main-change-size-list">
+                        {
+                            sizeProduct.map((item, index) => {
+                                return (
+                                    <div 
+                                        className={`${changeSize === index + 1 ? "main-change-size-list-current" : "main-change-size-list-item"}`} 
+                                        key={index}
+                                        onClick={() => changeSizeProductAndPrice(index + 1, item.priceNew, item.priceOld, item)}
+                                    >
+                                        {item.size}
+                                    </div>
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </div>

@@ -8,13 +8,13 @@ import { OrderProd } from '../../helpers/custom-drop/order-prod/OrderProd';
 import { DescrBlock } from '../../helpers/custom-drop/descr-block/DescrBlock';
 import { DeliveryBlock } from '../../helpers/custom-drop/delivery-block/DeliveryBlock';
 import { FooterBlock } from '../../helpers/custom-drop/footer-block/FooterBlock';
-import { pageConfigGlasses, thanksPageForGlasses } from '../../pageConfig';
+import { pageConfigFan, thanksPageForFan } from '../../pageConfig';
 import { ThanksPage } from '../../helpers/custom-drop/thanks-page/ThanksPage';
 import { SaleBlock } from '../../helpers/custom-drop/sale-block/SaleBlock';
 import { ReviewsBlock } from '../../helpers/custom-drop/reviews-block/ReviewsBlock';
-import "./Glasses.scss";
+import { pageConfigHose } from './data';
 
-export const GlassesProd = () => {
+export const HoseProd = () => {
     const [isModalOpen, setModalOpen] = useState(false);
     const [modalTel, setModalTel] = useState("");
     const [modalName, setModalName] = useState("");
@@ -22,7 +22,7 @@ export const GlassesProd = () => {
     return (
         <div className="custom-container">
             {
-                pageConfigGlasses.content.map((obj, index) => {
+                pageConfigHose.content.map((obj, index) => {
                     switch (obj.type) {
                         case "basicHeaderBlock":
                             return <HeaderBlock {...obj} key={index}/>
@@ -60,7 +60,7 @@ export const GlassesProd = () => {
                 modalName={modalName}
                 setModalTel={setModalTel}
                 setModalName={setModalName}
-                thanksPage={thanksPageForGlasses}
+                thanksPage={thanksPageForFan}
             />
             <DeliveryBlock/>
             <FooterBlock/>
