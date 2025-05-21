@@ -311,7 +311,7 @@ export const pageConfigHose = {
         "image": h1,
         "oldPrice": "515",
         "newPrice": "299",
-        "productId": "", // ENTER ID PRODUCT !!!!!!!
+        "productId": "id_715372", // ENTER ID PRODUCT !!!!!!!
         "defaultSize": {         
             "size": "15м."
         },
