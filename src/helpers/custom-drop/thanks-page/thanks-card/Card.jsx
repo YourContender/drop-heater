@@ -12,7 +12,8 @@ export const Card = ({
     oldPrice, 
     newPrice, 
     details,
-    sendRequestUpsell
+    sendRequestUpsell,
+    id
 }) => {
     const [isOpenOther, setIsOpenOther] = useState(false);
 
@@ -74,7 +75,7 @@ export const Card = ({
 
             <button className="card-btn" onClick={(e) => {
                 // e.stopPropagation();
-                sendRequestUpsell(title, newPrice);
+                sendRequestUpsell(title, newPrice, id);
             }}>
                 Замовити
             </button>

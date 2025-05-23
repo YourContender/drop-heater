@@ -18,8 +18,8 @@ export const ThanksPage = ({
 
     if (!isOpen) return null;
 
-    const sendRequestUpsell = (title, newPrice) => {
-        sendUpsell(title, newPrice);
+    const sendRequestUpsell = (title, newPrice, id) => {
+        sendUpsell(title, newPrice, id);
         setOpenModalTnk(true);
     }
 
@@ -29,25 +29,26 @@ export const ThanksPage = ({
         setModalTel("");
     });
 
-    const sendUpsell = async (title, price) => {
+    const sendUpsell = async (title, price, id) => {
         let upsell = {
             name: modalName,
             phone: modalTel,
             product: title,
             price: price,
-            status: "Дозамовлення"
+            status: "Дозамовлення",
+            productId: id 
         };
 
-        console.log(upsell);
+        // console.log(upsell);
 
-        // await fetch('https://api.heater.pp.ua/send', {
-        //     method: 'POST',
-        //     body: JSON.stringify(upsell),
-        //     headers: {
-        //         'Accept': 'application/json',
-        //         'Content-Type': 'application/json'
-        //     }
-        // });
+        await fetch('https://api.heater.pp.ua/send', {
+            method: 'POST',
+            body: JSON.stringify(upsell),
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }
+        });
     };
 
     return (
@@ -78,6 +79,7 @@ export const ThanksPage = ({
                             newPrice={item.new}
                             sendRequestUpsell={sendRequestUpsell}
                             details={item.details}
+                            id={item.id}
                         />
                     ))}
                 </div>
@@ -87,8 +89,7 @@ export const ThanksPage = ({
                     <div className="modal-wrapper">
                         <div className="modal-body">
                             <h1>
-                                Дякуємо Вам, щоб замовити вказаний продукт, назвіть його найменування менеджеру,
-                                який додасть його до основного замовлення.
+                                Дякуємо Вам, за додаткове замовлення, наш менеджер зв'яжеться з Вами незабаром.
                             </h1>
                             <FontAwesomeIcon 
                                 className="modal-body-btn" 

@@ -68,14 +68,13 @@ export const OrderProd = ({
 
     const sendRequest = async (data) => {
         let userData = {
-            productId: productId,
+            productId: sendSize.initId ? sendSize.initId : defaultSize.id,
             name: user,
             phone: tel,
             product: title,
             // quantity: quantityOrderSend,
             price: changePriceNew,
             size: sendSize.size 
-            
         }
         
         if (user.length >= 2 && tel[17] >= 0 && checkCorrectTel.length === 0) {
@@ -89,7 +88,7 @@ export const OrderProd = ({
                     'Content-Type': 'application/json'
                 }
             });
-            console.log(userData);
+            // console.log(userData);
             
             setSuccessRequest(true);
             setModalOpen(true);

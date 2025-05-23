@@ -30,6 +30,7 @@ export const thanksPageForHose = [
         new: "249",
         saleMessage: "На цей товар також діє акційна пропозиція",
         percent: "-50%",
+        id: "id_715552",
         details: [
             {
                 t: "Простота у використанні;",
@@ -77,6 +78,7 @@ export const thanksPageForHose = [
         new: "299",
         saleMessage: "На цей товар також діє акційна пропозиція",
         percent: "-50%",
+        id: "id_715554",
         details: [
             {
                 t: "ніж забезпечує найбільш міцне з'єднання прищею з підщепою, при цьому виключаючи ймовірність зміщення.",
@@ -101,6 +103,7 @@ export const thanksPageForHose = [
         new: "420",
         saleMessage: "На цей товар також діє акційна пропозиція",
         percent: "-50%",
+        id: "id_715553",
         details: [
             {
                 t: "Не залишає після підв'язки шматок стрічки (Scrap Free);",
@@ -136,6 +139,7 @@ export const thanksPageForHose = [
         new: "99",
         saleMessage: "На цей товар також діє акційна пропозиція",
         percent: "-50%",
+        id: "id_715555",
         details: [
             {
                 t: "Тип: ",
@@ -171,6 +175,7 @@ export const thanksPageForHose = [
         new: "249",
         saleMessage: "На цей товар також діє акційна пропозиція",
         percent: "-50%",
+        id: "id_715379",
         details: [
             {
                 t: "Ручна пилка Saw AND це ідеальний інструмент для виконання різних робіт у будинку та на природі.",
@@ -313,43 +318,51 @@ export const pageConfigHose = {
         "newPrice": "299",
         "productId": "id_715372", // ENTER ID PRODUCT !!!!!!!
         "defaultSize": {         
-            "size": "15м."
+            "size": "15м.",
+            "id": "id_715372"
         },
         "sizeProduct": [
             {
                 "size": "15м.",
                 "priceOld": 515,
                 "priceNew": 299,
+                "initId": "id_715372"
             },
             {
                 "size": "30м.",
                 "priceOld": 595,
                 "priceNew": 379,
+                "initId": "id_715445"
             },
             {
                 "size": "45м.",
                 "priceOld": 690,
                 "priceNew": 449,
+                "initId": "id_715446"
             },
             {
                 "size": "60м.",
                 "priceOld": 740,
                 "priceNew": 519,
+                "initId": "id_715447"
             },
             {
                 "size": "75м.",
                 "priceOld": 830,
                 "priceNew": 579,
+                "initId": "id_715448"
             },
             {
                 "size": "90м.",
                 "priceOld": 950,
                 "priceNew": 679,
+                "initId": "id_715449"
             },
             {
                 "size": "120м.",
                 "priceOld": 1020,
                 "priceNew": 749,
+                "initId": "id_715450"
             },
         ],
         "quantityList": [
