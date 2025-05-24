@@ -79,7 +79,7 @@ export const ThanksPage = ({
                             newPrice={item.new}
                             sendRequestUpsell={sendRequestUpsell}
                             details={item.details}
-                            id={item.id}
+                            id={item.productId}
                         />
                     ))}
                 </div>

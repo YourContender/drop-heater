@@ -4,6 +4,7 @@ import { Home } from "./projects/home/Home";
 import "./index.css";
 import { FanProd } from "./projects/fan/Fan.jsx";
 import { HoseProd } from "./projects/hose/Hose.jsx";
+import { BlasterProd } from "./projects/blaster/Blaster.jsx";
 // import { CustomDesignSite } from "./projects/press-desk/CustomDesignSite.jsx";
 
 export const App = () => {
@@ -21,6 +22,7 @@ export const App = () => {
 
                     <Route path="/fan" element={<FanProd/>} /> 
                     <Route path="/hose" element={<HoseProd/>} /> 
+                    <Route path="/blaster" element={<BlasterProd/>} /> 
                 </Routes>
             </Router>
         </div>

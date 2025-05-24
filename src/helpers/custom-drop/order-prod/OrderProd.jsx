@@ -123,25 +123,28 @@ export const OrderProd = ({
                     </div>
                 </div>
 
-                <div className="main-change-size">
-                    <h2>Оберіть довжину шлангу:</h2>
 
-                    <div className="main-change-size-list">
-                        {
-                            sizeProduct.map((item, index) => {
-                                return (
-                                    <div 
-                                        className={`${changeSize === index + 1 ? "main-change-size-list-current" : "main-change-size-list-item"}`} 
-                                        key={index}
-                                        onClick={() => changeSizeProductAndPrice(index + 1, item.priceNew, item.priceOld, item)}
-                                    >
-                                        {item.size}
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                </div>
+                    {
+                        sizeProduct.length !== 0 ? 
+                            <div className="main-change-size">
+                                <h2>Оберіть довжину шлангу:</h2>
+                                <div className="main-change-size-list">
+                                    {
+                                        sizeProduct.map((item, index) => {
+                                            return (
+                                                <div 
+                                                    className={`${changeSize === index + 1 ? "main-change-size-list-current" : "main-change-size-list-item"}`} 
+                                                    key={index}
+                                                    onClick={() => changeSizeProductAndPrice(index + 1, item.priceNew, item.priceOld, item)}
+                                                >
+                                                    {item.size}
+                                                </div>
+                                            )
+                                        })
+                                    }
+                                </div> 
+                            </div> : null 
+                    }
             </div>
             <div className="custom-prod-modal">
                 <MaskName setUser={handleSetUserName} successRequest={successRequest}/>

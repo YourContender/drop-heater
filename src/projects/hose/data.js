@@ -30,7 +30,7 @@ export const thanksPageForHose = [
         new: "249",
         saleMessage: "На цей товар також діє акційна пропозиція",
         percent: "-50%",
-        id: "id_715552",
+        productId: "id_715552",
         details: [
             {
                 t: "Простота у використанні;",
@@ -78,7 +78,7 @@ export const thanksPageForHose = [
         new: "299",
         saleMessage: "На цей товар також діє акційна пропозиція",
         percent: "-50%",
-        id: "id_715554",
+        productId: "id_715554",
         details: [
             {
                 t: "ніж забезпечує найбільш міцне з'єднання прищею з підщепою, при цьому виключаючи ймовірність зміщення.",
@@ -103,7 +103,7 @@ export const thanksPageForHose = [
         new: "420",
         saleMessage: "На цей товар також діє акційна пропозиція",
         percent: "-50%",
-        id: "id_715553",
+        productId: "id_715553",
         details: [
             {
                 t: "Не залишає після підв'язки шматок стрічки (Scrap Free);",
@@ -139,7 +139,7 @@ export const thanksPageForHose = [
         new: "99",
         saleMessage: "На цей товар також діє акційна пропозиція",
         percent: "-50%",
-        id: "id_715555",
+        productId: "id_715555",
         details: [
             {
                 t: "Тип: ",
@@ -175,7 +175,7 @@ export const thanksPageForHose = [
         new: "249",
         saleMessage: "На цей товар також діє акційна пропозиція",
         percent: "-50%",
-        id: "id_715379",
+        productId: "id_715379",
         details: [
             {
                 t: "Ручна пилка Saw AND це ідеальний інструмент для виконання різних робіт у будинку та на природі.",
