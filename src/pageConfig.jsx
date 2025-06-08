@@ -2984,6 +2984,13 @@ export const pageConfigFan = {
         "oldPrice": "859",
         "newPrice": "449",
         "productId": "id_714691",
+        "defaultSize": {         
+            "size": "default",
+            "id": "id_714691"
+        },
+        "sizeProduct": [
+            
+        ],
         "quantityList": [
           {
             "value": 1,
